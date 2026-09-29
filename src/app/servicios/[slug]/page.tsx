@@ -187,8 +187,8 @@ const servicesMap: Record<string, ServiceDetail> = {
     ],
   },
   'higiene-y-seguridad': {
-    title: 'Higiene y Seguridad en el Trabajo',
-    subtitle: 'Auditoría técnica y prevención integral de riesgos laborales',
+    title: 'Higiene y Seguridad Laboral para Empresas',
+    subtitle: 'Servicio integral para cumplir con la normativa y mejorar las condiciones de trabajo.',
     description:
       'Asesoramos a las empresas en el cumplimiento de las normativas de seguridad laboral, realizando mediciones de campo e implementando sistemas de gestión ambiental.',
     legalFramework: 'Ley 19.587 y resoluciones SRT 900/15, 84/12, 85/12.',
@@ -349,7 +349,8 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   const isPreocupacionales = normalizedSlug.includes('preocupacional');
   const isMedicoEnPlanta = normalizedSlug.includes('planta');
   const isUnidadesMoviles = normalizedSlug.includes('movil') || normalizedSlug.includes('moviles');
-  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles;
+  const isHigieneSeguridad = normalizedSlug.includes('higiene') || normalizedSlug.includes('seguridad');
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
@@ -446,16 +447,26 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">Años de experiencia</div>
             </div>
             <div>
-              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">600+</div>
-              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">Clientes Activos</div>
+              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">
+                {isHigieneSeguridad ? '500+' : '600+'}
+              </div>
+              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">
+                {isHigieneSeguridad ? 'Empresas asesoradas' : 'Clientes Activos'}
+              </div>
             </div>
             <div>
-              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">50k+</div>
-              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">Exámenes anuales</div>
+              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">
+                {isHigieneSeguridad ? '1,000+' : '50k+'}
+              </div>
+              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">
+                {isHigieneSeguridad ? 'Planes Implementados' : 'Exámenes anuales'}
+              </div>
             </div>
             <div>
               <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">100%</div>
-              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">Cumplimiento</div>
+              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">
+                {isHigieneSeguridad ? 'Normativa cumplida' : 'Cumplimiento'}
+              </div>
             </div>
           </div>
         </div>
@@ -1049,6 +1060,201 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
+        {/* Specific layout for Higiene y Seguridad Laboral matching reference screenshot */}
+        {isHigieneSeguridad && (
+          <>
+            {/* Section 1: Overview for Higiene y Seguridad */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Asesoramiento integral</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Higiene y Seguridad Laboral para tu Empresa
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Los servicios de Higiene y Seguridad de Seres Salud están orientados a proteger la salud de tus colaboradores, minimizar riesgos laborales y asegurar el cumplimiento de las normas vigentes.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Ofrecemos asesoría, implementación de planes de seguridad, auditorías, capacitaciones y evaluaciones específicas adaptadas al rubro y tamaño de tu empresa.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt="Higiene y Seguridad Laboral para tu Empresa - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios de Higiene y Seguridad */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios de Higiene y Seguridad
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Prevención, cumplimiento normativo y ambientes de trabajo seguros
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <HardHat className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Cumplimiento normativo
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Cumplimiento estricto de la Ley 19.587 y normativas vigentes de la SRT.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Reducción de siniestralidad
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Identificación y control de riesgos para prevenir accidentes laborales.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Ambientes ergonómicos
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Mediciones y mejoras para optimizar la salud en puestos de trabajo.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 4 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Building2 className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Planes a medida
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Planes de evacuación, simulacros y capacitaciones anuales.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Section 3: ¿Qué incluye el servicio de Higiene y Seguridad? */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye el servicio de Higiene y Seguridad?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Mediciones técnicas
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Ruido en ambiente de trabajo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Iluminación laboral</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Puesta a tierra y continuidad</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Planes y capacitaciones
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Planes de evacuación</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Simulacros de emergencia</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Capacitaciones para el personal</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Auditoría y asesoría
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Informes técnicos homologados</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Asesoramiento ante la SRT</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Gestión de mapas de riesgo</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
         {/* Specific layout for Medicina Laboral */}
         {isMedicinaLaboral && (
           <>
@@ -1237,7 +1443,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
         )}
 
         {/* Fallback layout for other services */}
-        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && (
+        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && (
           <>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">
