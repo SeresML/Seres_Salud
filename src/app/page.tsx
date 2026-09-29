@@ -1,7 +1,6 @@
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import ServicesGrid from '@/components/ServicesGrid';
-import InfrastructureBlock from '@/components/InfrastructureBlock';
 import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
@@ -16,10 +15,7 @@ export default function Home() {
       {/* Bloque 4: Grilla de Servicios (Bento / Cards) */}
       <ServicesGrid />
 
-      {/* Bloque 5: Infraestructura / Ubicación (Avellaneda) */}
-      <InfrastructureBlock />
-
-      {/* Bloque 6: Formulario de Contacto Integral */}
+      {/* Bloque 5: Formulario de Contacto Integral */}
       <ContactForm />
     </>
   );
