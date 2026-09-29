@@ -668,27 +668,6 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </Link>
         </div>
 
-        {/* FAQs */}
-        {service.faqs.length > 0 && (
-          <div className="bg-white p-8 rounded-2xl border border-emerald-100 shadow-card space-y-6">
-            <h2 className="text-2xl font-bold font-heading text-gray-900">
-              Preguntas Frecuentes sobre {service.title}
-            </h2>
-            <div className="space-y-4 divide-y divide-gray-100">
-              {service.faqs.map((faq, idx) => (
-                <div key={idx} className={`${idx > 0 ? 'pt-4' : ''} space-y-2`}>
-                  <h3 className="text-base font-bold font-heading text-[#0A5229]">
-                    {faq.q}
-                  </h3>
-                  <p className="text-sm text-gray-600 font-sans leading-relaxed">
-                    {faq.a}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
       </div>
     </div>
   );
