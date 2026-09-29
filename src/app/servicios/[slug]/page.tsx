@@ -583,6 +583,80 @@ export default function SingleServicePage({ params }: { params: { slug: string }
 
         </div>
 
+        {/* Section 3: ¿Qué incluye la medicina laboral? matching reference screenshot */}
+        <div className="space-y-10 pt-4">
+          <div className="text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+              ¿Qué incluye la medicina laboral?
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            {/* Card 1 */}
+            <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+              <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                Controles preventivos
+              </h3>
+              <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                  <span>Evaluación médica inicial</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                  <span>Controles periódicos</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                  <span>Valoración de aptitud laboral</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+              <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                Estudios y diagnósticos
+              </h3>
+              <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                  <span>Estudios clínicos requeridos</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                  <span>Electrocardiogramas y análisis</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                  <span>Interpretación profesional</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+              <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                Informes y seguimiento
+              </h3>
+              <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                  <span>Informes médicos para RRHH</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                  <span>Recomendaciones preventivas</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                  <span>Seguimiento de evolución</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         {/* Back Link */}
         <div className="pt-4">
           <Link
