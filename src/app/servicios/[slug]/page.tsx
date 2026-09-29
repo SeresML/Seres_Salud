@@ -346,8 +346,8 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   }
 
   const IconComp = getIcon(service.iconName);
-  const isPreocupacionales = normalizedSlug === 'examenes-preocupacionales';
-  const isMedicinaLaboral = normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug];
+  const isPreocupacionales = normalizedSlug.includes('preocupacional');
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
