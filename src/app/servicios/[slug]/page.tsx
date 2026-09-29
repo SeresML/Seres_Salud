@@ -1104,14 +1104,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               </div>
             </div>
 
-            {/* Section 2: Beneficios de Higiene y Seguridad */}
+            {/* Section 2: Beneficios de nuestros servicios */}
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de Higiene y Seguridad
+                  Beneficios de nuestros servicios
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
-                  Prevención, cumplimiento normativo y ambientes de trabajo seguros
+                  Protección, cumplimiento y tranquilidad
                 </p>
               </div>
 
@@ -1119,14 +1119,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
                   <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                    <HardHat className="w-6 h-6" />
+                    <ShieldCheck className="w-6 h-6" />
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Cumplimiento normativo
+                      Cumplimiento de normas
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Cumplimiento estricto de la Ley 19.587 y normativas vigentes de la SRT.
+                      Implementación de estándares y auditorías de higiene y seguridad.
                     </p>
                   </div>
                 </div>
@@ -1134,14 +1134,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
                   <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                    <ShieldCheck className="w-6 h-6" />
+                    <Activity className="w-6 h-6" />
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de siniestralidad
+                      Reducción de riesgos
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Identificación y control de riesgos para prevenir accidentes laborales.
+                      Identificación y mitigación de peligros laborales.
                     </p>
                   </div>
                 </div>
@@ -1149,14 +1149,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
                   <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                    <Activity className="w-6 h-6" />
+                    <UserCheck className="w-6 h-6" />
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Ambientes ergonómicos
+                      Entornos más seguros
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Mediciones y mejoras para optimizar la salud en puestos de trabajo.
+                      Protección real para tus colaboradores y procesos.
                     </p>
                   </div>
                 </div>
@@ -1164,14 +1164,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 4 */}
                 <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
                   <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                    <Building2 className="w-6 h-6" />
+                    <FileCheck className="w-6 h-6" />
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Planes a medida
+                      Apoyo a RRHH
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Planes de evacuación, simulacros y capacitaciones anuales.
+                      Soporte documental y operativo para recursos humanos.
                     </p>
                   </div>
                 </div>
@@ -1191,20 +1191,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Mediciones técnicas
+                    Diagnóstico de riesgos
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Ruido en ambiente de trabajo</span>
+                      <span>Análisis de condiciones laborales</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Iluminación laboral</span>
+                      <span>Identificación de peligros</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Puesta a tierra y continuidad</span>
+                      <span>Evaluación documental</span>
                     </li>
                   </ul>
                 </div>
@@ -1212,20 +1212,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Planes y capacitaciones
+                    Planificación y control
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Planes de evacuación</span>
+                      <span>Planes de acción</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Simulacros de emergencia</span>
+                      <span>Protocolos operativos</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Capacitaciones para el personal</span>
+                      <span>Seguimiento continuo</span>
                     </li>
                   </ul>
                 </div>
@@ -1233,20 +1233,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Auditoría y asesoría
+                    Informes y documentación
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Informes técnicos homologados</span>
+                      <span>Auditorías internas</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Asesoramiento ante la SRT</span>
+                      <span>Informes formales</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Gestión de mapas de riesgo</span>
+                      <span>Soporte para inspecciones</span>
                     </li>
                   </ul>
                 </div>
