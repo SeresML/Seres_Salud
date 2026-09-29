@@ -73,7 +73,7 @@ export default function AccesoClientesPage() {
 
             <div className="pt-4">
               <a
-                href="https://seressalud.com.ar"
+                href="https://ml1.seressalud.com.ar:8080"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold py-4 rounded-xl text-center block transition-all shadow-md text-base flex items-center justify-center gap-2 group"
@@ -122,7 +122,7 @@ export default function AccesoClientesPage() {
 
             <div className="pt-4">
               <a
-                href="https://seressalud.com.ar"
+                href="https://ml2.seressalud.com.ar:8080"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold py-4 rounded-xl text-center block transition-all shadow-md text-base flex items-center justify-center gap-2 group"

@@ -124,21 +124,25 @@ export default function Header() {
               <ChevronDown className="w-5 h-5 text-gray-500 group-hover:text-brand-green transition-transform group-hover:rotate-180 duration-200" />
             </Link>
             <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-dropdown border border-emerald-50 py-2 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-50">
-              <Link
-                href="/acceso-clientes#empresas"
+              <a
+                href="https://ml1.seressalud.com.ar:8080"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-lightgreen hover:text-brand-green transition-colors"
               >
                 <div className="font-semibold text-brand-green">Portal Empresas / RRHH</div>
                 <div className="text-xs text-gray-500 font-normal">Informes de ausentismo y resultados</div>
-              </Link>
+              </a>
               <div className="border-t border-gray-100 my-1"></div>
-              <Link
-                href="/acceso-clientes#pacientes"
+              <a
+                href="https://ml2.seressalud.com.ar:8080"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-lightgreen hover:text-brand-green transition-colors"
               >
                 <div className="font-semibold text-brand-green">Portal Pacientes / Trabajadores</div>
                 <div className="text-xs text-gray-500 font-normal">Turnos y descarga de exámenes</div>
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -243,20 +247,24 @@ export default function Header() {
 
             {clientesMobileOpen && (
               <div className="pl-4 mt-1 space-y-1 border-l-2 border-brand-moss">
-                <Link
-                  href="/acceso-clientes#empresas"
+                <a
+                  href="https://ml1.seressalud.com.ar:8080"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block py-1.5 text-base text-gray-700 hover:text-brand-green"
                 >
                   Portal Empresas / RRHH
-                </Link>
-                <Link
-                  href="/acceso-clientes#pacientes"
+                </a>
+                <a
+                  href="https://ml2.seressalud.com.ar:8080"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block py-1.5 text-base text-gray-700 hover:text-brand-green"
                 >
                   Portal Pacientes / Trabajadores
-                </Link>
+                </a>
               </div>
             )}
           </div>
