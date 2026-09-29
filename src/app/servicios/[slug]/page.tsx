@@ -460,202 +460,389 @@ export default function SingleServicePage({ params }: { params: { slug: string }
       {/* Main Content Container matching reference screenshot */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 space-y-16">
         
-        {/* Section 1: Institutional Overview Block */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          {/* Text Left */}
-          <div className="lg:col-span-7 space-y-5">
-            <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
-              <span>Salud laboral integral</span>
-            </div>
-            
-            <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
-              Medicina Laboral para Empresas
-            </h2>
+        {/* Specific layout for Exámenes Preocupacionales matching reference screenshot */}
+        {isPreocupacionales && (
+          <>
+            {/* Section 1: Overview for Exámenes Preocupacionales */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Servicio médico</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Exámenes Preocupacionales para Empresas
+                </h2>
 
-            <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-              En Seres Salud ofrecemos servicios de medicina laboral orientados a la protección y seguimiento de la salud de tus colaboradores, desde evaluaciones preventivas hasta controles periódicos.
-            </p>
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Los exámenes preocupacionales son evaluaciones médicas obligatorias que se realizan antes del ingreso laboral para establecer el estado de salud del trabajador y asegurar que pueda desempeñar sus funciones sin riesgos.
+                </p>
 
-            <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-              Nuestra medicina laboral integra diagnósticos, estudios y atención profesional para asegurar condiciones de trabajo saludables y el cumplimiento de la normativa vigente.
-            </p>
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Seres Salud realiza estos exámenes de forma profesional, cumpliendo con protocolos y asegurando documentación válida para RRHH y Seguridad e Higiene.
+                </p>
 
-            <div className="pt-3">
-              <Link
-                href="/contacto"
-                className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
-              >
-                Solicitar Asesoramiento
-              </Link>
-            </div>
-          </div>
-
-          {/* Photo Right */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
-              <Image
-                src="/images/about.jpg"
-                alt="Medicina Laboral para Empresas - Seres Salud"
-                fill
-                className="object-cover object-center"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Section 2: Beneficios de la medicina laboral */}
-        <div className="space-y-10 pt-4">
-          
-          {/* Header */}
-          <div className="text-center max-w-2xl mx-auto space-y-1">
-            <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-              Beneficios de la medicina laboral
-            </h2>
-            <p className="text-sm text-gray-500 font-medium font-sans">
-              Salud, prevención y respaldo profesional
-            </p>
-          </div>
-
-          {/* 2x2 Grid Cards matching reference screenshot */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            
-            {/* Card 1 */}
-            <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-6 h-6" />
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
               </div>
-              <div className="space-y-1">
-                <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                  Prevención de riesgos
-                </h3>
-                <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                  Controles que identifican riesgos antes de que afecten al equipo.
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt="Exámenes Preocupacionales para Empresas - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios de nuestros exámenes */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios de nuestros exámenes
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Seguridad, cumplimiento y salud
                 </p>
               </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Cumplimiento legal
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Evaluaciones que cumplen con requisitos legales y laborales.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Resultados confiables
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Evaluaciones médicas precisas y reportes profesionales.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <UserCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Protección del equipo
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Identificación temprana de condiciones de salud relevantes.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 4 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <FileCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      RRHH ordenado
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Documentación clara para procesos internos de personal.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </>
+        )}
+
+        {/* Specific layout for Medicina Laboral */}
+        {isMedicinaLaboral && (
+          <>
+            {/* Section 1: Institutional Overview Block */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Salud laboral integral</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Medicina Laboral para Empresas
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  En Seres Salud ofrecemos servicios de medicina laboral orientados a la protección y seguimiento de la salud de tus colaboradores, desde evaluaciones preventivas hasta controles periódicos.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Nuestra medicina laboral integra diagnósticos, estudios y atención profesional para asegurar condiciones de trabajo saludables y el cumplimiento de la normativa vigente.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt="Medicina Laboral para Empresas - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
             </div>
 
-            {/* Card 2 */}
-            <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                <Activity className="w-6 h-6" />
-              </div>
-              <div className="space-y-1">
-                <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                  Atención médica profesional
-                </h3>
-                <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                  Evaluaciones, diagnósticos y seguimientos especializados.
+            {/* Section 2: Beneficios de la medicina laboral */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios de la medicina laboral
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Salud, prevención y respaldo profesional
                 </p>
               </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Prevención de riesgos
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Controles que identifican riesgos antes de que afecten al equipo.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Atención médica profesional
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Evaluaciones, diagnósticos y seguimientos especializados.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <FileCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Diagnósticos confiables
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Estudios clínicos claros y respaldados por profesionales.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Building2 className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Apoyo para RRHH
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Informes preparados para gestión interna y cumplimiento normativo.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            {/* Card 3 */}
-            <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                <FileCheck className="w-6 h-6" />
+            {/* Section 3: ¿Qué incluye la medicina laboral? */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye la medicina laboral?
+                </h2>
               </div>
-              <div className="space-y-1">
-                <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                  Diagnósticos confiables
-                </h3>
-                <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                  Estudios clínicos claros y respaldados por profesionales.
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Controles preventivos
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Evaluación médica inicial</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Controles periódicos</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Valoración de aptitud laboral</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Estudios y diagnósticos
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Estudios clínicos requeridos</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Electrocardiogramas y análisis</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Interpretación profesional</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Informes y seguimiento
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Informes médicos para RRHH</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Recomendaciones preventivas</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Seguimiento de evolución</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
+        {/* Fallback layout for other services */}
+        {!isPreocupacionales && !isMedicinaLaboral && (
+          <>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Servicio profesional</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  {service.title}
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  {service.description}
                 </p>
+
+                {service.legalFramework && (
+                  <div className="p-4 bg-emerald-50/60 rounded-xl border border-emerald-100 text-xs sm:text-sm text-[#0A5229] font-medium">
+                    <strong className="font-bold">Marco Legal:</strong> {service.legalFramework}
+                  </div>
+                )}
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt={`${service.title} - Seres Salud`}
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
               </div>
             </div>
 
-            {/* Card 4 */}
-            <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                <Building2 className="w-6 h-6" />
+            {/* Benefits list */}
+            {service.benefits && service.benefits.length > 0 && (
+              <div className="space-y-8 pt-4">
+                <div className="text-center max-w-2xl mx-auto space-y-1">
+                  <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                    Beneficios del Servicio
+                  </h2>
+                  <p className="text-sm text-gray-500 font-medium font-sans">
+                    Excelencia, agilidad y respaldo médico
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                  {service.benefits.map((benefit, idx) => (
+                    <div key={idx} className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                      <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                        <CheckCircle2 className="w-6 h-6" />
+                      </div>
+                      <div className="space-y-1">
+                        <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                          {benefit}
+                        </h3>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="space-y-1">
-                <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                  Apoyo para RRHH
-                </h3>
-                <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                  Informes preparados para gestión interna y cumplimiento normativo.
-                </p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        {/* Section 3: ¿Qué incluye la medicina laboral? matching reference screenshot */}
-        <div className="space-y-10 pt-4">
-          <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-              ¿Qué incluye la medicina laboral?
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            {/* Card 1 */}
-            <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
-              <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                Controles preventivos
-              </h3>
-              <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                  <span>Evaluación médica inicial</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                  <span>Controles periódicos</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                  <span>Valoración de aptitud laboral</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
-              <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                Estudios y diagnósticos
-              </h3>
-              <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                  <span>Estudios clínicos requeridos</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                  <span>Electrocardiogramas y análisis</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                  <span>Interpretación profesional</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
-              <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                Informes y seguimiento
-              </h3>
-              <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                  <span>Informes médicos para RRHH</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                  <span>Recomendaciones preventivas</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                  <span>Seguimiento de evolución</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+            )}
+          </>
+        )}
 
         {/* Back Link */}
         <div className="pt-4">
