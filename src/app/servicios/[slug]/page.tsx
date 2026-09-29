@@ -580,6 +580,80 @@ export default function SingleServicePage({ params }: { params: { slug: string }
 
               </div>
             </div>
+
+            {/* Section 3: ¿Qué incluye el examen preocupacional? matching reference screenshot */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye el examen preocupacional?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Historia clínica
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Entrevista y antecedentes</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Evaluación de riesgos</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Registro completo</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Evaluaciones médicas
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Examen físico</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Signos vitales</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Pruebas generales</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Documentación
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Certificado médico</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Reporte para RRHH</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Guía para próximos pasos</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </>
         )}
 
