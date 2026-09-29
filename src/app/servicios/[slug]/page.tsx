@@ -47,8 +47,8 @@ export function generateStaticParams() {
 
 const servicesMap: Record<string, ServiceDetail> = {
   'medicina-laboral': {
-    title: 'Medicina Laboral Corporativa',
-    subtitle: 'Asesoramiento institucional, legal y preventivo continuo para empresas',
+    title: 'Medicina Laboral para Empresas',
+    subtitle: 'Servicios médicos especializados para empresas',
     description:
       'Priorizamos la salud y el bienestar de sus empleados mediante programas integrales de prevención de enfermedades profesionales, auditorías clínicas y asesoramiento en normativas vigentes.',
     legalFramework: 'Ley Nacional N° 19.587 de Higiene y Seguridad y Ley N° 24.557 de Riesgos del Trabajo.',
@@ -347,70 +347,144 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   const IconComp = getIcon(service.iconName);
 
   return (
-    <div className="bg-brand-lightbg min-h-screen py-12">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+    <div className="bg-white min-h-screen pb-24 font-sans">
+      
+      {/* Full-Width Header Hero Section matching reference screenshot */}
+      <div className="relative w-full bg-gradient-to-r from-[#1B5E3B] via-[#0A5229] to-[#3B8E63] py-12 sm:py-16 text-white shadow-sm overflow-hidden">
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            {/* Left Side: Title & Subtitle & Button */}
+            <div className="lg:col-span-7 space-y-5 text-center lg:text-left">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-wide drop-shadow-md leading-tight">
+                {service.title}
+              </h1>
+              <p className="text-lg sm:text-xl font-medium text-emerald-100 font-sans leading-relaxed drop-shadow-xs">
+                {service.subtitle}
+              </p>
+              <div className="pt-2">
+                <Link
+                  href="/contacto"
+                  className="inline-block bg-white hover:bg-emerald-50 text-[#0A5229] font-bold text-sm sm:text-base px-8 py-3 rounded-xl shadow-lg border border-emerald-100 transition-all hover:scale-105 active:scale-95"
+                >
+                  Solicitar Asesoramiento
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Side: Quick Consultation Form matching screenshot */}
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="bg-white rounded-2xl p-6 sm:p-7 shadow-2xl border border-emerald-100 max-w-sm w-full text-gray-800">
+                <h2 className="text-lg font-bold font-heading text-gray-900 mb-4">
+                  Envíe su Consulta
+                </h2>
+                <form action="/contacto" method="GET" className="space-y-3">
+                  <div>
+                    <input
+                      type="text"
+                      name="nombre"
+                      placeholder="Contacto/Empresa"
+                      className="w-full border border-gray-300 rounded-lg px-3.5 py-2 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0A5229]"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="tel"
+                      name="telefono"
+                      placeholder="Teléfono"
+                      className="w-full border border-gray-300 rounded-lg px-3.5 py-2 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0A5229]"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="E-mail"
+                      className="w-full border border-gray-300 rounded-lg px-3.5 py-2 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0A5229]"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      name="mensaje"
+                      rows={3}
+                      placeholder="Consulta"
+                      className="w-full border border-gray-300 rounded-lg px-3.5 py-2 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0A5229] resize-none"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <button
+                      type="submit"
+                      className="bg-[#006E32] hover:bg-[#005426] text-white font-bold text-xs sm:text-sm px-6 py-2 rounded-lg transition-all shadow-md active:scale-95"
+                    >
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* Metrics Strip matching screenshot */}
+      <div className="bg-white border-b border-gray-100 py-8 shadow-xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">25+</div>
+              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">Años de experiencia</div>
+            </div>
+            <div>
+              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">600+</div>
+              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">Clientes Activos</div>
+            </div>
+            <div>
+              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">50k+</div>
+              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">Exámenes anuales</div>
+            </div>
+            <div>
+              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">100%</div>
+              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">Cumplimiento</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Service Details Container */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 space-y-10">
         
         {/* Back Link */}
         <div>
           <Link
             href="/servicios"
-            className="inline-flex items-center gap-2 text-sm font-bold text-brand-green hover:underline bg-white px-4 py-2 rounded-lg border border-emerald-100 shadow-xs"
+            className="inline-flex items-center gap-2 text-sm font-bold text-[#0A5229] hover:underline bg-emerald-50 px-4 py-2 rounded-lg border border-emerald-100 shadow-xs"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Volver al Catálogo de Servicios</span>
           </Link>
         </div>
 
-        {/* Hero Card */}
-        <div className="bg-[#073B1D] text-white p-8 sm:p-12 rounded-[8px] shadow-xl relative overflow-hidden space-y-6">
-          <div className="flex items-center gap-4">
-            <div className="w-16 h-16 rounded-xl bg-brand-green text-white flex items-center justify-center border border-emerald-500/30 shrink-0">
-              <IconComp className="w-9 h-9" />
-            </div>
-            <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-moss bg-emerald-950 px-3 py-1 rounded-md border border-emerald-800">
-                Marco Legal: {service.legalFramework}
-              </span>
-              <h1 className="text-3xl sm:text-4xl font-extrabold font-heading text-white mt-2">
-                {service.title}
-              </h1>
-            </div>
-          </div>
-
-          <p className="text-emerald-100 text-lg sm:text-xl font-sans font-light leading-relaxed">
-            {service.subtitle}
-          </p>
-
-          <p className="text-sm sm:text-base text-emerald-200/90 leading-relaxed max-w-3xl">
-            {service.description}
-          </p>
-
-          <div className="pt-4 flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/contacto"
-              className="bg-[#0A5229] hover:bg-[#063319] text-white font-bold px-7 py-3.5 rounded-[8px] text-sm text-center transition-all shadow-md flex items-center justify-center gap-2 border border-emerald-600/40"
-            >
-              <PhoneCall className="w-4 h-4 text-emerald-300" />
-              <span>Solicitar Presupuesto para este Servicio</span>
-            </Link>
-          </div>
-        </div>
-
         {/* Benefits & Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* Benefits */}
-          <div className="bg-white p-8 rounded-[8px] border border-emerald-100 shadow-card space-y-4">
-            <div className="flex items-center gap-3 text-brand-green">
+          <div className="bg-white p-8 rounded-2xl border border-emerald-100 shadow-card space-y-4 border-t-4 border-t-[#0A5229]">
+            <div className="flex items-center gap-3 text-[#0A5229]">
               <ShieldCheck className="w-6 h-6" />
-              <h2 className="text-xl font-bold font-heading text-brand-darktext">
+              <h2 className="text-xl font-bold font-heading text-gray-900">
                 Beneficios para la Empresa
               </h2>
             </div>
             <ul className="space-y-3">
               {service.benefits.map((b, idx) => (
                 <li key={idx} className="flex items-start gap-2.5 text-sm text-gray-700 font-sans">
-                  <CheckCircle2 className="w-5 h-5 text-brand-moss shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-[#0A5229] shrink-0 mt-0.5" />
                   <span>{b}</span>
                 </li>
               ))}
@@ -418,17 +492,17 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </div>
 
           {/* Features */}
-          <div className="bg-white p-8 rounded-[8px] border border-emerald-100 shadow-card space-y-4">
-            <div className="flex items-center gap-3 text-brand-green">
+          <div className="bg-white p-8 rounded-2xl border border-emerald-100 shadow-card space-y-4 border-t-4 border-t-[#0A5229]">
+            <div className="flex items-center gap-3 text-[#0A5229]">
               <FileCheck className="w-6 h-6" />
-              <h2 className="text-xl font-bold font-heading text-brand-darktext">
+              <h2 className="text-xl font-bold font-heading text-gray-900">
                 Alcance y Prestaciones Incluidas
               </h2>
             </div>
             <ul className="space-y-3">
               {service.features.map((f, idx) => (
                 <li key={idx} className="flex items-start gap-2.5 text-sm text-gray-700 font-sans">
-                  <span className="w-2 h-2 rounded-full bg-brand-green shrink-0 mt-2"></span>
+                  <span className="w-2 h-2 rounded-full bg-[#0A5229] shrink-0 mt-2"></span>
                   <span>{f}</span>
                 </li>
               ))}
@@ -439,14 +513,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
 
         {/* FAQs */}
         {service.faqs.length > 0 && (
-          <div className="bg-white p-8 rounded-[8px] border border-emerald-100 shadow-card space-y-6">
-            <h2 className="text-2xl font-bold font-heading text-brand-darktext">
+          <div className="bg-white p-8 rounded-2xl border border-emerald-100 shadow-card space-y-6">
+            <h2 className="text-2xl font-bold font-heading text-gray-900">
               Preguntas Frecuentes sobre {service.title}
             </h2>
             <div className="space-y-4 divide-y divide-gray-100">
               {service.faqs.map((faq, idx) => (
                 <div key={idx} className={`${idx > 0 ? 'pt-4' : ''} space-y-2`}>
-                  <h3 className="text-base font-bold font-heading text-brand-green">
+                  <h3 className="text-base font-bold font-heading text-[#0A5229]">
                     {faq.q}
                   </h3>
                   <p className="text-sm text-gray-600 font-sans leading-relaxed">
