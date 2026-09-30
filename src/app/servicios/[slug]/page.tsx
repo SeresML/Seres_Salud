@@ -397,8 +397,8 @@ const servicesMap: Record<string, ServiceDetail> = {
     ],
   },
   'pausas-activas': {
-    title: 'Pausas Activas',
-    subtitle: 'Programas de estiramiento y gimnasia laboral para reducir el fatiga laboral',
+    title: 'Pausas Activas para Empresas',
+    subtitle: 'Programas de pausas activas que reducen la fatiga y aumentan la productividad de tus equipos.',
     description:
       'Implementamos sesiones breves de ejercicios físicos y de movilidad dentro de la jornada laboral para aliviar tensiones musculares, prevenir lesiones por postura y renovar la energía del equipo.',
     legalFramework: 'Programas de Promoción de la Salud y Ergonómicos de la SRT.',
@@ -501,7 +501,8 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   const isLibretasSanitarias = normalizedSlug.includes('libretas');
   const isMedicinaAsistencial = normalizedSlug.includes('asistencial');
   const isPsicotecnicos = normalizedSlug.includes('psicotecnico') || normalizedSlug.includes('psicotecnicos');
-  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos;
+  const isPausasActivas = normalizedSlug.includes('pausas');
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
@@ -2748,6 +2749,200 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
+        {/* Specific layout for Pausas Activas */}
+        {isPausasActivas && (
+          <>
+            {/* Section 1: Overview for Pausas Activas */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Bienestar en movimiento</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Pausas Activas para Empresas
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Las pausas activas son breves interrupciones programadas durante la jornada laboral que ayudan a reducir la fatiga física y mental, mejorar la postura y revitalizar la concentración.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  En Seres Salud diseñamos y facilitamos programas de pausas activas adaptados a la actividad de tu empresa, promoviendo hábitos saludables que impactan positivamente en la productividad y calidad de vida de tus colaboradores.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt="Pausas Activas para Empresas - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios de las pausas activas */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios de las pausas activas
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Salud, energía y rendimiento
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Zap className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Reducción de fatiga
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Pausas que alivian tensiones y favorecen la energía general.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Mejor postura
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Movimientos guiados que corrigen la postura y reducen molestias.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <UserCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Incremento de concentración
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Mini ejercicios que revitalizan la atención durante la jornada.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 4 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Building2 className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Clima laboral positivo
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Actividades grupales que fomentan colaboración y bienestar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3: ¿Qué incluye el programa de pausas activas? */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye el programa de pausas activas?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Sesiones guiadas
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Ejercicios adaptados</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Movilidad y estiramientos</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Instrucción profesional</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Evaluación inicial
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Análisis del equipo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Ajuste de rutina</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Metas personalizadas</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Material complementario
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Guías de estiramientos</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Videos y rutinas</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Acceso continuo</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
         {/* Specific layout for Medicina Laboral */}
         {isMedicinaLaboral && (
           <>
@@ -2936,7 +3131,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
         )}
 
         {/* Fallback layout for other services */}
-        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && (
+        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && (
           <>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">
