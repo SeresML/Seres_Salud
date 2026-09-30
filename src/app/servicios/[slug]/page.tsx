@@ -285,8 +285,8 @@ const servicesMap: Record<string, ServiceDetail> = {
     ],
   },
   'area-protegida': {
-    title: 'Servicio de Área Protegida',
-    subtitle: 'Cobertura médica de emergencias y urgencias en sus instalaciones',
+    title: 'Área Protegida para Empresas',
+    subtitle: 'Cobertura médica inmediata para cuidar a tu equipo y cumplir con la normativa.',
     description:
       'Protegemos el recinto físico de su empresa garantizando la atención médica rápida ante cualquier eventualidad de salud sufrida por empleados, clientes o contratistas.',
     legalFramework: 'Normas internacionales de soporte vital básico y avanzado.',
@@ -352,7 +352,8 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   const isControlAusentismo = normalizedSlug.includes('ausentismo');
   const isAtencionArt = normalizedSlug.includes('art');
   const isKinesiologia = normalizedSlug.includes('kinesiologia');
-  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia;
+  const isAreaProtegida = normalizedSlug.includes('protegida');
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
@@ -1257,6 +1258,196 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
+        {/* Specific layout for Área Protegida para Empresas */}
+        {isAreaProtegida && (
+          <>
+            {/* Section 1: Overview for Área Protegida */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Servicio esencial</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Área Protegida para Empresas
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  El servicio de Área Protegida brinda atención médica inmediata ante emergencias y urgencias en el lugar de trabajo, cuidando la salud del personal y reduciendo riesgos para la empresa.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Seres Salud combina experiencia médica, rapidez de respuesta y cumplimiento normativo para proteger a las personas y a la organización.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt="Área Protegida para Empresas - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios de nuestros planes */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios de nuestros planes
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Soluciones integrales que transforman la gestión de salud en tu empresa
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Reducción de costos
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Optimización de gastos mediante prevención y gestión médica eficiente.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Mejora de productividad
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Mayor rendimiento laboral gracias a empleados más saludables.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <FileCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Cumplimiento normativo
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Alineación con la normativa vigente en salud y seguridad laboral.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <HeartPulse className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Cultura de bienestar
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Compromiso, satisfacción y cuidado integral de los colaboradores.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3: ¿Qué incluye el servicio de Área Protegida? */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye el servicio de Área Protegida?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Atención médica inmediata
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Emergencias y urgencias</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Atención en el lugar de trabajo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Derivación coordinada</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Respaldo legal
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Registro de atenciones médicas</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Informes para la empresa</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Soporte ante inspecciones</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Prevención de riesgos
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Intervención temprana</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Reducción de incidentes</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Protección integral del personal</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
         {/* Specific layout for Kinesiología para Empresas */}
         {isKinesiologia && (
           <>
@@ -2019,7 +2210,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
         )}
 
         {/* Fallback layout for other services */}
-        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && (
+        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && (
           <>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">
