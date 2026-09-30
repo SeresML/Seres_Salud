@@ -372,7 +372,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'psicotecnicos-laborales': {
     title: 'Psicotécnicos Laborales',
-    subtitle: 'Evaluación psicológica y perfil actitudinal para selección de personal',
+    subtitle: 'Evaluaciones diseñadas para medir capacidades, aptitudes y comportamientos relacionados con el desempeño laboral.',
     description:
       'Evaluamos la aptitud psicológica, rasgos de personalidad y competencias emocionales de los postulantes según las exigencias del puesto de trabajo a cubrir.',
     legalFramework: 'Resolución SRT N° 37/10 y Ley de Ejercicio Profesional de la Psicología.',
@@ -500,7 +500,8 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   const isAreaProtegida = normalizedSlug.includes('protegida');
   const isLibretasSanitarias = normalizedSlug.includes('libretas');
   const isMedicinaAsistencial = normalizedSlug.includes('asistencial');
-  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial;
+  const isPsicotecnicos = normalizedSlug.includes('psicotecnico') || normalizedSlug.includes('psicotecnicos');
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
@@ -2553,6 +2554,200 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
+        {/* Specific layout for Psicotécnicos Laborales */}
+        {isPsicotecnicos && (
+          <>
+            {/* Section 1: Overview for Psicotécnicos Laborales */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Evaluaciones profesionales</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Psicotécnicos Laborales
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Los psicotécnicos laborales son evaluaciones psicométricas aplicadas para medir aptitudes, capacidades cognitivas y rasgos conductuales, con el objetivo de aportar datos objetivos sobre la idoneidad de una persona para determinada función laboral.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Seres Salud realiza estas pruebas con profesionales especializados, elaborando informes claros y precisos para que tu empresa pueda tomar decisiones informadas en selección, promoción interna y desarrollo de equipos.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt="Psicotécnicos Laborales - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios de los psicotécnicos */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios de los psicotécnicos
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Decisiones más acertadas en RRHH
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Zap className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Selección objetiva
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Aporta datos medibles para elegir candidatos.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Riesgo reducido
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Minimiza errores de contratación y rotación.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <UserCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Desarrollo interno
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Identifica potencial para promociones y formación.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 4 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Building2 className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Informes detallados
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Resultados claros para decisiones estratégicas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3: ¿Qué incluye un psicotécnico laboral? */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye un psicotécnico laboral?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Evaluación cognitiva
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Capacidad de atención</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Memoria y razonamiento</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Velocidad de procesamiento</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Evaluación conductual
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Estilo de trabajo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Resolución de conflictos</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Adaptabilidad</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Informe profesional
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Reporte de resultados</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Recomendaciones por perfil</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Guía para RRHH</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
         {/* Specific layout for Medicina Laboral */}
         {isMedicinaLaboral && (
           <>
@@ -2741,7 +2936,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
         )}
 
         {/* Fallback layout for other services */}
-        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && (
+        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && (
           <>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">
