@@ -1382,20 +1382,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Asistencia inicial
+                    Atención médica inicial
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Primera atención médica de urgencia</span>
+                      <span>Evaluación médica del trabajador</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Curaciones e inmovilizaciones</span>
+                      <span>Atención inmediata del accidente</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Diagnóstico y derivaciones</span>
+                      <span>Registro clínico correspondiente</span>
                     </li>
                   </ul>
                 </div>
@@ -1403,20 +1403,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Gestión y trámites
+                    Gestión con la ART
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Coordinación con la ART contratada</span>
+                      <span>Comunicación con la aseguradora</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Emisión de informes y certificados</span>
+                      <span>Derivaciones y autorizaciones</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Control de ausentismo por siniestros</span>
+                      <span>Seguimiento administrativo</span>
                     </li>
                   </ul>
                 </div>
@@ -1424,20 +1424,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Rehabilitación y alta
+                    Seguimiento médico
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Tratamientos traumatológicos y kinesiología</span>
+                      <span>Controles de evolución</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Evaluación periódica de evolución</span>
+                      <span>Certificados y alta médica</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Dictamen de aptitud para reintegro laboral</span>
+                      <span>Informes para la empresa</span>
                     </li>
                   </ul>
                 </div>
