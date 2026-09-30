@@ -2546,7 +2546,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
         )}
 
         {/* Fallback layout for other services */}
-        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && (
+        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && (
           <>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">
