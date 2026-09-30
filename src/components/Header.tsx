@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ChevronDown, Menu, X, ShieldCheck, UserCheck, Stethoscope, Truck, GraduationCap, HardHat, UserX, Activity, HeartPulse, Building2 } from 'lucide-react';
+import { ChevronDown, Menu, X, ShieldCheck, UserCheck, Stethoscope, Truck, GraduationCap, HardHat, UserX, Activity, HeartPulse, Building2, FileText, HeartHandshake, Brain, Zap, Syringe } from 'lucide-react';
 
 const serviceLinks = [
   { name: 'Medicina Laboral', href: '/servicios/medicina-laboral', icon: Stethoscope },
@@ -17,6 +17,11 @@ const serviceLinks = [
   { name: 'Atención por ART', href: '/servicios/atencion-art', icon: Activity },
   { name: 'Kinesiología', href: '/servicios/kinesiologia', icon: HeartPulse },
   { name: 'Área Protegida', href: '/servicios/area-protegida', icon: ShieldCheck },
+  { name: 'Libretas Sanitarias Laborales', href: '/servicios/libretas-sanitarias-laborales', icon: FileText },
+  { name: 'Medicina Asistencial', href: '/servicios/medicina-asistencial', icon: HeartHandshake },
+  { name: 'Psicotécnicos laborales', href: '/servicios/psicotecnicos-laborales', icon: Brain },
+  { name: 'Pausas Activas', href: '/servicios/pausas-activas', icon: Zap },
+  { name: 'Vacunas Antigripales', href: '/servicios/vacunas-antigripales', icon: Syringe },
 ];
 
 export default function Header() {

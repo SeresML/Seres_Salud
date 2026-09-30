@@ -18,6 +18,11 @@ import {
   UserX,
   Activity,
   HeartPulse,
+  FileText,
+  HeartHandshake,
+  Brain,
+  Zap,
+  Syringe,
 } from 'lucide-react';
 
 interface ServiceDetail {
@@ -43,6 +48,11 @@ export function generateStaticParams() {
     { slug: 'atencion-art' },
     { slug: 'kinesiologia' },
     { slug: 'area-protegida' },
+    { slug: 'libretas-sanitarias-laborales' },
+    { slug: 'medicina-asistencial' },
+    { slug: 'psicotecnicos-laborales' },
+    { slug: 'pausas-activas' },
+    { slug: 'vacunas-antigripales' },
   ];
 }
 
@@ -308,6 +318,136 @@ const servicesMap: Record<string, ServiceDetail> = {
       },
     ],
   },
+  'libretas-sanitarias-laborales': {
+    title: 'Libretas Sanitarias Laborales',
+    subtitle: 'Gestión y tramitación de libretas sanitarias para personal alimenticio y comercial',
+    description:
+      'Realizamos la totalidad de los análisis clínicos, físicos y radiológicos necesarios para la obtención y renovación de la Libreta Sanitaria Laboral obligatoria para industrias alimenticias, gastronómicas y de atención al público.',
+    legalFramework: 'Reglamentaciones municipales y provinciales de Salud Pública y Código Alimentario Argentino.',
+    iconName: 'FileText',
+    benefits: [
+      'Tramitación rápida y centralizada en un solo día',
+      'Estudios de laboratorio e imágenes en clínica propia',
+      'Cumplimiento de exigencias bromatológicas y sanitarias',
+      'Entrega de documentación oficial para presentar ante el municipio',
+    ],
+    features: [
+      'Examen clínico general y dermatológico',
+      'Análisis de laboratorio (VDRL, exudado faríngeo, parasitológico)',
+      'Radiografía de tórax digitalizada',
+      'Certificación médica y firma profesional',
+    ],
+    faqs: [
+      {
+        q: '¿Quiénes deben poseer la libreta sanitaria?',
+        a: 'Todo trabajador que manipule alimentos, bebidas o desempeñe tareas en comercios de atención al público, hotelería y servicios de salud.',
+      },
+    ],
+  },
+  'medicina-asistencial': {
+    title: 'Medicina Asistencial',
+    subtitle: 'Atención médica primaria y tratamiento continuo para trabajadores',
+    description:
+      'Brindamos atención asistencial de primer nivel para dolencias comunes, consultas médicas espontáneas y seguimiento de patologías no ocupacionales en nuestros consultorios equipados.',
+    legalFramework: 'Ley 26.529 de Derechos del Paciente e Historias Clínicas.',
+    iconName: 'HeartHandshake',
+    benefits: [
+      'Atención médica directa sin largas demoras en guardias',
+      'Diagnóstico oportuno y prescripción de tratamientos',
+      'Disminución del ausentismo por atención primaria rápida',
+      'Historia clínica digitalizada y resguardada',
+    ],
+    features: [
+      'Consultorios de clínica médica general',
+      'Enfermería activa para inyectables y tomas de presión',
+      'Recetario médico e indicaciones claras',
+      'Derivación a especialidades médicas',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo coordinan los turnos asistenciales?',
+        a: 'Se otorgan turnos programados o atención por demanda espontánea según la necesidad de la empresa y del paciente.',
+      },
+    ],
+  },
+  'psicotecnicos-laborales': {
+    title: 'Psicotécnicos Laborales',
+    subtitle: 'Evaluación psicológica y perfil actitudinal para selección de personal',
+    description:
+      'Evaluamos la aptitud psicológica, rasgos de personalidad y competencias emocionales de los postulantes según las exigencias del puesto de trabajo a cubrir.',
+    legalFramework: 'Resolución SRT N° 37/10 y Ley de Ejercicio Profesional de la Psicología.',
+    iconName: 'Brain',
+    benefits: [
+      'Evaluaciones realizadas por psicólogos laborales matriculados',
+      'Detección de perfiles de riesgo o desadaptación al puesto',
+      'Informes detallados y confidenciales para el área de Selección de RRHH',
+      'Modalidad presencial u online según requerimiento',
+    ],
+    features: [
+      'Batería de tests proyectivos y psicométricos',
+      'Entrevista clínica laboral focalizada',
+      'Informe psicotécnico con diagnóstico de aptitud',
+      'Recomendaciones de adecuación al puesto',
+    ],
+    faqs: [
+      {
+        q: '¿Cuánto demora el informe psicotécnico?',
+        a: 'El informe final se entrega al departamento de RRHH dentro de las 48 a 72 horas hábiles de realizada la evaluación.',
+      },
+    ],
+  },
+  'pausas-activas': {
+    title: 'Pausas Activas',
+    subtitle: 'Programas de estiramiento y gimnasia laboral para reducir el fatiga laboral',
+    description:
+      'Implementamos sesiones breves de ejercicios físicos y de movilidad dentro de la jornada laboral para aliviar tensiones musculares, prevenir lesiones por postura y renovar la energía del equipo.',
+    legalFramework: 'Programas de Promoción de la Salud y Ergonómicos de la SRT.',
+    iconName: 'Zap',
+    benefits: [
+      'Disminución del fatiga laboral y estrés acumulado',
+      'Reducción de afecciones por sedentarismo o movimientos repetitivos',
+      'Mejora del clima laboral y la motivación del equipo',
+      'Sesiones guiadas por kinesiólogos o profesores de educación física',
+    ],
+    features: [
+      'Rutinas de 10 a 15 minutos en el propio puesto de trabajo',
+      'Ejercicios de movilidad articular, elongación y respiración',
+      'Adaptación para personal administrativo y de planta industrial',
+      'Formato presencial o transmisiones en vivo para teletrabajo',
+    ],
+    faqs: [
+      {
+        q: '¿Es necesario cambiarse de ropa para realizar la pausa activa?',
+        a: 'No, los ejercicios están especialmente diseñados para ejecutarse con la ropa de trabajo habitual y sin requerir elementos complejos.',
+      },
+    ],
+  },
+  'vacunas-antigripales': {
+    title: 'Vacunas Antigripales',
+    subtitle: 'Campañas de inmunización y vacunación corporativa in-situ',
+    description:
+      'Organizamos campañas de vacunación antigripal y de inmunización laboral directamente en su empresa para proteger a los trabajadores durante la temporada invernal y minimizar licencias por gripe.',
+    legalFramework: 'Calendario Nacional de Vacunación y Recomendaciones del Ministerio de Salud.',
+    iconName: 'Syringe',
+    benefits: [
+      'Aplicación in-situ en el establecimiento sin trasladar al personal',
+      'Vacunas de cepas actualizadas para la temporada',
+      'Cadena de frío garantizada y descartables de primera calidad',
+      'Carnets y certificados de vacunación individuales',
+    ],
+    features: [
+      'Operativos de vacunación para nóminas pequeñas y grandes corporaciones',
+      'Enfermeros profesionales capacitados en inmunización',
+      'Coordinación de fechas y horarios según turnos de trabajo',
+      'Registro y consolidado de vacunados para el área de RRHH',
+    ],
+    faqs: [
+      {
+        q: '¿En qué época del año se recomiendan las campañas de vacunación antigripal?',
+        a: 'Se recomienda iniciar las campañas entre marzo y mayo de cada año, antes del comienzo de la circulación viral de otoño/invierno.',
+      },
+    ],
+  },
 };
 
 const getIcon = (name: string) => {
@@ -321,6 +461,11 @@ const getIcon = (name: string) => {
     case 'UserX': return UserX;
     case 'Activity': return Activity;
     case 'HeartPulse': return HeartPulse;
+    case 'FileText': return FileText;
+    case 'HeartHandshake': return HeartHandshake;
+    case 'Brain': return Brain;
+    case 'Zap': return Zap;
+    case 'Syringe': return Syringe;
     default: return ShieldCheck;
   }
 };

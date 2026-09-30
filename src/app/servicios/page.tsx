@@ -14,11 +14,16 @@ import {
   ShieldCheck,
   ArrowRight,
   PhoneCall,
+  FileText,
+  HeartHandshake,
+  Brain,
+  Zap,
+  Syringe,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Servicios de Medicina Laboral | Seres Salud',
-  description: 'Conozca nuestra oferta integral de 10 servicios en medicina laboral y salud ocupacional para empresas en Argentina.',
+  description: 'Conozca nuestra oferta integral de 15 servicios en medicina laboral y salud ocupacional para empresas en Argentina.',
 };
 
 const allServicesData = [
@@ -102,6 +107,46 @@ const allServicesData = [
     icon: ShieldCheck,
     category: 'Emergencias 24/7',
   },
+  {
+    slug: 'libretas-sanitarias-laborales',
+    title: 'Libretas Sanitarias Laborales',
+    subtitle: 'Análisis clínicos y tramitación sanitaria',
+    desc: 'Gestión completa de análisis clínicos, físicos y radiológicos para emisión y renovación de libretas sanitarias laborales.',
+    icon: FileText,
+    category: 'Trámites Sanitarios',
+  },
+  {
+    slug: 'medicina-asistencial',
+    title: 'Medicina Asistencial',
+    subtitle: 'Atención primaria y prevención continua',
+    desc: 'Consultas clínicas, curaciones y atención espontánea para la salud general de los trabajadores en clínica central.',
+    icon: HeartHandshake,
+    category: 'Atención Médica',
+  },
+  {
+    slug: 'psicotecnicos-laborales',
+    title: 'Psicotécnicos Laborales',
+    subtitle: 'Evaluación psicológica de aptitud laboral',
+    desc: 'Evaluaciones psicotécnicas completas e informes detallados para selección e incorporación de personal.',
+    icon: Brain,
+    category: 'Evaluación Psicológica',
+  },
+  {
+    slug: 'pausas-activas',
+    title: 'Pausas Activas',
+    subtitle: 'Gimnasia laboral y prevención ergonómica',
+    desc: 'Rutinas guiadas de movimiento, estiramiento y relajación en la jornada laboral para reducir el fatiga y lesiones.',
+    icon: Zap,
+    category: 'Bienestar Laboral',
+  },
+  {
+    slug: 'vacunas-antigripales',
+    title: 'Vacunas Antigripales',
+    subtitle: 'Campañas de inmunización in-situ para empresas',
+    desc: 'Organización y aplicación de campañas de vacunación directamente en planta o sede corporativa.',
+    icon: Syringe,
+    category: 'Inmunización',
+  },
 ];
 
 export default function ServiciosPage() {
@@ -124,7 +169,7 @@ export default function ServiciosPage() {
             Nuestros Servicios en Salud Ocupacional
           </h2>
           <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-            Brindamos cobertura médica integral para empresas de todos los rubros e industrias. Explore las 10 áreas de atención especializada de Seres Salud.
+            Brindamos cobertura médica integral para empresas de todos los rubros e industrias. Explore las 15 áreas de atención especializada de Seres Salud.
           </p>
         </div>
 

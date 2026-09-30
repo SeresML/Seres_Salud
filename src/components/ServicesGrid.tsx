@@ -125,7 +125,7 @@ export default function ServicesGrid() {
             href="/servicios"
             className="inline-flex items-center justify-center bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold px-8 py-3.5 rounded-[8px] text-base transition-all shadow-md hover:shadow-lg"
           >
-            Ver Todos los 10 Servicios de Medicina Laboral →
+            Ver Todos los 15 Servicios de Medicina Laboral →
           </Link>
         </div>
 
