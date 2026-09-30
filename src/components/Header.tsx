@@ -4,14 +4,14 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ChevronDown, Menu, X, ShieldCheck, UserCheck, Stethoscope, Truck, GraduationCap, HardHat, UserX, Activity, HeartPulse, Building2, FileText, HeartHandshake, Brain, Zap, Syringe } from 'lucide-react';
+import { ChevronDown, ChevronRight, Menu, X, ShieldCheck, UserCheck, Stethoscope, Truck, GraduationCap, HardHat, UserX, Activity, HeartPulse, Building2, FileText, HeartHandshake, Brain, Zap, Syringe } from 'lucide-react';
 
 const serviceLinks = [
   { name: 'Medicina Laboral', href: '/servicios/medicina-laboral', icon: Stethoscope },
   { name: 'Exámenes Preocupacionales', href: '/servicios/examenes-preocupacionales', icon: UserCheck },
   { name: 'Médico en Planta', href: '/servicios/medico-en-planta', icon: Building2 },
   { name: 'Unidades Móviles', href: '/servicios/unidades-moviles', icon: Truck },
-  { name: 'Cursos (RCP, Primeros Auxilios)', href: '/servicios/cursos', icon: GraduationCap },
+  { name: 'Cursos', href: '/servicios/cursos', icon: GraduationCap, isCursos: true },
   { name: 'Higiene y Seguridad', href: '/servicios/higiene-y-seguridad', icon: HardHat },
   { name: 'Control de Ausentismo', href: '/servicios/control-de-ausentismo', icon: UserX },
   { name: 'Atención por ART', href: '/servicios/atencion-art', icon: Activity },
@@ -24,9 +24,22 @@ const serviceLinks = [
   { name: 'Vacunas Antigripales', href: '/servicios/vacunas-antigripales', icon: Syringe },
 ];
 
+const cursosSubItems = [
+  { name: 'Cursos de RCP', href: '/servicios/cursos#rcp' },
+  { name: 'Cursos de Primeros Auxilios', href: '/servicios/cursos#primeros-auxilios' },
+  { name: 'Cursos de Vida Saludable', href: '/servicios/cursos#vida-saludable' },
+  { name: 'Prevención Cardiovascular', href: '/servicios/cursos#prevencion-cardiovascular' },
+  { name: 'Cursos de Alcoholismo', href: '/servicios/cursos#alcoholismo' },
+  { name: 'Cursos de Drogas de Abuso', href: '/servicios/cursos#drogas-de-abuso' },
+  { name: 'Cursos de HIV Sida', href: '/servicios/cursos#hiv-sida' },
+  { name: 'Cursos de Ergonomía', href: '/servicios/cursos#ergonomia' },
+  { name: 'Cursos de Tabaquismo', href: '/servicios/cursos#tabaquismo' },
+];
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [serviciosMobileOpen, setServiciosMobileOpen] = useState(false);
+  const [cursosMobileOpen, setCursosMobileOpen] = useState(false);
   const [clientesMobileOpen, setClientesMobileOpen] = useState(false);
   const pathname = usePathname();
 
@@ -81,14 +94,46 @@ export default function Header() {
                   <span>→</span>
                 </Link>
               </div>
-              <div className="max-h-[380px] overflow-y-auto space-y-0.5 px-1 custom-scrollbar">
+              <div className="space-y-0.5 px-1">
                 {serviceLinks.map((service) => {
                   const IconComp = service.icon;
+                  if (service.isCursos) {
+                    return (
+                      <div key={service.href} className="relative group/cursos">
+                        <Link
+                          href={service.href}
+                          className="flex items-center justify-between px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-[#006E32] hover:text-white rounded-lg transition-colors group-hover/cursos:bg-[#006E32] group-hover/cursos:text-white"
+                        >
+                          <div className="flex items-center gap-2.5 truncate">
+                            <IconComp className="w-4 h-4 text-brand-moss shrink-0 group-hover/cursos:text-white" />
+                            <span className="truncate">{service.name}</span>
+                          </div>
+                          <ChevronRight className="w-4 h-4 text-gray-400 group-hover/cursos:text-white shrink-0 fill-current" />
+                        </Link>
+
+                        {/* Flyout Sub-menu matching reference screenshot */}
+                        <div className="absolute left-full top-0 ml-1 w-64 bg-white rounded-xl shadow-2xl border border-gray-200 py-1 opacity-0 group-hover/cursos:opacity-100 pointer-events-none group-hover/cursos:pointer-events-auto transition-all duration-200 z-50">
+                          <div className="divide-y divide-gray-100">
+                            {cursosSubItems.map((subItem) => (
+                              <Link
+                                key={subItem.name}
+                                href={subItem.href}
+                                className="block px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-[#006E32] transition-colors"
+                              >
+                                {subItem.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  }
+
                   return (
                     <Link
                       key={service.href}
                       href={service.href}
-                      className="flex items-center gap-2.5 px-3 py-2 text-sm text-gray-700 hover:bg-brand-lightgreen hover:text-brand-green rounded-lg transition-colors"
+                      className="flex items-center gap-2.5 px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-brand-lightgreen hover:text-brand-green rounded-lg transition-colors"
                     >
                       <IconComp className="w-4 h-4 text-brand-moss shrink-0" />
                       <span className="truncate">{service.name}</span>
@@ -208,14 +253,41 @@ export default function Header() {
                   Ver Todos
                 </Link>
                 {serviceLinks.map((svc) => (
-                  <Link
-                    key={svc.href}
-                    href={svc.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="block py-1.5 text-base text-gray-700 hover:text-brand-green"
-                  >
-                    {svc.name}
-                  </Link>
+                  <div key={svc.href}>
+                    {svc.isCursos ? (
+                      <div>
+                        <button
+                          onClick={() => setCursosMobileOpen(!cursosMobileOpen)}
+                          className="w-full flex items-center justify-between py-1.5 text-base text-gray-700 hover:text-brand-green font-semibold"
+                        >
+                          <span>{svc.name}</span>
+                          <ChevronDown className={`w-4 h-4 transition-transform ${cursosMobileOpen ? 'rotate-180' : ''}`} />
+                        </button>
+                        {cursosMobileOpen && (
+                          <div className="pl-4 space-y-1 border-l-2 border-emerald-300 my-1">
+                            {cursosSubItems.map((sub) => (
+                              <Link
+                                key={sub.name}
+                                href={sub.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="block py-1 text-sm text-gray-600 hover:text-[#006E32]"
+                              >
+                                {sub.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <Link
+                        href={svc.href}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="block py-1.5 text-base text-gray-700 hover:text-brand-green font-semibold"
+                      >
+                        {svc.name}
+                      </Link>
+                    )}
+                  </div>
                 ))}
               </div>
             )}
