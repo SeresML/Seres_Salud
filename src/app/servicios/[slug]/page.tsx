@@ -1373,11 +1373,11 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               </div>
             </div>
 
-            {/* Section 3: ¿Qué incluye el servicio de Control de Ausentismo? */}
+            {/* Section 3: ¿Qué incluye el servicio? */}
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el servicio de Control de Ausentismo?
+                  ¿Qué incluye el servicio?
                 </h2>
               </div>
 
@@ -1385,20 +1385,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Visitas a domicilio
+                    Control médico
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Constatación médica en el hogar del trabajador</span>
+                      <span>Evaluación profesional</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Verificación de imposibilidad de asistir</span>
+                      <span>Constatación de ausencia</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Informe de reposo sugerido y diagnóstico</span>
+                      <span>Registro clínico</span>
                     </li>
                   </ul>
                 </div>
@@ -1406,20 +1406,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Atención en consultorio
+                    Atención flexible
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Evaluación en sedes clínicas de Seres Salud</span>
+                      <span>Consultorio o domicilio</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Examen médico exhaustivo</span>
+                      <span>Intervención rápida</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Indicación de tratamiento y medicación</span>
+                      <span>Coordinación con la empresa</span>
                     </li>
                   </ul>
                 </div>
@@ -1427,20 +1427,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Auditoría y juntas médicas
+                    Informe para RRHH
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Revisión de carpetas médicas prolongadas</span>
+                      <span>Resultado del control</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Resolución de discrepancias diagnósticas</span>
+                      <span>Seguimiento de casos</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Asesoramiento a RRHH y Legales</span>
+                      <span>Respaldo médico</span>
                     </li>
                   </ul>
                 </div>
