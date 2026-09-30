@@ -212,8 +212,8 @@ const servicesMap: Record<string, ServiceDetail> = {
     ],
   },
   'control-de-ausentismo': {
-    title: 'Control de Ausentismo Médico',
-    subtitle: 'Comprobación profesional de bajas por enfermedad o accidente',
+    title: 'Control de Ausentismo Laboral',
+    subtitle: 'Gestión médica profesional para reducir ausencias injustificadas.',
     description:
       'Servicio orientado a auditar y verificar las inasistencias por motivos de salud mediante médicos visitadores a domicilio y atención en consultorio central.',
     legalFramework: 'Ley de Contrato de Trabajo N° 20.744 (Art. 209 y 210).',
@@ -345,12 +345,12 @@ export default function SingleServicePage({ params }: { params: { slug: string }
     notFound();
   }
 
-  const IconComp = getIcon(service.iconName);
   const isPreocupacionales = normalizedSlug.includes('preocupacional');
   const isMedicoEnPlanta = normalizedSlug.includes('planta');
   const isUnidadesMoviles = normalizedSlug.includes('movil') || normalizedSlug.includes('moviles');
   const isHigieneSeguridad = normalizedSlug.includes('higiene') || normalizedSlug.includes('seguridad');
-  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad;
+  const isControlAusentismo = normalizedSlug.includes('ausentismo');
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
@@ -1255,6 +1255,200 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
+        {/* Specific layout for Control de Ausentismo Laboral matching reference screenshot */}
+        {isControlAusentismo && (
+          <>
+            {/* Section 1: Overview for Control de Ausentismo */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Gestión médica</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Control médico de ausentismo laboral
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  El servicio de Control de Ausentismo de Seres Salud permite a las empresas verificar ausencias laborales mediante evaluaciones médicas objetivas, realizadas por profesionales especializados.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  <strong className="font-bold text-gray-900">En consultorio:</strong> El empleado podrá, previa autorización de la empresa, atenderse en los consultorios de Seres Salud, donde se realiza un control más exhaustivo y, de ser necesario, se indicará medicación o tratamiento.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  <strong className="font-bold text-gray-900">En domicilio:</strong> Cuando un empleado falta, la empresa puede solicitar el envío de un médico al domicilio para me constatar si la persona se encuentra realmente imposibilitada de concurrir a su puesto de trabajo.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt="Control médico de ausentismo laboral - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios de nuestro servicio */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios de nuestro servicio
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Agilidad, veracidad y control para recursos humanos
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Verificación objetiva
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Médicos especializados evalúan la veracidad y grado de la patología.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Respuesta en 24 hs
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Visitas domiciliarias y controles en consultorio con rápida gestión.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <UserX className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Desarticulación del ausentismo
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Disminución significativa de ausencias injustificadas o reiteradas.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Building2 className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Soporte para RRHH
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Informes médicos claros, detallados y digitalizados para la toma de decisiones.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3: ¿Qué incluye el servicio de Control de Ausentismo? */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye el servicio de Control de Ausentismo?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Visitas a domicilio
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Constatación médica en el hogar del trabajador</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Verificación de imposibilidad de asistir</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Informe de reposo sugerido y diagnóstico</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Atención en consultorio
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Evaluación en sedes clínicas de Seres Salud</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Examen médico exhaustivo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Indicación de tratamiento y medicación</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Auditoría y juntas médicas
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Revisión de carpetas médicas prolongadas</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Resolución de discrepancias diagnósticas</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Asesoramiento a RRHH y Legales</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
         {/* Specific layout for Medicina Laboral */}
         {isMedicinaLaboral && (
           <>
@@ -1443,7 +1637,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
         )}
 
         {/* Fallback layout for other services */}
-        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && (
+        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && (
           <>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">
