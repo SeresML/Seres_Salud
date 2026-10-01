@@ -30,7 +30,7 @@ const cursosSubItems = [
   { name: 'Cursos de Vida Saludable', href: '/servicios/cursos#vida-saludable' },
   { name: 'Prevención Cardiovascular', href: '/servicios/prevencion-cardiovascular' },
   { name: 'Cursos de Alcoholismo', href: '/servicios/curso-alcoholismo' },
-  { name: 'Cursos de Drogas de Abuso', href: '/servicios/cursos#drogas-de-abuso' },
+  { name: 'Cursos de Drogas de Abuso', href: '/servicios/curso-drogas-de-abuso' },
   { name: 'Cursos de HIV Sida', href: '/servicios/cursos#hiv-sida' },
   { name: 'Cursos de Ergonomía', href: '/servicios/cursos#ergonomia' },
   { name: 'Cursos de Tabaquismo', href: '/servicios/cursos#tabaquismo' },
