@@ -3597,19 +3597,19 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">
                 <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
-                  <span>Capacitación vital</span>
+                  <span>Capacitación esencial</span>
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
-                  Curso de Reanimación Cardiopulmonar (RCP)
+                  Curso de Reanimación Cardiopulmonar
                 </h2>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-                  El curso de RCP de Seres Salud capacita a los colaboradores de tu empresa en técnicas de Reanimación Cardiopulmonar y manejo del Desfibrilador Externo Automático (DEA), brindando herramientas vitales ante emergencias.
+                  El curso de RCP de Seres Salud brinda a los equipos de trabajo las herramientas necesarias para actuar de forma rápida y efectiva ante un paro cardiorrespiratorio.
                 </p>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-                  Nuestras capacitaciones incluyen formación teórico-práctica con maniquíes de simulación clínica avanzada para garantizar una rápida respuesta y salvamento de vidas.
+                  La capacitación es 100% práctica, enfocada en maniobras de reanimación, reconocimiento de situaciones críticas y correcta actuación hasta la llegada de asistencia médica.
                 </p>
 
                 <div className="pt-3">
@@ -3641,21 +3641,21 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   Beneficios del curso de RCP
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
-                  Respuesta rápida, preparación y salvamento de vidas
+                  Preparación real ante emergencias
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
                   <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                    <ShieldCheck className="w-6 h-6" />
+                    <HeartHandshake className="w-6 h-6" />
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Capacitación práctica
+                      Salva vidas
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Maniobras reales con maniquíes de simulación anatómica.
+                      Actuar correctamente en los primeros minutos es clave.
                     </p>
                   </div>
                 </div>
@@ -3666,24 +3666,24 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Manejo de DEA
+                      Respuesta inmediata
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Uso correcto del Desfibrilador Externo Automático.
+                      Preparación para actuar sin demoras ante una emergencia.
                     </p>
                   </div>
                 </div>
 
                 <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
                   <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                    <CheckCircle2 className="w-6 h-6" />
+                    <ShieldCheck className="w-6 h-6" />
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reacción inmediata
+                      Mayor seguridad laboral
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Conocimientos para actuar con calma y eficacia.
+                      Equipos capacitados y preparados para actuar.
                     </p>
                   </div>
                 </div>
@@ -3694,12 +3694,83 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Certificación oficial
+                      Capacitación certificada
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Diplomas nominales respaldados por médicos especialistas.
+                      Constancia de formación para la empresa.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3: ¿Qué incluye el curso de RCP? */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye el curso de RCP?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Maniobras de RCP
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>RCP en adultos</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Reconocimiento de paro</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Cadena de supervivencia</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Práctica guiada
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Ejercicios supervisados</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Simulaciones reales</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Correcciones en tiempo real</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
+                    Certificación
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Constancia de participación</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Material didáctico</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Capacitación adaptada a la empresa</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -3829,19 +3900,19 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div id="rcp" className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center scroll-mt-28">
               <div className="lg:col-span-7 space-y-5">
                 <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
-                  <span>Capacitación vital</span>
+                  <span>Capacitación esencial</span>
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
-                  Curso de Reanimación Cardiopulmonar (RCP)
+                  Curso de Reanimación Cardiopulmonar
                 </h2>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-                  El curso de RCP de Seres Salud capacita a los colaboradores de tu empresa en técnicas de Reanimación Cardiopulmonar y manejo del Desfibrilador Externo Automático (DEA), brindando herramientas vitales ante emergencias.
+                  El curso de RCP de Seres Salud brinda a los equipos de trabajo las herramientas necesarias para actuar de forma rápida y efectiva ante un paro cardiorrespiratorio.
                 </p>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-                  Nuestras capacitaciones incluyen formación teórico-práctica con maniquíes de simulación clínica avanzada para garantizar una rápida respuesta y salvamento de vidas.
+                  La capacitación es 100% práctica, enfocada en maniobras de reanimación, reconocimiento de situaciones críticas y correcta actuación hasta la llegada de asistencia médica.
                 </p>
 
                 <div className="pt-3">
