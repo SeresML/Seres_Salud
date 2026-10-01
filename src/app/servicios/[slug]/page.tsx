@@ -171,8 +171,8 @@ const servicesMap: Record<string, ServiceDetail> = {
     ],
   },
   'cursos': {
-    title: 'Curso de RCP para Empresas',
-    subtitle: 'Capacitación práctica en Reanimación Cardiopulmonar para el ámbito laboral.',
+    title: 'Curso Primeros Auxilios para Empresas',
+    subtitle: 'Capacitación práctica para dotar a tus equipos de herramientas que salvan vidas.',
     description:
       'Dictamos cursos con certificación oficial sobre Reanimación Cardiopulmonar (RCP), Primeros Auxilios, Uso de Defibriladores (DEA) y Ergoestrés.',
     legalFramework: 'Normativas de la SRT y Ministerio de Trabajo.',
@@ -3139,7 +3139,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
-        {/* Specific layout for Cursos de Capacitación y RCP */}
+        {/* Specific layout for Cursos de Capacitación y RCP / Primeros Auxilios */}
         {isCursos && (
           <>
             {/* Section 1: Overview for Cursos */}
@@ -3150,15 +3150,15 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
-                  Curso de Reanimación Cardiopulmonar
+                  Curso de RCP
                 </h2>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-                  El curso de RCP de Seres Salud brinda a los equipos de trabajo las herramientas necesarias para actuar de forma rápida y efectiva ante un paro cardiorrespiratorio.
+                  En el Curso de RCP y Primeros Auxilios de Seres Salud, las empresas y sus equipos adquieren habilidades prácticas para responder ante emergencias, incluyendo reanimación cardiopulmonar y técnicas básicas que salvan vidas.
                 </p>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-                  La capacitación es 100% práctica, enfocada en maniobras de reanimación, reconocimiento de situaciones críticas y correcta actuación hasta la llegada de asistencia médica.
+                  La capacitación combina teoría y práctica guiada, enfocada en situaciones reales del entorno laboral y promoviendo seguridad para todos los colaboradores.
                 </p>
 
                 <div className="pt-3">
@@ -3175,7 +3175,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
                   <Image
                     src="/images/about.jpg"
-                    alt="Curso de Reanimación Cardiopulmonar - Seres Salud"
+                    alt="Curso de RCP y Primeros Auxilios - Seres Salud"
                     fill
                     className="object-cover object-center"
                   />
@@ -3183,14 +3183,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               </div>
             </div>
 
-            {/* Section 2: Beneficios del curso de RCP */}
+            {/* Section 2: Beneficios de nuestros cursos */}
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios del curso de RCP
+                  Beneficios de nuestros cursos
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
-                  Preparación real ante emergencias
+                  Habilidades que marcan la diferencia
                 </p>
               </div>
 
@@ -3202,10 +3202,10 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Salva vidas
+                      Capacidad para salvar vidas
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Actuar correctamente en los primeros minutos es clave.
+                      Aprendé técnicas efectivas de reanimación y primeros auxilios.
                     </p>
                   </div>
                 </div>
@@ -3217,10 +3217,10 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Respuesta inmediata
+                      Respuesta ante emergencias
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Preparación para actuar sin demoras ante una emergencia.
+                      Capacidad para actuar correctamente en situaciones imprevistas.
                     </p>
                   </div>
                 </div>
@@ -3228,14 +3228,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
                   <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                    <ShieldCheck className="w-6 h-6" />
+                    <UserCheck className="w-6 h-6" />
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Mayor seguridad laboral
+                      Equipos más seguros
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Equipos capacitados y preparados para actuar.
+                      Promueve un entorno de trabajo con colaboradores preparados.
                     </p>
                   </div>
                 </div>
@@ -3247,10 +3247,10 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Capacitación certificada
+                      Capacitación práctica
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Constancia de formación para la empresa.
+                      Ejercicios reales y simulaciones guiadas por profesionales.
                     </p>
                   </div>
                 </div>
@@ -3269,20 +3269,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Maniobras de RCP
+                    Formación práctica
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>RCP en adultos</span>
+                      <span>Técnicas de reanimación cardiopulmonar</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Reconocimiento de paro</span>
+                      <span>Primeros auxilios básicos</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Cadena de supervivencia</span>
+                      <span>Uso de equipo de emergencia</span>
                     </li>
                   </ul>
                 </div>
@@ -3290,20 +3290,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Práctica guiada
+                    Simulaciones guiadas
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Ejercicios supervisados</span>
+                      <span>Ejercicios en escenarios reales</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Simulaciones reales</span>
+                      <span>Feedback profesional</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Correcciones en tiempo real</span>
+                      <span>Evaluaciones por instructores</span>
                     </li>
                   </ul>
                 </div>
@@ -3311,20 +3311,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Certificación
+                    Material y certificados
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Constancia de participación</span>
-                    </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
                       <span>Material didáctico</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Capacitación adaptada a la empresa</span>
+                      <span>Certificado de participación</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Acceso a recursos adicionales</span>
                     </li>
                   </ul>
                 </div>
