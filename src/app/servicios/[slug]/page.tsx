@@ -171,8 +171,8 @@ const servicesMap: Record<string, ServiceDetail> = {
     ],
   },
   'cursos': {
-    title: 'Curso Primeros Auxilios para Empresas',
-    subtitle: 'Capacitación práctica para dotar a tus equipos de herramientas que salvan vidas.',
+    title: 'Curso de Vida Saludable Laboral',
+    subtitle: 'Orientado a promover hábitos saludables, bienestar integral.',
     description:
       'Dictamos cursos con certificación oficial sobre Reanimación Cardiopulmonar (RCP), Primeros Auxilios, Uso de Defibriladores (DEA) y Ergoestrés.',
     legalFramework: 'Normativas de la SRT y Ministerio de Trabajo.',
@@ -3139,26 +3139,26 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
-        {/* Specific layout for Cursos de Capacitación y RCP / Primeros Auxilios */}
+        {/* Specific layout for Cursos de Capacitación y Vida Saludable Laboral */}
         {isCursos && (
           <>
             {/* Section 1: Overview for Cursos */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">
                 <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
-                  <span>Capacitación esencial</span>
+                  <span>Promoción de bienestar</span>
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
-                  Curso de RCP
+                  Curso de Vida Saludable para Empresas
                 </h2>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-                  En el Curso de RCP y Primeros Auxilios de Seres Salud, las empresas y sus equipos adquieren habilidades prácticas para responder ante emergencias, incluyendo reanimación cardiopulmonar y técnicas básicas que salvan vidas.
+                  El curso de Vida Saludable de Seres Salud está diseñado para educar y motivar a los equipos de trabajo a adoptar hábitos que beneficien su salud física y mental dentro y fuera del ambiente laboral.
                 </p>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
-                  La capacitación combina teoría y práctica guiada, enfocada en situaciones reales del entorno laboral y promoviendo seguridad para todos los colaboradores.
+                  Desde alimentación equilibrada hasta manejo del estrés y actividad física, esta capacitación ofrece herramientas prácticas para mejorar el bienestar integral de los colaboradores.
                 </p>
 
                 <div className="pt-3">
@@ -3175,7 +3175,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
                   <Image
                     src="/images/about.jpg"
-                    alt="Curso de RCP y Primeros Auxilios - Seres Salud"
+                    alt="Curso de Vida Saludable para Empresas - Seres Salud"
                     fill
                     className="object-cover object-center"
                   />
@@ -3190,7 +3190,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   Beneficios de nuestros cursos
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
-                  Habilidades que marcan la diferencia
+                  Hábitos saludables y rendimiento laboral
                 </p>
               </div>
 
@@ -3198,14 +3198,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
                   <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                    <HeartPulse className="w-6 h-6" />
+                    <ShieldCheck className="w-6 h-6" />
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Capacidad para salvar vidas
+                      Bienestar general
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Aprendé técnicas efectivas de reanimación y primeros auxilios.
+                      Promueve una vida más saludable dentro y fuera del trabajo.
                     </p>
                   </div>
                 </div>
@@ -3217,10 +3217,10 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Respuesta ante emergencias
+                      Productividad
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Capacidad para actuar correctamente en situaciones imprevistas.
+                      Hábitos saludables mejoran el rendimiento y la energía.
                     </p>
                   </div>
                 </div>
@@ -3232,10 +3232,10 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Equipos más seguros
+                      Reducción de ausentismo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Promueve un entorno de trabajo con colaboradores preparados.
+                      Mejor salud reduce ausencias por enfermedad.
                     </p>
                   </div>
                 </div>
@@ -3243,25 +3243,25 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 4 */}
                 <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
                   <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
-                    <GraduationCap className="w-6 h-6" />
+                    <Building2 className="w-6 h-6" />
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Capacitación práctica
+                      Ambiente laboral positivo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                      Ejercicios reales y simulaciones guiadas por profesionales.
+                      Fomenta compromiso y bienestar colectivo.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Section 3: ¿Qué incluye el curso de RCP? */}
+            {/* Section 3: ¿Qué incluye el curso de vida saludable? */}
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el curso de RCP?
+                  ¿Qué incluye el curso de vida saludable?
                 </h2>
               </div>
 
@@ -3269,20 +3269,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Formación práctica
+                    Contenido educativo
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Técnicas de reanimación cardiopulmonar</span>
+                      <span>Nutrición equilibrada</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Primeros auxilios básicos</span>
+                      <span>Ejercicio y movimiento</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Uso de equipo de emergencia</span>
+                      <span>Manejo del estrés</span>
                     </li>
                   </ul>
                 </div>
@@ -3290,20 +3290,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Simulaciones guiadas
+                    Herramientas prácticas
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Ejercicios en escenarios reales</span>
+                      <span>Técnicas saludables</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Feedback profesional</span>
+                      <span>Rutinas y hábitos</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Evaluaciones por instructores</span>
+                      <span>Autoevaluación de bienestar</span>
                     </li>
                   </ul>
                 </div>
@@ -3311,20 +3311,20 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Material y certificados
+                    Aplicación laboral
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Material didáctico</span>
+                      <span>Gestión de pausas activas</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Certificado de participación</span>
+                      <span>Programas corporativos</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
-                      <span>Acceso a recursos adicionales</span>
+                      <span>Seguimiento de objetivos</span>
                     </li>
                   </ul>
                 </div>
