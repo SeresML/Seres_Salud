@@ -54,6 +54,12 @@ export function generateStaticParams() {
     { slug: 'pausas-activas' },
     { slug: 'vacunas-antigripales' },
     { slug: 'prevencion-cardiovascular' },
+    { slug: 'curso-rcp' },
+    { slug: 'rcp' },
+    { slug: 'curso-primeros-auxilios' },
+    { slug: 'primeros-auxilios' },
+    { slug: 'curso-vida-saludable' },
+    { slug: 'vida-saludable' },
     { slug: 'curso-alcoholismo' },
     { slug: 'alcoholismo' },
     { slug: 'curso-drogas-de-abuso' },
@@ -204,6 +210,156 @@ const servicesMap: Record<string, ServiceDetail> = {
       {
         q: '¿Se otorgan certificados individuales para los asistentes?',
         a: 'Sí, entregamos certificados de aprobación nominales avalados por médicos especialistas en medicina del trabajo.',
+      },
+    ],
+  },
+  'curso-rcp': {
+    title: 'Curso de Reanimación Cardiopulmonar (RCP)',
+    subtitle: 'Capacitación teórico-práctica con simulación y maniobras de RCP.',
+    description:
+      'El curso de RCP de Seres Salud capacita a los colaboradores de tu empresa en técnicas de Reanimación Cardiopulmonar y uso de Desfibrilador Externo Automático (DEA), brindando conocimientos vitales ante emergencias médicas en el trabajo.',
+    legalFramework: 'Ley 27.159 de Sistema de Prevención Integral de Eventos Cardiovasculares de Muerte Súbita.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Capacitación teórico-práctica',
+      'Maniobras con maniquíes de simulación',
+      'Respuesta inmediata ante emergencias',
+      'Certificación oficial para el personal',
+    ],
+    features: [
+      'Cadena de supervivencia',
+      'Compresiones torácicas y ventilación',
+      'Manejo de DEA',
+    ],
+    faqs: [
+      {
+        q: '¿Se realizan prácticas con maniquíes de simulación?',
+        a: 'Sí, las capacitaciones incluyen práctica directa con maniquíes y desfibriladores de entrenamiento.',
+      },
+    ],
+  },
+  'rcp': {
+    title: 'Curso de Reanimación Cardiopulmonar (RCP)',
+    subtitle: 'Capacitación teórico-práctica con simulación y maniobras de RCP.',
+    description:
+      'El curso de RCP de Seres Salud capacita a los colaboradores de tu empresa en técnicas de Reanimación Cardiopulmonar y uso de Desfibrilador Externo Automático (DEA), brindando conocimientos vitales ante emergencias médicas en el trabajo.',
+    legalFramework: 'Ley 27.159 de Sistema de Prevención Integral de Eventos Cardiovasculares de Muerte Súbita.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Capacitación teórico-práctica',
+      'Maniobras con maniquíes de simulación',
+      'Respuesta inmediata ante emergencias',
+      'Certificación oficial para el personal',
+    ],
+    features: [
+      'Cadena de supervivencia',
+      'Compresiones torácicas y ventilación',
+      'Manejo de DEA',
+    ],
+    faqs: [
+      {
+        q: '¿Se realizan prácticas con maniquíes de simulación?',
+        a: 'Sí, las capacitaciones incluyen práctica directa con maniquíes y desfibriladores de entrenamiento.',
+      },
+    ],
+  },
+  'curso-primeros-auxilios': {
+    title: 'Curso de Primeros Auxilios para Empresas',
+    subtitle: 'Capacitación en atención inicial de emergencias, quemaduras, heridas y traumatismos.',
+    description:
+      'El curso de Primeros Auxilios capacita al personal de la empresa para responder con rapidez y eficacia ante accidentes o emergencias de salud hasta la llegada de asistencia médica especializada.',
+    legalFramework: 'Ley 19.587 de Higiene y Seguridad Laboral y Resoluciones de la SRT.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Actuación primaria ante emergencias',
+      'Manejo de botiquines y primeros auxilios',
+      'Reducción de secuelas por accidentes',
+      'Entorno laboral más protegido',
+    ],
+    features: [
+      'Evaluación inicial de la víctima',
+      'Tratamiento de heridas y hemorragias',
+      'Manejo de quemaduras y traumatismos',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo se dictan las capacitaciones de primeros auxilios?',
+        a: 'Se realizan dictados presenciales en las instalaciones de la empresa con material didáctico y simulaciones de casos reales.',
+      },
+    ],
+  },
+  'primeros-auxilios': {
+    title: 'Curso de Primeros Auxilios para Empresas',
+    subtitle: 'Capacitación en atención inicial de emergencias, quemaduras, heridas y traumatismos.',
+    description:
+      'El curso de Primeros Auxilios capacita al personal de la empresa para responder con rapidez y eficacia ante accidentes o emergencias de salud hasta la llegada de asistencia médica especializada.',
+    legalFramework: 'Ley 19.587 de Higiene y Seguridad Laboral y Resoluciones de la SRT.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Actuación primaria ante emergencias',
+      'Manejo de botiquines y primeros auxilios',
+      'Reducción de secuelas por accidentes',
+      'Entorno laboral más protegido',
+    ],
+    features: [
+      'Evaluación inicial de la víctima',
+      'Tratamiento de heridas y hemorragias',
+      'Manejo de quemaduras y traumatismos',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo se dictan las capacitaciones de primeros auxilios?',
+        a: 'Se realizan dictados presenciales en las instalaciones de la empresa con material didáctico y simulaciones de casos reales.',
+      },
+    ],
+  },
+  'curso-vida-saludable': {
+    title: 'Curso de Vida Saludable para Empresas',
+    subtitle: 'Promoción de hábitos saludables, alimentación equilibrada y bienestar integral.',
+    description:
+      'El curso de Vida Saludable de Seres Salud está diseñado para educar y motivar a los equipos de trabajo a adoptar hábitos que beneficien su salud física y mental dentro y fuera del ambiente laboral.',
+    legalFramework: 'Normativas de la SRT y Ministerio de Salud.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Hábitos saludables sostenibles',
+      'Mejor rendimiento y concentración',
+      'Bienestar físico y mental',
+      'Reducción del estrés laboral',
+    ],
+    features: [
+      'Nutrición y alimentación saludable',
+      'Manejo del estrés y descanso',
+      'Actividad física e hidratación',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo se estructura el curso de vida saludable?',
+        a: 'Ofrecemos talleres interactivos, guías prácticas y charlas con especialistas en nutrición y medicina laboral.',
+      },
+    ],
+  },
+  'vida-saludable': {
+    title: 'Curso de Vida Saludable para Empresas',
+    subtitle: 'Promoción de hábitos saludables, alimentación equilibrada y bienestar integral.',
+    description:
+      'El curso de Vida Saludable de Seres Salud está diseñado para educar y motivar a los equipos de trabajo a adoptar hábitos que beneficien su salud física y mental dentro y fuera del ambiente laboral.',
+    legalFramework: 'Normativas de la SRT y Ministerio de Salud.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Hábitos saludables sostenibles',
+      'Mejor rendimiento y concentración',
+      'Bienestar físico y mental',
+      'Reducción del estrés laboral',
+    ],
+    features: [
+      'Nutrición y alimentación saludable',
+      'Manejo del estrés y descanso',
+      'Actividad física e hidratación',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo se estructura el curso de vida saludable?',
+        a: 'Ofrecemos talleres interactivos, guías prácticas y charlas con especialistas en nutrición y medicina laboral.',
       },
     ],
   },
@@ -794,9 +950,12 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   const isHivSida = normalizedSlug.includes('hiv') || normalizedSlug.includes('sida');
   const isErgonomia = normalizedSlug.includes('ergonomia');
   const isTabaquismo = normalizedSlug.includes('tabaquismo') || normalizedSlug.includes('tabaco');
-  const isCursos = (normalizedSlug.includes('curso') || normalizedSlug.includes('cursos')) && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia && !isTabaquismo;
+  const isRcp = normalizedSlug.includes('rcp');
+  const isPrimerosAuxilios = (normalizedSlug.includes('primeros-auxilios') || normalizedSlug.includes('auxilio') || normalizedSlug.includes('auxilios')) && !isRcp;
+  const isVidaSaludable = (normalizedSlug.includes('vida-saludable') || normalizedSlug === 'cursos' || normalizedSlug === 'curso-vida-saludable') && !isRcp && !isPrimerosAuxilios;
+  const isCursos = isVidaSaludable || ((normalizedSlug.includes('curso') || normalizedSlug.includes('cursos')) && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia && !isTabaquismo && !isRcp && !isPrimerosAuxilios);
   const isPrevencionCardiovascular = normalizedSlug.includes('cardiovascular') || normalizedSlug.includes('corazon');
-  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia && !isTabaquismo;
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia && !isTabaquismo && !isRcp && !isPrimerosAuxilios;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
@@ -3431,6 +3590,238 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
+        {/* Specific layout for Curso de RCP */}
+        {isRcp && (
+          <>
+            {/* Section 1: Overview for RCP */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Capacitación vital</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Curso de Reanimación Cardiopulmonar (RCP)
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  El curso de RCP de Seres Salud capacita a los colaboradores de tu empresa en técnicas de Reanimación Cardiopulmonar y manejo del Desfibrilador Externo Automático (DEA), brindando herramientas vitales ante emergencias.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Nuestras capacitaciones incluyen formación teórico-práctica con maniquíes de simulación clínica avanzada para garantizar una rápida respuesta y salvamento de vidas.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/rcp.jpg"
+                    alt="Curso de Reanimación Cardiopulmonar (RCP) - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios del curso de RCP */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios del curso de RCP
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Respuesta rápida, preparación y salvamento de vidas
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Capacitación práctica
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Maniobras reales con maniquíes de simulación anatómica.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Manejo de DEA
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Uso correcto del Desfibrilador Externo Automático.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Reacción inmediata
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Conocimientos para actuar con calma y eficacia.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <FileCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Certificación oficial
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Diplomas nominales respaldados por médicos especialistas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
+        {/* Specific layout for Curso de Primeros Auxilios */}
+        {isPrimerosAuxilios && (
+          <>
+            {/* Section 1: Overview for Primeros Auxilios */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Atención de emergencias</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Curso de Primeros Auxilios para Empresas
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  El curso de Primeros Auxilios de Seres Salud brinda conocimientos fundamentales para atender accidentes y emergencias médicas en el trabajo antes de la llegada de la asistencia médica.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Diseñado para formar brigadas de emergencia y capacitar al personal en curaciones, contención de hemorragias, inmovilización y uso de botiquines.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/primeros-auxilios.jpg"
+                    alt="Curso de Primeros Auxilios para Empresas - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios de Primeros Auxilios */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios del curso de primeros auxilios
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Prevención, intervención oportuna y resguardo en planta
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Atención primaria
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Saber cómo intervenir en los primeros minutos críticos de un accidente.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Reducción de secuelas
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Procedimientos adecuados de inmovilización y primeros auxilios.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Uso de botiquines
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Conocimiento y manejo correcto del material de primeros auxilios.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <FileCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Cumplimiento de Ley 19.587
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Capacitación exigida en materia de seguridad e higiene laboral.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
         {/* Specific layout for Cursos de Capacitación y Vida Saludable Laboral */}
         {isCursos && (
           <>
@@ -3466,7 +3857,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               <div className="lg:col-span-5 flex justify-center lg:justify-end">
                 <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
                   <Image
-                    src="/images/about.jpg"
+                    src="/images/vida-saludable.jpg"
                     alt="Curso de Vida Saludable para Empresas - Seres Salud"
                     fill
                     className="object-cover object-center"
@@ -3847,7 +4238,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               <div className="lg:col-span-5 flex justify-center lg:justify-end">
                 <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
                   <Image
-                    src="/images/about.jpg"
+                    src="/images/prevencion-cardiovascular.jpg"
                     alt="Prevención Cardiovascular - Seres Salud"
                     fill
                     className="object-cover object-center"
@@ -4041,7 +4432,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               <div className="lg:col-span-5 flex justify-center lg:justify-end">
                 <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
                   <Image
-                    src="/images/about.jpg"
+                    src="/images/alcoholismo.jpg"
                     alt="Prevención del alcoholismo en el ámbito laboral - Seres Salud"
                     fill
                     className="object-cover object-center"
