@@ -60,6 +60,8 @@ export function generateStaticParams() {
     { slug: 'drogas-de-abuso' },
     { slug: 'curso-hiv-sida' },
     { slug: 'hiv-sida' },
+    { slug: 'curso-ergonomia' },
+    { slug: 'ergonomia' },
   ];
 }
 
@@ -630,6 +632,56 @@ const servicesMap: Record<string, ServiceDetail> = {
       },
     ],
   },
+  'curso-ergonomia': {
+    title: 'Curso de Ergonomía para Empresas',
+    subtitle: 'Capacitación enfocada en la prevención de lesiones, adaptación de puestos de trabajo y promoción del bienestar físico.',
+    description:
+      'El curso de Ergonomía de Seres Salud está enfocado en la prevención de lesiones y adaptación de puestos de trabajo para mejorar el bienestar físico de los colaboradores y reducir riesgos laborales.',
+    legalFramework: 'Resolución SRT 886/15 y Ley 19.587 de Higiene y Seguridad.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Reducción de lesiones',
+      'Posturas correctas',
+      'Mejor bienestar',
+      'Incremento productivo',
+    ],
+    features: [
+      'Contenido teórico',
+      'Prácticas laborales',
+      'Modalidades',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo se dictan las capacitaciones de ergonomía laboral?',
+        a: 'Realizamos capacitaciones teórico-prácticas adaptadas a los puestos de trabajo administrativos e industriales de cada empresa.',
+      },
+    ],
+  },
+  'ergonomia': {
+    title: 'Curso de Ergonomía para Empresas',
+    subtitle: 'Capacitación enfocada en la prevención de lesiones, adaptación de puestos de trabajo y promoción del bienestar físico.',
+    description:
+      'El curso de Ergonomía de Seres Salud está enfocado en la prevención de lesiones y adaptación de puestos de trabajo para mejorar el bienestar físico de los colaboradores y reducir riesgos laborales.',
+    legalFramework: 'Resolución SRT 886/15 y Ley 19.587 de Higiene y Seguridad.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Reducción de lesiones',
+      'Posturas correctas',
+      'Mejor bienestar',
+      'Incremento productivo',
+    ],
+    features: [
+      'Contenido teórico',
+      'Prácticas laborales',
+      'Modalidades',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo se dictan las capacitaciones de ergonomía laboral?',
+        a: 'Realizamos capacitaciones teórico-prácticas adaptadas a los puestos de trabajo administrativos e industriales de cada empresa.',
+      },
+    ],
+  },
 };
 
 const getIcon = (name: string) => {
@@ -688,9 +740,10 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   const isAlcoholismo = normalizedSlug.includes('alcoholismo') || normalizedSlug.includes('alcohol');
   const isDrogasDeAbuso = normalizedSlug.includes('drogas') || normalizedSlug.includes('sustancias');
   const isHivSida = normalizedSlug.includes('hiv') || normalizedSlug.includes('sida');
-  const isCursos = (normalizedSlug.includes('curso') || normalizedSlug.includes('cursos')) && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida;
+  const isErgonomia = normalizedSlug.includes('ergonomia');
+  const isCursos = (normalizedSlug.includes('curso') || normalizedSlug.includes('cursos')) && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia;
   const isPrevencionCardiovascular = normalizedSlug.includes('cardiovascular') || normalizedSlug.includes('corazon');
-  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida;
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
@@ -4482,8 +4535,202 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
+        {/* Specific layout for Curso de Ergonomía para Empresas matching reference screenshot */}
+        {isErgonomia && (
+          <>
+            {/* Section 1: Overview */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Capacitación preventiva</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Curso de Ergonomía Laboral
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  El curso de Ergonomía de Seres Salud está enfocado en la prevención de lesiones y adaptación de puestos de trabajo para mejorar el bienestar físico de los colaboradores y reducir riesgos laborales.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Brinda herramientas prácticas para evaluar espacios de trabajo, técnicas de postura y movimiento, y estrategias para optimizar ambientes laborales saludables.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt="Curso de Ergonomía Laboral - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios de nuestros cursos */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios de nuestros cursos
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Prevención, bienestar y rendimiento
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Reducción de lesiones
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Previene dolencias musculoesqueléticas y problemas físicos.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Posturas correctas
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Enseña técnicas de movimiento y ergonomía postural.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Mejor bienestar
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Mayor confort y salud física en el equipo.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 4 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <FileCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Incremento productivo
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Menos ausencias por fatiga y lesiones laborales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3: ¿Qué incluye el curso de ergonomía? */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye el curso de ergonomía?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                {/* Column 1 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
+                    Contenido teórico
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Conceptos de ergonomía</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Análisis de riesgos físicos</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Normativas aplicables</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Column 2 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
+                    Prácticas laborales
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Evaluación de puestos de trabajo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Técnicas de levantamiento</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Tareas repetitivas y micro movimientos</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Column 3 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
+                    Modalidades
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Presencial o virtual</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Adaptado a tu empresa</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Certificados incluidos</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
         {/* Fallback layout for other services */}
-        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && (
+        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia && (
           <>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">

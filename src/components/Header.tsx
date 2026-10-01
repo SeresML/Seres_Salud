@@ -32,7 +32,7 @@ const cursosSubItems = [
   { name: 'Cursos de Alcoholismo', href: '/servicios/curso-alcoholismo' },
   { name: 'Cursos de Drogas de Abuso', href: '/servicios/curso-drogas-de-abuso' },
   { name: 'Cursos de HIV Sida', href: '/servicios/curso-hiv-sida' },
-  { name: 'Cursos de Ergonomía', href: '/servicios/cursos#ergonomia' },
+  { name: 'Cursos de Ergonomía', href: '/servicios/curso-ergonomia' },
   { name: 'Cursos de Tabaquismo', href: '/servicios/cursos#tabaquismo' },
 ];
 
