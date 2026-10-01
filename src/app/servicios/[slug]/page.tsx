@@ -58,6 +58,8 @@ export function generateStaticParams() {
     { slug: 'alcoholismo' },
     { slug: 'curso-drogas-de-abuso' },
     { slug: 'drogas-de-abuso' },
+    { slug: 'curso-hiv-sida' },
+    { slug: 'hiv-sida' },
   ];
 }
 
@@ -578,6 +580,56 @@ const servicesMap: Record<string, ServiceDetail> = {
       },
     ],
   },
+  'curso-hiv-sida': {
+    title: 'Curso de HIV / SIDA para Empresas',
+    subtitle: 'Capacitación para la prevención, comprensión y gestión responsable de HIV/SIDA.',
+    description:
+      'Este curso brinda información clara y actualizada sobre el HIV / SIDA, su transmisión, prevención y manejo de situaciones laborales, promoviendo entornos de trabajo seguros y respetuosos.',
+    legalFramework: 'Normativas de la SRT y Ley 23.798 de SIDA.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Concientización efectiva',
+      'Entornos laborales seguros',
+      'Reducción de estigma',
+      'Políticas internas claras',
+    ],
+    features: [
+      'Marco teórico',
+      'Prevención',
+      'Aplicación laboral',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo contribuye la capacitación de HIV/SIDA en el ámbito laboral?',
+        a: 'Promueve la educación en salud, desmitifica prejuicios, fomenta la inclusión laboral y asegura el cumplimiento de normativas de salud y no discriminación en el trabajo.',
+      },
+    ],
+  },
+  'hiv-sida': {
+    title: 'Curso de HIV / SIDA para Empresas',
+    subtitle: 'Capacitación para la prevención, comprensión y gestión responsable de HIV/SIDA.',
+    description:
+      'Este curso brinda información clara y actualizada sobre el HIV / SIDA, su transmisión, prevención y manejo de situaciones laborales, promoviendo entornos de trabajo seguros y respetuosos.',
+    legalFramework: 'Normativas de la SRT y Ley 23.798 de SIDA.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Concientización efectiva',
+      'Entornos laborales seguros',
+      'Reducción de estigma',
+      'Políticas internas claras',
+    ],
+    features: [
+      'Marco teórico',
+      'Prevención',
+      'Aplicación laboral',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo contribuye la capacitación de HIV/SIDA en el ámbito laboral?',
+        a: 'Promueve la educación en salud, desmitifica prejuicios, fomenta la inclusión laboral y asegura el cumplimiento de normativas de salud y no discriminación en el trabajo.',
+      },
+    ],
+  },
 };
 
 const getIcon = (name: string) => {
@@ -635,9 +687,10 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   const isVacunasAntigripales = normalizedSlug.includes('vacuna') || normalizedSlug.includes('vacunas') || normalizedSlug.includes('antigripal') || normalizedSlug.includes('antigripales');
   const isAlcoholismo = normalizedSlug.includes('alcoholismo') || normalizedSlug.includes('alcohol');
   const isDrogasDeAbuso = normalizedSlug.includes('drogas') || normalizedSlug.includes('sustancias');
-  const isCursos = (normalizedSlug.includes('curso') || normalizedSlug.includes('cursos')) && !isAlcoholismo && !isDrogasDeAbuso;
+  const isHivSida = normalizedSlug.includes('hiv') || normalizedSlug.includes('sida');
+  const isCursos = (normalizedSlug.includes('curso') || normalizedSlug.includes('cursos')) && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida;
   const isPrevencionCardiovascular = normalizedSlug.includes('cardiovascular') || normalizedSlug.includes('corazon');
-  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso;
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
@@ -4235,8 +4288,202 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
+        {/* Specific layout for Curso de HIV / SIDA para Empresas matching reference screenshot */}
+        {isHivSida && (
+          <>
+            {/* Section 1: Overview */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Capacitación preventiva</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Curso de HIV / SIDA en el ámbito laboral
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Este curso brinda información clara y actualizada sobre el HIV / SIDA, su transmisión, prevención y manejo de situaciones laborales, promoviendo entornos de trabajo seguros y respetuosos.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Se enfoca en desmitificar conceptos, prevenir la discriminación y fomentar políticas de salud y seguridad basadas en evidencia científica y mejores prácticas.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt="Curso de HIV / SIDA en el ámbito laboral - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios de nuestros cursos */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios de nuestros cursos
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Prevención, respeto y gestión responsable
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Concientización efectiva
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Información clara y actualizada sobre HIV/SIDA.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Entornos laborales seguros
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Promueve prácticas y políticas saludables.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Reducción de estigma
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Desmitifica prejuicios y fomenta respeto.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 4 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <FileCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Políticas internas claras
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Base para estrategias de salud laboral.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3: ¿Qué incluye el curso de HIV / SIDA? */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye el curso de HIV / SIDA?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                {/* Column 1 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
+                    Marco teórico
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Definición de HIV/SIDA</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Formas de transmisión</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Mitos y realidades</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Column 2 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
+                    Prevención
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Prácticas seguras</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Políticas preventivas</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Promoción de salud</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Column 3 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
+                    Aplicación laboral
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Riesgos y gestión</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Intervenciones preventivas</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Protocolos de apoyo</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
         {/* Fallback layout for other services */}
-        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && (
+        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && (
           <>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">
