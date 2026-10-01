@@ -28,7 +28,7 @@ const cursosSubItems = [
   { name: 'Cursos de RCP', href: '/servicios/cursos#rcp' },
   { name: 'Cursos de Primeros Auxilios', href: '/servicios/cursos#primeros-auxilios' },
   { name: 'Cursos de Vida Saludable', href: '/servicios/cursos#vida-saludable' },
-  { name: 'Prevención Cardiovascular', href: '/servicios/cursos#prevencion-cardiovascular' },
+  { name: 'Prevención Cardiovascular', href: '/servicios/prevencion-cardiovascular' },
   { name: 'Cursos de Alcoholismo', href: '/servicios/cursos#alcoholismo' },
   { name: 'Cursos de Drogas de Abuso', href: '/servicios/cursos#drogas-de-abuso' },
   { name: 'Cursos de HIV Sida', href: '/servicios/cursos#hiv-sida' },
