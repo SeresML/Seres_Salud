@@ -54,6 +54,8 @@ export function generateStaticParams() {
     { slug: 'pausas-activas' },
     { slug: 'vacunas-antigripales' },
     { slug: 'prevencion-cardiovascular' },
+    { slug: 'curso-alcoholismo' },
+    { slug: 'alcoholismo' },
   ];
 }
 
@@ -474,6 +476,56 @@ const servicesMap: Record<string, ServiceDetail> = {
       },
     ],
   },
+  'curso-alcoholismo': {
+    title: 'Curso Alcoholismo para Empresas',
+    subtitle: 'Capacitación preventiva para concientizar, reducir riesgos laborales y entornos de trabajo más seguros.',
+    description:
+      'El curso de Alcoholismo Laboral de Seres Salud está orientado a concientizar sobre los riesgos del consumo de alcohol en el trabajo y su impacto en la seguridad, la salud y el desempeño laboral.',
+    legalFramework: 'Normativas de la SRT y Ley 19.587 de Higiene y Seguridad Laboral.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Reducción de riesgos',
+      'Mayor seguridad laboral',
+      'Concientización del personal',
+      'Cumplimiento normativo',
+    ],
+    features: [
+      'Contenido teórico',
+      'Enfoque preventivo',
+      'Capacitación adaptada',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo se dictan las capacitaciones sobre alcoholismo laboral?',
+        a: 'Las capacitaciones se dictan en modalidad presencial en las instalaciones de la empresa o de forma virtual, adaptadas al rubro de cada compañía.',
+      },
+    ],
+  },
+  'alcoholismo': {
+    title: 'Curso Alcoholismo para Empresas',
+    subtitle: 'Capacitación preventiva para concientizar, reducir riesgos laborales y entornos de trabajo más seguros.',
+    description:
+      'El curso de Alcoholismo Laboral de Seres Salud está orientado a concientizar sobre los riesgos del consumo de alcohol en el trabajo y su impacto en la seguridad, la salud y el desempeño laboral.',
+    legalFramework: 'Normativas de la SRT y Ley 19.587 de Higiene y Seguridad Laboral.',
+    iconName: 'GraduationCap',
+    benefits: [
+      'Reducción de riesgos',
+      'Mayor seguridad laboral',
+      'Concientización del personal',
+      'Cumplimiento normativo',
+    ],
+    features: [
+      'Contenido teórico',
+      'Enfoque preventivo',
+      'Capacitación adaptada',
+    ],
+    faqs: [
+      {
+        q: '¿Cómo se dictan las capacitaciones sobre alcoholismo laboral?',
+        a: 'Las capacitaciones se dictan en modalidad presencial en las instalaciones de la empresa o de forma virtual, adaptadas al rubro de cada compañía.',
+      },
+    ],
+  },
 };
 
 const getIcon = (name: string) => {
@@ -529,9 +581,10 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   const isPsicotecnicos = normalizedSlug.includes('psicotecnico') || normalizedSlug.includes('psicotecnicos');
   const isPausasActivas = normalizedSlug.includes('pausas');
   const isVacunasAntigripales = normalizedSlug.includes('vacuna') || normalizedSlug.includes('vacunas') || normalizedSlug.includes('antigripal') || normalizedSlug.includes('antigripales');
-  const isCursos = normalizedSlug.includes('curso') || normalizedSlug.includes('cursos');
+  const isAlcoholismo = normalizedSlug.includes('alcoholismo') || normalizedSlug.includes('alcohol');
+  const isCursos = (normalizedSlug.includes('curso') || normalizedSlug.includes('cursos')) && !isAlcoholismo;
   const isPrevencionCardiovascular = normalizedSlug.includes('cardiovascular') || normalizedSlug.includes('corazon');
-  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular;
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
@@ -3741,8 +3794,202 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
+        {/* Specific layout for Curso Alcoholismo para Empresas matching reference screenshot */}
+        {isAlcoholismo && (
+          <>
+            {/* Section 1: Overview */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Capacitación preventiva</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Prevención del alcoholismo en el ámbito laboral
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  El curso de Alcoholismo Laboral de Seres Salud está orientado a concientizar sobre los riesgos del consumo de alcohol en el trabajo y su impacto en la seguridad, la salud y el desempeño laboral.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  La capacitación brinda herramientas prácticas para la detección temprana, prevención de accidentes y promoción de hábitos saludables en el entorno laboral.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/about.jpg"
+                    alt="Prevención del alcoholismo en el ámbito laboral - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Beneficios de nuestros cursos */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center max-w-2xl mx-auto space-y-1">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  Beneficios de nuestros cursos
+                </h2>
+                <p className="text-sm text-gray-500 font-medium font-sans">
+                  Prevención, concientización y cumplimiento normativo
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                {/* Card 1 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Reducción de riesgos
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Disminuye accidentes laborales asociados al consumo de alcohol.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <Activity className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Mayor seguridad laboral
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Promueve conductas responsables en el entorno de trabajo.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Concientización del personal
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Información clara sobre consecuencias y prevención.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 4 */}
+                <div className="bg-white p-7 rounded-2xl shadow-card border border-gray-100 flex items-start gap-4 hover:shadow-cardhover transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0A5229] flex items-center justify-center shrink-0">
+                    <FileCheck className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
+                      Cumplimiento normativo
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                      Capacitación alineada a normativas de salud y seguridad laboral.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3: ¿Qué incluye el curso de alcoholismo? */}
+            <div className="space-y-10 pt-4">
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
+                  ¿Qué incluye el curso de alcoholismo?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                {/* Column 1 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
+                    Contenido teórico
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Conceptos sobre alcoholismo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Efectos en la salud y el trabajo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Marco legal y normativo</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Column 2 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
+                    Enfoque preventivo
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Detección temprana</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Prevención de accidentes</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Promoción de hábitos saludables</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Column 3 */}
+                <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
+                    Capacitación adaptada
+                  </h3>
+                  <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Modalidad presencial o virtual</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Adaptada a la actividad de la empresa</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[#006E32] shrink-0" />
+                      <span>Entrega de material y certificados</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
         {/* Fallback layout for other services */}
-        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && (
+        {!isPreocupacionales && !isMedicinaLaboral && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && (
           <>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-7 space-y-5">
