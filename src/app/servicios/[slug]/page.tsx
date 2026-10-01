@@ -3822,11 +3822,93 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
-        {/* Specific layout for Cursos de Capacitación y Vida Saludable Laboral */}
+        {/* Specific layout for Cursos de Capacitación (RCP, Primeros Auxilios y Vida Saludable) */}
         {isCursos && (
           <>
-            {/* Section 1: Overview for Cursos */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            {/* Section 1: Curso de RCP */}
+            <div id="rcp" className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center scroll-mt-28">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Capacitación vital</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Curso de Reanimación Cardiopulmonar (RCP)
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  El curso de RCP de Seres Salud capacita a los colaboradores de tu empresa en técnicas de Reanimación Cardiopulmonar y manejo del Desfibrilador Externo Automático (DEA), brindando herramientas vitales ante emergencias.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Nuestras capacitaciones incluyen formación teórico-práctica con maniquíes de simulación clínica avanzada para garantizar una rápida respuesta y salvamento de vidas.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/rcp.jpg"
+                    alt="Curso de Reanimación Cardiopulmonar (RCP) - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Curso de Primeros Auxilios */}
+            <div id="primeros-auxilios" className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center pt-16 border-t border-gray-100 scroll-mt-28">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
+                  <span>Atención de emergencias</span>
+                </div>
+                
+                <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
+                  Curso de Primeros Auxilios para Empresas
+                </h2>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  El curso de Primeros Auxilios de Seres Salud brinda conocimientos fundamentales para atender accidentes y emergencias médicas en el trabajo antes de la llegada de la asistencia médica.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
+                  Diseñado para formar brigadas de emergencia y capacitar al personal en curaciones, contención de hemorragias, inmovilización y uso de botiquines.
+                </p>
+
+                <div className="pt-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                  >
+                    Solicitar Asesoramiento
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                  <Image
+                    src="/images/primeros-auxilios.jpg"
+                    alt="Curso de Primeros Auxilios para Empresas - Seres Salud"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3: Overview for Vida Saludable */}
+            <div id="vida-saludable" className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center pt-16 border-t border-gray-100 scroll-mt-28">
               <div className="lg:col-span-7 space-y-5">
                 <div className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-3.5 py-1 rounded-full text-xs font-semibold">
                   <span>Promoción de bienestar</span>
