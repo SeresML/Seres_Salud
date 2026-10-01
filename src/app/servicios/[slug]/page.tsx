@@ -2884,7 +2884,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               <div className="lg:col-span-5 flex justify-center lg:justify-end">
                 <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
                   <Image
-                    src="/images/about.jpg"
+                    src="/images/psicotecnicos.jpg"
                     alt="Psicotécnicos Laborales - Seres Salud"
                     fill
                     className="object-cover object-center"
