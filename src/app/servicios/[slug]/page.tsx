@@ -4151,7 +4151,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   slug: '/servicios/curso-hiv-sida',
                   title: 'Curso de HIV / SIDA para Empresas',
                   desc: 'Información médica actualizada, medidas de prevención, derechos laborales y promoción de entornos inclusivos.',
-                  image: '/images/about.jpg',
+                  image: '/images/hiv-sida.jpg',
                   tag: 'Concientización',
                 },
                 {
@@ -5025,7 +5025,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               <div className="lg:col-span-5 flex justify-center lg:justify-end">
                 <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
                   <Image
-                    src="/images/about.jpg"
+                    src="/images/hiv-sida.jpg"
                     alt="Curso de HIV / SIDA en el ámbito laboral - Seres Salud"
                     fill
                     className="object-cover object-center"
