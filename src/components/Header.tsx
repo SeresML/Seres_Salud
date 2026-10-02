@@ -74,72 +74,74 @@ export default function Header() {
           </Link>
 
           {/* Dropdown Servicios */}
-          <div className="relative group">
+          <div className="relative group py-2">
             <Link
               href="/servicios"
-              className={`flex items-center gap-1.5 py-2 hover:text-brand-green transition-colors ${
+              className={`flex items-center gap-1.5 hover:text-brand-green transition-colors ${
                 pathname.startsWith('/servicios') ? 'text-brand-green font-bold' : 'text-gray-800'
               }`}
             >
               <span>Servicios</span>
               <ChevronDown className="w-5 h-5 text-gray-500 group-hover:text-brand-green transition-transform group-hover:rotate-180 duration-200" />
             </Link>
-            <div className="absolute top-full left-0 mt-1 w-80 bg-white rounded-xl shadow-dropdown border border-emerald-50 py-3 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-50 transform origin-top-left group-hover:translate-y-0 translate-y-2">
-              <div className="px-3 pb-2 mb-2 border-b border-gray-100">
-                <Link
-                  href="/servicios"
-                  className="text-xs font-bold uppercase tracking-wider text-brand-green hover:underline flex items-center justify-between"
-                >
-                  <span>Ver Todos los Servicios</span>
-                  <span>→</span>
-                </Link>
-              </div>
-              <div className="space-y-0.5 px-1">
-                {serviceLinks.map((service) => {
-                  const IconComp = service.icon;
-                  if (service.isCursos) {
-                    return (
-                      <div key={service.href} className="relative group/cursos">
-                        <Link
-                          href={service.href}
-                          className="flex items-center justify-between px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-[#006E32] hover:text-white rounded-lg transition-colors group-hover/cursos:bg-[#006E32] group-hover/cursos:text-white"
-                        >
-                          <div className="flex items-center gap-2.5 truncate">
-                            <IconComp className="w-4 h-4 text-brand-moss shrink-0 group-hover/cursos:text-white" />
-                            <span className="truncate">{service.name}</span>
-                          </div>
-                          <ChevronRight className="w-4 h-4 text-gray-400 group-hover/cursos:text-white shrink-0 fill-current" />
-                        </Link>
+            <div className="absolute top-full left-0 pt-1 w-80 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-50 transform origin-top-left">
+              <div className="bg-white rounded-xl shadow-dropdown border border-emerald-50 py-3">
+                <div className="px-3 pb-2 mb-2 border-b border-gray-100">
+                  <Link
+                    href="/servicios"
+                    className="text-xs font-bold uppercase tracking-wider text-brand-green hover:underline flex items-center justify-between"
+                  >
+                    <span>Ver Todos los Servicios</span>
+                    <span>→</span>
+                  </Link>
+                </div>
+                <div className="space-y-0.5 px-1">
+                  {serviceLinks.map((service) => {
+                    const IconComp = service.icon;
+                    if (service.isCursos) {
+                      return (
+                        <div key={service.href} className="relative group/cursos">
+                          <Link
+                            href={service.href}
+                            className="flex items-center justify-between px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-[#006E32] hover:text-white rounded-lg transition-colors group-hover/cursos:bg-[#006E32] group-hover/cursos:text-white"
+                          >
+                            <div className="flex items-center gap-2.5 truncate">
+                              <IconComp className="w-4 h-4 text-brand-moss shrink-0 group-hover/cursos:text-white" />
+                              <span className="truncate">{service.name}</span>
+                            </div>
+                            <ChevronRight className="w-4 h-4 text-gray-400 group-hover/cursos:text-white shrink-0 fill-current" />
+                          </Link>
 
-                        {/* Flyout Sub-menu matching reference screenshot */}
-                        <div className="absolute left-full top-0 ml-1 w-64 bg-white rounded-xl shadow-2xl border border-gray-200 py-1 opacity-0 group-hover/cursos:opacity-100 pointer-events-none group-hover/cursos:pointer-events-auto transition-all duration-200 z-50">
-                          <div className="divide-y divide-gray-100">
-                            {cursosSubItems.map((subItem) => (
-                              <Link
-                                key={subItem.name}
-                                href={subItem.href}
-                                className="block px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-[#006E32] transition-colors"
-                              >
-                                {subItem.name}
-                              </Link>
-                            ))}
+                          {/* Flyout Sub-menu matching reference screenshot */}
+                          <div className="absolute left-full top-0 -ml-1 pl-2 w-64 opacity-0 group-hover/cursos:opacity-100 pointer-events-none group-hover/cursos:pointer-events-auto transition-all duration-200 z-50">
+                            <div className="bg-white rounded-xl shadow-2xl border border-gray-200 py-1 divide-y divide-gray-100 overflow-hidden">
+                              {cursosSubItems.map((subItem) => (
+                                <Link
+                                  key={subItem.name}
+                                  href={subItem.href}
+                                  className="block px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-[#006E32] transition-colors"
+                                >
+                                  {subItem.name}
+                                </Link>
+                              ))}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    );
-                  }
+                      );
+                    }
 
-                  return (
-                    <Link
-                      key={service.href}
-                      href={service.href}
-                      className="flex items-center gap-2.5 px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-brand-lightgreen hover:text-brand-green rounded-lg transition-colors"
-                    >
-                      <IconComp className="w-4 h-4 text-brand-moss shrink-0" />
-                      <span className="truncate">{service.name}</span>
-                    </Link>
-                  );
-                })}
+                    return (
+                      <Link
+                        key={service.href}
+                        href={service.href}
+                        className="flex items-center gap-2.5 px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-brand-lightgreen hover:text-brand-green rounded-lg transition-colors"
+                      >
+                        <IconComp className="w-4 h-4 text-brand-moss shrink-0" />
+                        <span className="truncate">{service.name}</span>
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
@@ -163,34 +165,36 @@ export default function Header() {
           </Link>
 
           {/* Dropdown Acceso a Clientes */}
-          <div className="relative group">
+          <div className="relative group py-2">
             <Link
               href="/acceso-clientes"
-              className={`flex items-center gap-1.5 py-2 hover:text-brand-green transition-colors ${
+              className={`flex items-center gap-1.5 hover:text-brand-green transition-colors ${
                 isActive('/acceso-clientes') ? 'text-brand-green font-bold' : 'text-gray-800'
               }`}
             >
               <span>Acceso a Clientes</span>
               <ChevronDown className="w-5 h-5 text-gray-500 group-hover:text-brand-green transition-transform group-hover:rotate-180 duration-200" />
             </Link>
-            <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-md shadow-md border border-gray-200 py-1 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-50">
-              <a
-                href="https://ml1.seressalud.com.ar:8080"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block px-4 py-2.5 text-sm font-medium text-gray-800 hover:bg-emerald-50 hover:text-[#006E32] transition-colors"
-              >
-                Opción 1
-              </a>
-              <div className="border-t border-gray-200" />
-              <a
-                href="https://ml2.seressalud.com.ar:8080"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block px-4 py-2.5 text-sm font-medium text-gray-800 hover:bg-emerald-50 hover:text-[#006E32] transition-colors"
-              >
-                Opción 2
-              </a>
+            <div className="absolute top-full left-0 pt-1 w-48 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-50">
+              <div className="bg-white rounded-md shadow-md border border-gray-200 py-1">
+                <a
+                  href="https://ml1.seressalud.com.ar:8080"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-4 py-2.5 text-sm font-medium text-gray-800 hover:bg-emerald-50 hover:text-[#006E32] transition-colors"
+                >
+                  Opción 1
+                </a>
+                <div className="border-t border-gray-200" />
+                <a
+                  href="https://ml2.seressalud.com.ar:8080"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-4 py-2.5 text-sm font-medium text-gray-800 hover:bg-emerald-50 hover:text-[#006E32] transition-colors"
+                >
+                  Opción 2
+                </a>
+              </div>
             </div>
           </div>
 
