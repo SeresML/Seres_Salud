@@ -4158,7 +4158,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   slug: '/servicios/curso-ergonomia',
                   title: 'Curso de Ergonomía Laboral',
                   desc: 'Prevención de lesiones musculoesqueléticas, ajuste ergonómico de puestos de trabajo y hábitos posturales correctos.',
-                  image: '/images/pausas-activas.jpg',
+                  image: '/images/ergonomia.jpg',
                   tag: 'Prevención Ergonómica',
                 },
                 {
@@ -5221,7 +5221,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               <div className="lg:col-span-5 flex justify-center lg:justify-end">
                 <div className="relative h-[280px] sm:h-[340px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
                   <Image
-                    src="/images/about.jpg"
+                    src="/images/ergonomia.jpg"
                     alt="Curso de Ergonomía Laboral - Seres Salud"
                     fill
                     className="object-cover object-center"
