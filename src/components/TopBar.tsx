@@ -16,8 +16,8 @@ export default function TopBar() {
 
           <div className="flex items-center gap-1.5 hover:text-emerald-300 transition-colors">
             <Mail className="w-3.5 h-3.5 text-[#75A376]" />
-            <a href="mailto:comercial@seressalud.com.ar" className="font-medium">
-              comercial@seressalud.com.ar
+            <a href="mailto:consultas@seressalud.com.ar" className="font-medium">
+              consultas@seressalud.com.ar
             </a>
           </div>
 

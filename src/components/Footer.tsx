@@ -142,8 +142,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-brand-moss shrink-0" />
-                <a href="mailto:comercial@seressalud.com.ar" className="hover:text-emerald-300 break-all">
-                  comercial@seressalud.com.ar
+                <a href="mailto:consultas@seressalud.com.ar" className="hover:text-emerald-300 break-all">
+                  consultas@seressalud.com.ar
                 </a>
               </li>
             </ul>

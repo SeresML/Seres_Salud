@@ -101,7 +101,7 @@ const servicesMap: Record<string, ServiceDetail> = {
       },
       {
         q: '¿Cómo se solicita el servicio comercial para una Pyme?',
-        a: 'Puede solicitar una reunión o presupuesto directamente a comercial@seressalud.com.ar o enviando un mensaje a nuestro WhatsApp oficial.',
+        a: 'Puede solicitar una reunión o presupuesto directamente a consultas@seressalud.com.ar o enviando un mensaje a nuestro WhatsApp oficial.',
       },
     ],
   },

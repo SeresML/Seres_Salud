@@ -55,8 +55,8 @@ export default function ContactoPage() {
             </div>
             <div>
               <h3 className="text-base font-bold font-heading text-gray-900">Correo Electrónico</h3>
-              <a href="mailto:comercial@seressalud.com.ar" className="text-sm font-semibold text-[#0A5229] hover:underline mt-1 block break-all">
-                comercial@seressalud.com.ar
+              <a href="mailto:consultas@seressalud.com.ar" className="text-sm font-semibold text-[#0A5229] hover:underline mt-1 block break-all">
+                consultas@seressalud.com.ar
               </a>
               <span className="text-xs text-gray-500">Respuesta en menos de 2 horas hábiles.</span>
             </div>

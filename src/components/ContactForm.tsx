@@ -93,7 +93,7 @@ export default function ContactForm() {
                   <Mail className="w-5 h-5 text-brand-moss shrink-0 mt-0.5" />
                   <div>
                     <div className="font-semibold text-white">Correo Comercial</div>
-                    <div className="text-emerald-100/70 text-xs">comercial@seressalud.com.ar</div>
+                    <div className="text-emerald-100/70 text-xs">consultas@seressalud.com.ar</div>
                   </div>
                 </div>
               </div>
