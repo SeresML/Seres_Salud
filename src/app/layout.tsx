@@ -1,10 +1,17 @@
 import type { Metadata } from 'next';
 import { Montserrat, Open_Sans } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import TopBar from '@/components/TopBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+
+// Etiquetas de Google calcadas del seressalud.com.ar de WordPress (Site Kit):
+// etiqueta de Google (GA4 G-Z2YPRCWN7K) + Google Ads + Tag Manager
+const ETIQUETA_GOOGLE = 'GT-NNZGB8W5';
+const GOOGLE_ADS = 'AW-1012107997';
+const GTM = 'GTM-MNTXZS9';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -58,6 +65,28 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${montserrat.variable} ${openSans.variable}`}>
       <body className="min-h-screen flex flex-col antialiased bg-brand-lightbg font-sans">
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM}`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${ETIQUETA_GOOGLE}`} strategy="afterInteractive" />
+        <Script id="google-gtag" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["seressalud.com.ar"]});
+gtag("js", new Date());
+gtag("config", "${ETIQUETA_GOOGLE}");
+gtag("config", "${GOOGLE_ADS}");`}
+        </Script>
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${GTM}');`}
+        </Script>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

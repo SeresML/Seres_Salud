@@ -32,7 +32,8 @@ export default function ContactForm() {
         'Servicio Requerido': formData.servicio,
         'Mensaje': formData.mensaje,
       },
-      honeypot
+      honeypot,
+      { email: formData.email, telefono: formData.telefono }
     );
     setEnviando(false);
     if (ok) {

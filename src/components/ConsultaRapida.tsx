@@ -24,7 +24,8 @@ export default function ConsultaRapida({ servicio }: { servicio: string }) {
         'Servicio': servicio,
         'Consulta': campo('mensaje'),
       },
-      campo('web')
+      campo('web'),
+      { email: campo('email'), telefono: campo('telefono') }
     );
     setEnviando(false);
     setEstado(ok ? 'ok' : 'error');

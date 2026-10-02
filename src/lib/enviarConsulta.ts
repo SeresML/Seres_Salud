@@ -7,14 +7,16 @@ export const COPIA = 'consultas@seressalud.com.ar';
 
 declare global {
   interface Window {
-    dataLayer?: Record<string, unknown>[];
+    dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
 export async function enviarConsulta(
   asunto: string,
   campos: Record<string, string>,
-  honeypot: string
+  honeypot: string,
+  contacto: { email?: string; telefono?: string } = {}
 ): Promise<boolean> {
   try {
     const respuesta = await fetch(`https://formsubmit.co/ajax/${DESTINO}`, {
@@ -38,7 +40,10 @@ export async function enviarConsulta(
     return false;
   }
 
-  // Evento para Google Tag Manager (conversión de Google Ads), cuando se instale
+  // Mismo evento que mandaba Site Kit al enviar un WPForms en el WordPress
+  window.gtag?.('event', 'submit_lead_form', {
+    user_data: { email: contacto.email, phone_number: contacto.telefono },
+  });
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ event: 'formulario_enviado', pagina: window.location.pathname });
   return true;
