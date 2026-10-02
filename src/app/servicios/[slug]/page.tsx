@@ -24,6 +24,7 @@ import {
   Brain,
   Zap,
   Syringe,
+  ArrowRight,
 } from 'lucide-react';
 
 interface ServiceDetail {
@@ -189,28 +190,37 @@ const servicesMap: Record<string, ServiceDetail> = {
     ],
   },
   'cursos': {
-    title: 'Curso de Vida Saludable Laboral',
-    subtitle: 'Orientado a promover hábitos saludables, bienestar integral.',
+    title: 'Cursos y Capacitaciones para Empresas',
+    subtitle: 'Programas de formación en salud ocupacional, prevención de riesgos y socorrismo',
     description:
-      'Dictamos cursos con certificación oficial sobre Reanimación Cardiopulmonar (RCP), Primeros Auxilios, Uso de Defibriladores (DEA) y Ergoestrés.',
-    legalFramework: 'Normativas de la SRT y Ministerio de Trabajo.',
+      'Catálogo de cursos y capacitaciones con certificación oficial para colaboradores y equipos de trabajo en empresas de todos los rubros.',
+    legalFramework: 'Normativas de la SRT, Ley de Higiene y Seguridad 19.587 y Ley 27.159 de Muerte Súbita.',
     iconName: 'GraduationCap',
     benefits: [
-      'Instructores certificados por entidades internacionales',
-      'Práctica con maniquíes de simulación clínica avanzada',
-      'Dictado presencial en las instalaciones de la empresa o en nuestra clínica',
-      'Otorgamiento de diplomas y acreditación laboral',
+      'Instructores médicos y profesionales certificados',
+      'Modalidad presencial in-situ en su empresa o en nuestras instalaciones',
+      'Materiales y maniquíes de simulación avanzada',
+      'Emisión de certificados de aprobación individuales con validez oficial',
     ],
     features: [
-      'Cursos de RCP Básico y Avanzado',
-      'Manejo de Obstrucción de Vía Aérea (OVACE)',
-      'Primeros Auxilios en Trauma e Quemaduras',
-      'Prevención de Enfermedades Profesionales y Lesiones Musculoesqueléticas',
+      'Curso de Reanimación Cardiopulmonar (RCP)',
+      'Curso de Primeros Auxilios y Socorrismo',
+      'Curso de Vida Saludable y Hábitos Laborales',
+      'Curso de Prevención Cardiovascular',
+      'Curso de Alcoholismo y Sustancias en el Trabajo',
+      'Curso de Drogas de Abuso en el Ámbito Laboral',
+      'Curso de HIV / SIDA en el Trabajo',
+      'Curso de Ergonomía y Prevención Postural',
+      'Curso de Tabaquismo y Ambientes Libres de Humo',
     ],
     faqs: [
       {
-        q: '¿Se otorgan certificados individuales para los asistentes?',
-        a: 'Sí, entregamos certificados de aprobación nominales avalados por médicos especialistas en medicina del trabajo.',
+        q: '¿Cómo se dictan los cursos para empresas?',
+        a: 'Dictamos las capacitaciones de forma presencial directamente en las instalaciones de su empresa o en nuestras aulas clínicas en Avellaneda, adaptando los horarios a la nómina de su personal.',
+      },
+      {
+        q: '¿Se otorgan certificados acreditados para los empleados?',
+        a: 'Sí, entregamos certificados nominales de asistencia y aprobación firmados por médicos especialistas en medicina del trabajo.',
       },
     ],
   },
@@ -953,10 +963,11 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   const isTabaquismo = normalizedSlug.includes('tabaquismo') || normalizedSlug.includes('tabaco');
   const isRcp = normalizedSlug.includes('rcp');
   const isPrimerosAuxilios = (normalizedSlug.includes('primeros-auxilios') || normalizedSlug.includes('auxilio') || normalizedSlug.includes('auxilios')) && !isRcp;
-  const isVidaSaludable = (normalizedSlug.includes('vida-saludable') || normalizedSlug === 'cursos' || normalizedSlug === 'curso-vida-saludable') && !isRcp && !isPrimerosAuxilios;
-  const isCursos = isVidaSaludable || ((normalizedSlug.includes('curso') || normalizedSlug.includes('cursos')) && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia && !isTabaquismo && !isRcp && !isPrimerosAuxilios);
+  const isPanelCursos = normalizedSlug === 'cursos';
+  const isVidaSaludable = (normalizedSlug.includes('vida-saludable') || normalizedSlug === 'curso-vida-saludable') && !isRcp && !isPrimerosAuxilios && !isPanelCursos;
+  const isCursos = isVidaSaludable || isPanelCursos || ((normalizedSlug.includes('curso') || normalizedSlug.includes('cursos')) && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia && !isTabaquismo && !isRcp && !isPrimerosAuxilios);
   const isPrevencionCardiovascular = normalizedSlug.includes('cardiovascular') || normalizedSlug.includes('corazon');
-  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia && !isTabaquismo && !isRcp && !isPrimerosAuxilios;
+  const isMedicinaLaboral = (normalizedSlug === 'medicina-laboral' || !servicesMap[normalizedSlug]) && !isPreocupacionales && !isMedicoEnPlanta && !isUnidadesMoviles && !isHigieneSeguridad && !isControlAusentismo && !isAtencionArt && !isKinesiologia && !isAreaProtegida && !isLibretasSanitarias && !isMedicinaAsistencial && !isPsicotecnicos && !isPausasActivas && !isVacunasAntigripales && !isCursos && !isPanelCursos && !isPrevencionCardiovascular && !isAlcoholismo && !isDrogasDeAbuso && !isHivSida && !isErgonomia && !isTabaquismo && !isRcp && !isPrimerosAuxilios;
 
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
@@ -3881,8 +3892,8 @@ export default function SingleServicePage({ params }: { params: { slug: string }
           </>
         )}
 
-        {/* Specific layout for Cursos de Capacitación y Vida Saludable Laboral */}
-        {isCursos && (
+        {/* Specific layout for Vida Saludable Laboral */}
+        {isVidaSaludable && (
           <>
             {/* Section 1: Overview for Vida Saludable */}
             <div id="vida-saludable" className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center scroll-mt-28">
@@ -4075,6 +4086,129 @@ export default function SingleServicePage({ params }: { params: { slug: string }
               </div>
             </div>
           </>
+        )}
+
+        {/* Specific layout for Panel Completo de Cursos */}
+        {isPanelCursos && (
+          <div className="space-y-12">
+            <div className="text-center max-w-3xl mx-auto space-y-3">
+              <span className="inline-flex items-center gap-2 bg-emerald-50 text-[#0A5229] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                Capacitaciones Corporativas
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900">
+                Panel Completo de Cursos de Salud y Prevención
+              </h2>
+              <p className="text-base text-gray-600 font-sans leading-relaxed">
+                Explore nuestra oferta de programas de formación teórico-prácticos dictados in-situ en su empresa o en nuestras clínicas con certificación oficial.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  slug: '/servicios/curso-rcp',
+                  title: 'Curso de Reanimación Cardiopulmonar (RCP)',
+                  desc: 'Capacitación teórico-práctica con maniquíes de simulación clínica y entrenamiento en uso de Desfibrilador Externo Automático (DEA).',
+                  image: '/images/rcp.jpg',
+                  tag: 'Emergencias 24h',
+                },
+                {
+                  slug: '/servicios/curso-primeros-auxilios',
+                  title: 'Curso de Primeros Auxilios',
+                  desc: 'Técnicas inmediatas de socorrismo, control de hemorragias, quemaduras, inmovilización y manejo inicial del trauma.',
+                  image: '/images/primeros-auxilios.jpg',
+                  tag: 'Socorrismo',
+                },
+                {
+                  slug: '/servicios/curso-vida-saludable',
+                  title: 'Curso de Vida Saludable',
+                  desc: 'Promoción del bienestar físico y mental, nutrición laboral, prevención del sedentarismo y manejo del estrés.',
+                  image: '/images/vida-saludable.jpg',
+                  tag: 'Bienestar Laboral',
+                },
+                {
+                  slug: '/servicios/prevencion-cardiovascular',
+                  title: 'Curso de Prevención Cardiovascular',
+                  desc: 'Detección oportuna de factores de riesgo cardíaco, hipertensión y hábitos saludables para cuidar el corazón del equipo.',
+                  image: '/images/prevencion-cardiovascular.jpg',
+                  tag: 'Salud Cardíaca',
+                },
+                {
+                  slug: '/servicios/curso-alcoholismo',
+                  title: 'Curso de Alcoholismo Laboral',
+                  desc: 'Sensibilización, concientización de riesgos y protocolos de prevención frente al consumo de alcohol en el ámbito de trabajo.',
+                  image: '/images/alcoholismo.jpg',
+                  tag: 'Prevención',
+                },
+                {
+                  slug: '/servicios/curso-drogas-de-abuso',
+                  title: 'Curso de Drogas de Abuso',
+                  desc: 'Prevención y gestión de riesgos asociados al consumo de sustancias para garantizar ambientes laborales seguros.',
+                  image: '/images/drogas-de-abuso.jpg',
+                  tag: 'Seguridad Laboral',
+                },
+                {
+                  slug: '/servicios/curso-hiv-sida',
+                  title: 'Curso de HIV / SIDA para Empresas',
+                  desc: 'Información médica actualizada, medidas de prevención, derechos laborales y promoción de entornos inclusivos.',
+                  image: '/images/hiv-sida.jpg',
+                  tag: 'Concientización',
+                },
+                {
+                  slug: '/servicios/curso-ergonomia',
+                  title: 'Curso de Ergonomía Laboral',
+                  desc: 'Prevención de lesiones musculoesqueléticas, ajuste ergonómico de puestos de trabajo y hábitos posturales correctos.',
+                  image: '/images/ergonomia.jpg',
+                  tag: 'Prevención Ergonómica',
+                },
+                {
+                  slug: '/servicios/curso-tabaquismo',
+                  title: 'Curso de Tabaquismo para Empresas',
+                  desc: 'Concientización sobre los efectos del tabaco, promoción de espacios 100% libres de humo y apoyo al cese tabáquico.',
+                  image: '/images/tabaquismo.jpg',
+                  tag: 'Ambientes Libres de Humo',
+                },
+              ].map((curso) => (
+                <div
+                  key={curso.slug}
+                  className="bg-white rounded-2xl overflow-hidden border border-emerald-100 shadow-card hover:shadow-cardhover transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 border-t-4 border-t-[#0A5229]"
+                >
+                  <div>
+                    <div className="relative h-48 w-full bg-gray-100 overflow-hidden">
+                      <Image
+                        src={curso.image}
+                        alt={curso.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-xs text-[#0A5229] font-bold text-xs px-3 py-1 rounded-full shadow-xs">
+                        {curso.tag}
+                      </div>
+                    </div>
+
+                    <div className="p-6 space-y-3">
+                      <h3 className="text-xl font-bold font-heading text-gray-900 group-hover:text-[#0A5229] transition-colors leading-snug">
+                        {curso.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 font-sans leading-relaxed">
+                        {curso.desc}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="p-6 pt-0">
+                    <Link
+                      href={curso.slug}
+                      className="w-full inline-flex items-center justify-center gap-2 bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold py-3 px-4 rounded-xl text-sm transition-all shadow-sm group-hover:shadow-md"
+                    >
+                      <span>Ver curso completo</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         )}
 
         {/* Specific layout for Medicina Laboral */}

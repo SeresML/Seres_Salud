@@ -61,9 +61,9 @@ const allServicesData = [
   },
   {
     slug: 'cursos',
-    title: 'Cursos (RCP y Primeros Auxilios)',
-    subtitle: 'Capacitaciones certificadas de respuesta ante emergencias',
-    desc: 'Programas de formación teórico-prácticos para el personal de empresas en técnicas de reanimación cardiopulmonar y maniobras de socorrismo.',
+    title: 'Cursos',
+    subtitle: 'Programas de capacitación y prevención laboral',
+    desc: 'Capacitaciones certificadas in-situ o en clínica sobre RCP, Primeros Auxilios, Ergonomía, Vida Saludable y prevención de adicciones.',
     icon: GraduationCap,
     category: 'Capacitación',
   },

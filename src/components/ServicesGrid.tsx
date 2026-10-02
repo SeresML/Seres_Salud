@@ -26,10 +26,10 @@ const mainServices = [
   },
   {
     slug: 'cursos',
-    title: 'Cursos de Capitación',
-    desc: 'Capacitaciones en RCP, Primeros Auxilios, Prevención de Riesgos y Brigadas dictados en su empresa por profesionales calificados.',
+    title: 'Cursos',
+    desc: 'Capacitaciones certificadas en RCP, Primeros Auxilios, Ergonomía y Salud dictadas in-situ en su empresa con acreditación oficial.',
     icon: GraduationCap,
-    tag: 'Certificación Oficial',
+    tag: 'Panel de Cursos',
   },
   {
     slug: 'higiene-y-seguridad',
