@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Clock, Building2 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Contacto y Presupuestos | Seres Salud Medicina Laboral',
-  description: 'Póngase en contacto con nuestro departamento de Medicina Laboral en Avellaneda. Teléfonos 11-3085-5551 / 4222-1597.',
+  description: 'Póngase en contacto con nuestro departamento de Medicina Laboral en Avellaneda. Teléfonos +54 9 11 6604-8055 / 4222-1597.',
 };
 
 export default function ContactoPage() {
@@ -41,7 +41,7 @@ export default function ContactoPage() {
             <div>
               <h3 className="text-base font-bold font-heading text-gray-900">Líneas Telefónicas</h3>
               <div className="text-sm font-semibold text-[#0A5229] mt-1">
-                <a href="tel:1130855551" className="hover:underline">11-3085-5551</a>
+                <a href="tel:+5491166048055" className="hover:underline">+54 9 11 6604-8055</a>
               </div>
               <div className="text-sm font-semibold text-[#0A5229]">
                 <a href="tel:42221597" className="hover:underline">4222-1597</a>

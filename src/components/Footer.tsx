@@ -136,7 +136,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-brand-moss shrink-0" />
                 <div className="flex flex-col">
-                  <a href="tel:1130855551" className="hover:text-emerald-300">11-3085-5551</a>
+                  <a href="tel:+5491166048055" className="hover:text-emerald-300">+54 9 11 6604-8055</a>
                   <a href="tel:42221597" className="hover:text-emerald-300">4222-1597</a>
                 </div>
               </li>

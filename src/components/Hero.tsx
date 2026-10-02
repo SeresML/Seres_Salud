@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Hero() {
-  const whatsappUrl = "https://wa.me/5491130855551?text=Hola,%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Medicina%20Laboral%20de%20Seres%20Salud.";
+  const whatsappUrl = "https://wa.me/5491166048055?text=Hola,%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Medicina%20Laboral%20de%20Seres%20Salud.";
 
   return (
     <section className="relative min-h-[440px] sm:min-h-[500px] lg:min-h-[540px] flex items-center justify-center overflow-hidden bg-slate-100">

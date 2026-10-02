@@ -60,7 +60,7 @@ export default function ContactForm() {
                   <Phone className="w-5 h-5 text-brand-moss shrink-0 mt-0.5" />
                   <div>
                     <div className="font-semibold text-white">Teléfonos Directos</div>
-                    <div className="text-emerald-100/70 text-xs">11-3085-5551 / 4222-1597</div>
+                    <div className="text-emerald-100/70 text-xs">+54 9 11 6604-8055 / 4222-1597</div>
                   </div>
                 </div>
 

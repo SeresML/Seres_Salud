@@ -9,7 +9,7 @@ export default function TopBar() {
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6">
           <div className="flex items-center gap-1.5 hover:text-emerald-300 transition-colors">
             <Phone className="w-3.5 h-3.5 text-[#75A376]" />
-            <a href="tel:1130855551" className="font-medium">11-3085-5551</a>
+            <a href="tel:+5491166048055" className="font-medium">+54 9 11 6604-8055</a>
             <span className="text-emerald-700">|</span>
             <a href="tel:42221597" className="font-medium">4222-1597</a>
           </div>
