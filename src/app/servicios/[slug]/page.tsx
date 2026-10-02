@@ -972,79 +972,83 @@ export default function SingleServicePage({ params }: { params: { slug: string }
   return (
     <div className="bg-white min-h-screen pb-24 font-sans">
       
-      {/* Full-Width Header Hero Section matching reference screenshot */}
-      <div className="relative w-full bg-gradient-to-r from-[#1B5E3B] via-[#0A5229] to-[#3B8E63] py-12 sm:py-16 text-white shadow-sm overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
-            {/* Left Side: Title & Subtitle & Button */}
-            <div className="lg:col-span-7 space-y-5 text-center lg:text-left">
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-wide drop-shadow-md leading-tight">
-                {service.title}
-              </h1>
-              <p className="text-lg sm:text-xl font-medium text-emerald-100 font-sans leading-relaxed drop-shadow-xs">
-                {service.subtitle}
-              </p>
-              <div className="pt-2">
-                <a
-                  href="https://wa.link/wsa6r5"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-white hover:bg-emerald-50 text-[#0A5229] font-bold text-sm sm:text-base px-8 py-3 rounded-xl shadow-lg border border-emerald-100 transition-all hover:scale-105 active:scale-95"
-                >
-                  Solicitar Asesoramiento
-                </a>
-              </div>
-            </div>
+      {/* Full-Width Header Hero Section matching reference screenshot (hidden on panel cursos page) */}
+      {!isPanelCursos && (
+        <>
+          <div className="relative w-full bg-gradient-to-r from-[#1B5E3B] via-[#0A5229] to-[#3B8E63] py-12 sm:py-16 text-white shadow-sm overflow-hidden">
+            <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]" />
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                
+                {/* Left Side: Title & Subtitle & Button */}
+                <div className="lg:col-span-7 space-y-5 text-center lg:text-left">
+                  <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-wide drop-shadow-md leading-tight">
+                    {service.title}
+                  </h1>
+                  <p className="text-lg sm:text-xl font-medium text-emerald-100 font-sans leading-relaxed drop-shadow-xs">
+                    {service.subtitle}
+                  </p>
+                  <div className="pt-2">
+                    <a
+                      href="https://wa.link/wsa6r5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-white hover:bg-emerald-50 text-[#0A5229] font-bold text-sm sm:text-base px-8 py-3 rounded-xl shadow-lg border border-emerald-100 transition-all hover:scale-105 active:scale-95"
+                    >
+                      Solicitar Asesoramiento
+                    </a>
+                  </div>
+                </div>
 
-            {/* Right Side: Quick Consultation Form matching screenshot */}
-            <div className="lg:col-span-5 flex justify-center lg:justify-end">
-              <div className="bg-white rounded-2xl p-6 sm:p-7 shadow-2xl border border-emerald-100 max-w-sm w-full text-gray-800">
-                <h2 className="text-lg font-bold font-heading text-gray-900 mb-4">
-                  Envíe su Consulta
-                </h2>
-                <ConsultaRapida servicio={service.title} />
-              </div>
-            </div>
+                {/* Right Side: Quick Consultation Form matching screenshot */}
+                <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                  <div className="bg-white rounded-2xl p-6 sm:p-7 shadow-2xl border border-emerald-100 max-w-sm w-full text-gray-800">
+                    <h2 className="text-lg font-bold font-heading text-gray-900 mb-4">
+                      Envíe su Consulta
+                    </h2>
+                    <ConsultaRapida servicio={service.title} />
+                  </div>
+                </div>
 
-          </div>
-        </div>
-      </div>
-
-      {/* Metrics Strip matching screenshot */}
-      <div className="bg-white border-b border-gray-100 py-8 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">25+</div>
-              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">Años de experiencia</div>
-            </div>
-            <div>
-              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">
-                {isHigieneSeguridad ? '500+' : '600+'}
-              </div>
-              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">
-                {isHigieneSeguridad ? 'Empresas asesoradas' : 'Clientes Activos'}
-              </div>
-            </div>
-            <div>
-              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">
-                {isHigieneSeguridad ? '1,000+' : '50k+'}
-              </div>
-              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">
-                {isHigieneSeguridad ? 'Planes Implementados' : 'Exámenes anuales'}
-              </div>
-            </div>
-            <div>
-              <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">100%</div>
-              <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">
-                {isHigieneSeguridad ? 'Normativa cumplida' : 'Cumplimiento'}
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
+          {/* Metrics Strip matching screenshot */}
+          <div className="bg-white border-b border-gray-100 py-8 shadow-xs">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                  <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">25+</div>
+                  <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">Años de experiencia</div>
+                </div>
+                <div>
+                  <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">
+                    {isHigieneSeguridad ? '500+' : '600+'}
+                  </div>
+                  <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">
+                    {isHigieneSeguridad ? 'Empresas asesoradas' : 'Clientes Activos'}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">
+                    {isHigieneSeguridad ? '1,000+' : '50k+'}
+                  </div>
+                  <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">
+                    {isHigieneSeguridad ? 'Planes Implementados' : 'Exámenes anuales'}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-3xl sm:text-4xl font-extrabold font-heading text-[#0A5229]">100%</div>
+                  <div className="text-xs sm:text-sm text-gray-500 font-sans mt-1">
+                    {isHigieneSeguridad ? 'Normativa cumplida' : 'Cumplimiento'}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
 
       {/* Main Content Container matching reference screenshot */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 space-y-16">
