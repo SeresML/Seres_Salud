@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { enviarConsulta, COPIA } from '@/lib/enviarConsulta';
+import { enviarConsulta, DESTINO } from '@/lib/enviarConsulta';
 
 // Formulario corto "Envíe su Consulta" de las páginas de cada servicio
 export default function ConsultaRapida({ servicio }: { servicio: string }) {
@@ -83,7 +83,7 @@ export default function ConsultaRapida({ servicio }: { servicio: string }) {
           <p className="mt-3 text-sm text-[#0A5229]">¡Gracias! Recibimos su consulta y lo contactaremos a la brevedad.</p>
         )}
         {estado === 'error' && (
-          <p className="mt-3 text-sm text-red-600">No pudimos enviar su consulta. Intente nuevamente o escríbanos a {COPIA}.</p>
+          <p className="mt-3 text-sm text-red-600">No pudimos enviar su consulta. Intente nuevamente o escríbanos a {DESTINO}.</p>
         )}
       </div>
     </form>

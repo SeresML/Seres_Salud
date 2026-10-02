@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { enviarConsulta, COPIA } from '@/lib/enviarConsulta';
+import { enviarConsulta, DESTINO } from '@/lib/enviarConsulta';
 
 export default function ContactForm() {
   const [enviando, setEnviando] = useState(false);
@@ -105,7 +105,7 @@ export default function ContactForm() {
             )}
             {estado === 'error' && (
               <p className="mt-3 text-sm font-semibold text-red-600">
-                No pudimos enviar su consulta. Intente nuevamente o escríbanos a {COPIA}.
+                No pudimos enviar su consulta. Intente nuevamente o escríbanos a {DESTINO}.
               </p>
             )}
           </form>

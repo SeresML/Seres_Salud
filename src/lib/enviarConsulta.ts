@@ -2,8 +2,8 @@
 // envía un mail de activación a DESTINO (nunca a la COPIA); hasta que no se
 // confirma, no reenvía. FormSubmit activa por página de origen: con
 // referrerPolicy "origin" todas las páginas del sitio cuentan como una sola.
-const DESTINO = 'gestionimpulsodigital@gmail.com';
-export const COPIA = 'consultas@seressalud.com.ar';
+export const DESTINO = 'consultas@seressalud.com.ar';
+const COPIA = 'gestionimpulsodigital@gmail.com';
 
 declare global {
   interface Window {
