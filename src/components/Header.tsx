@@ -173,25 +173,23 @@ export default function Header() {
               <span>Acceso a Clientes</span>
               <ChevronDown className="w-5 h-5 text-gray-500 group-hover:text-brand-green transition-transform group-hover:rotate-180 duration-200" />
             </Link>
-            <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-dropdown border border-emerald-50 py-2 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-50">
+            <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-md shadow-md border border-gray-200 py-1 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-50">
               <a
                 href="https://ml1.seressalud.com.ar:8080"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-lightgreen hover:text-brand-green transition-colors"
+                className="block px-4 py-2.5 text-sm font-medium text-gray-800 hover:bg-emerald-50 hover:text-[#006E32] transition-colors"
               >
-                <div className="font-semibold text-brand-green">Portal Empresas / RRHH</div>
-                <div className="text-xs text-gray-500 font-normal">Informes de ausentismo y resultados</div>
+                Opción 1
               </a>
-              <div className="border-t border-gray-100 my-1"></div>
+              <div className="border-t border-gray-200" />
               <a
                 href="https://ml2.seressalud.com.ar:8080"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-lightgreen hover:text-brand-green transition-colors"
+                className="block px-4 py-2.5 text-sm font-medium text-gray-800 hover:bg-emerald-50 hover:text-[#006E32] transition-colors"
               >
-                <div className="font-semibold text-brand-green">Portal Pacientes / Trabajadores</div>
-                <div className="text-xs text-gray-500 font-normal">Turnos y descarga de exámenes</div>
+                Opción 2
               </a>
             </div>
           </div>
@@ -333,7 +331,7 @@ export default function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="block py-1.5 text-base text-gray-700 hover:text-brand-green"
                 >
-                  Portal Empresas / RRHH
+                  Opción 1
                 </a>
                 <a
                   href="https://ml2.seressalud.com.ar:8080"
@@ -342,7 +340,7 @@ export default function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="block py-1.5 text-base text-gray-700 hover:text-brand-green"
                 >
-                  Portal Pacientes / Trabajadores
+                  Opción 2
                 </a>
               </div>
             )}

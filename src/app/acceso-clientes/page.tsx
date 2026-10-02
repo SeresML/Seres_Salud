@@ -44,10 +44,10 @@ export default function AccesoClientesPage() {
 
               <div>
                 <span className="text-xs font-bold text-[#0A5229] uppercase tracking-wider">
-                  Para Departamentos de RRHH y Legales
+                  Opción 1 - Para Departamentos de RRHH y Legales
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-extrabold font-heading text-gray-900 mt-1">
-                  Portal Empresas
+                  Opción 1: Portal Empresas
                 </h3>
               </div>
 
@@ -93,10 +93,10 @@ export default function AccesoClientesPage() {
 
               <div>
                 <span className="text-xs font-bold text-[#0A5229] uppercase tracking-wider">
-                  Para Postulantes y Empleados
+                  Opción 2 - Para Postulantes y Empleados
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-extrabold font-heading text-gray-900 mt-1">
-                  Portal Pacientes
+                  Opción 2: Portal Pacientes
                 </h3>
               </div>
 
