@@ -89,12 +89,14 @@ export default function PromocionesPage() {
 
             {/* Button */}
             <div className="pt-6 text-center">
-              <Link
-                href="/contacto?promocion=abonos-medicina-laboral"
+              <a
+                href="https://wa.link/wsa6r5"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold text-sm sm:text-base px-10 py-3 rounded-full transition-all shadow-md hover:shadow-lg hover:scale-105 active:scale-95"
               >
                 Consultar
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -154,12 +156,14 @@ export default function PromocionesPage() {
 
             {/* Button */}
             <div className="pt-6 text-center">
-              <Link
-                href="/contacto?promocion=examen-basico-de-ley"
+              <a
+                href="https://wa.link/wsa6r5"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold text-sm sm:text-base px-10 py-3 rounded-full transition-all shadow-md hover:shadow-lg hover:scale-105 active:scale-95"
               >
                 Consultar
-              </Link>
+              </a>
             </div>
           </div>
 

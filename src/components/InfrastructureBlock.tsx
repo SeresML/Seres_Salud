@@ -67,12 +67,14 @@ export default function InfrastructureBlock() {
             </ul>
 
             <div className="pt-2">
-              <Link
-                href="/contacto"
+              <a
+                href="https://wa.link/wsa6r5"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold px-8 py-3 rounded-full text-sm transition-all shadow-sm hover:shadow-md active:scale-95"
               >
                 Consultar
-              </Link>
+              </a>
             </div>
           </div>
 

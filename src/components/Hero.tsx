@@ -36,12 +36,14 @@ export default function Hero() {
 
         {/* Single Centered Green Button */}
         <div className="pt-6">
-          <Link
-            href="/contacto"
+          <a
+            href="https://wa.link/wsa6r5"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#006E32] hover:bg-[#005426] text-white font-bold text-base sm:text-lg px-9 py-3 rounded-lg transition-all shadow-md hover:shadow-lg hover:scale-105 active:scale-95 inline-block"
           >
             Contactar
-          </Link>
+          </a>
         </div>
 
       </div>

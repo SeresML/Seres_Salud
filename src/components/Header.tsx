@@ -197,12 +197,14 @@ export default function Header() {
           </div>
 
           {/* Contact CTA Button - Made Larger */}
-          <Link
-            href="/contacto"
+          <a
+            href="https://wa.link/wsa6r5"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold px-7 py-3 rounded-lg transition-all shadow-sm hover:shadow-card active:scale-[0.98] text-base flex items-center justify-center"
           >
             <span>Contactar</span>
-          </Link>
+          </a>
         </nav>
 
         {/* Mobile Menu Toggle Button */}
@@ -347,13 +349,15 @@ export default function Header() {
           </div>
 
           <div className="pt-3">
-            <Link
-              href="/contacto"
+            <a
+              href="https://wa.link/wsa6r5"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center bg-[#0A5229] text-white font-bold py-3.5 rounded-lg block shadow-md hover:bg-brand-darkgreen transition-colors text-base"
             >
               Contactar
-            </Link>
+            </a>
           </div>
         </div>
       )}

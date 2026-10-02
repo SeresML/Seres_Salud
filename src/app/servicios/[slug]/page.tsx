@@ -975,12 +975,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {service.subtitle}
               </p>
               <div className="pt-2">
-                <Link
-                  href="/contacto"
+                <a
+                  href="https://wa.link/wsa6r5"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-white hover:bg-emerald-50 text-[#0A5229] font-bold text-sm sm:text-base px-8 py-3 rounded-xl shadow-lg border border-emerald-100 transition-all hover:scale-105 active:scale-95"
                 >
                   Solicitar Asesoramiento
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -1103,12 +1105,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -1298,12 +1302,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -1493,12 +1499,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -1688,12 +1696,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -1883,12 +1893,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -2073,12 +2085,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -2263,12 +2277,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -2453,12 +2469,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -2647,12 +2665,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -2837,12 +2857,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -3031,12 +3053,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -3225,12 +3249,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -3419,12 +3445,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -3613,12 +3641,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -3800,12 +3830,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -3916,12 +3948,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -4110,12 +4144,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -4297,12 +4333,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -4491,12 +4529,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -4685,12 +4725,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -4879,12 +4921,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -5073,12 +5117,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -5267,12 +5313,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </p>
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -5462,12 +5510,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 )}
 
                 <div className="pt-3">
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.link/wsa6r5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
                   >
                     Solicitar Asesoramiento
-                  </Link>
+                  </a>
                 </div>
               </div>
 

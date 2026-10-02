@@ -230,13 +230,15 @@ export default function ServiciosPage() {
               Contáctese hoy con nuestros especialistas comerciales y arme un plan acorde a su nómina.
             </p>
           </div>
-          <Link
-            href="/contacto"
+          <a
+            href="https://wa.link/wsa6r5"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold px-8 py-3.5 rounded-xl transition-all shadow-md shrink-0 text-sm flex items-center gap-2"
           >
             <PhoneCall className="w-4 h-4" />
             <span>Solicitar Asesoramiento</span>
-          </Link>
+          </a>
         </div>
 
       </div>
