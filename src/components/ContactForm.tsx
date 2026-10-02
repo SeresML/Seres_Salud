@@ -2,9 +2,13 @@
 
 import React, { useState } from 'react';
 import { Send, Phone, Mail, MapPin, CheckCircle, Building2, User, FileText } from 'lucide-react';
+import { enviarConsulta, COPIA } from '@/lib/enviarConsulta';
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [enviando, setEnviando] = useState(false);
+  const [error, setError] = useState(false);
+  const [honeypot, setHoneypot] = useState('');
   const [formData, setFormData] = useState({
     nombre: '',
     empresa: '',
@@ -14,9 +18,29 @@ export default function ContactForm() {
     mensaje: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setEnviando(true);
+    setError(false);
+    const ok = await enviarConsulta(
+      `Consulta Seres Salud — ${formData.nombre}`,
+      {
+        'Nombre Completo': formData.nombre,
+        'Empresa / Organización': formData.empresa,
+        'Teléfono': formData.telefono,
+        email: formData.email,
+        'Servicio Requerido': formData.servicio,
+        'Mensaje': formData.mensaje,
+      },
+      honeypot
+    );
+    setEnviando(false);
+    if (ok) {
+      setSubmitted(true);
+      setFormData({ ...formData, nombre: '', empresa: '', telefono: '', email: '', mensaje: '' });
+    } else {
+      setError(true);
+    }
   };
 
   return (
@@ -102,6 +126,16 @@ export default function ContactForm() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                <input
+                  type="text"
+                  name="web"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="hidden"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                />
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {/* Nombre */}
@@ -228,11 +262,17 @@ export default function ContactForm() {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold py-4 rounded-[8px] text-base transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 group"
+                  disabled={enviando}
+                  className="w-full bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold py-4 rounded-[8px] text-base transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 group disabled:opacity-60"
                 >
                   <Send className="w-5 h-5 text-emerald-300 group-hover:translate-x-1 transition-transform" />
-                  <span>Enviar Consulta Comercial</span>
+                  <span>{enviando ? 'Enviando...' : 'Enviar Consulta Comercial'}</span>
                 </button>
+                {error && (
+                  <p className="text-sm text-red-600 text-center">
+                    No pudimos enviar su consulta. Intente nuevamente o escríbanos a {COPIA}.
+                  </p>
+                )}
               </form>
             )}
           </div>

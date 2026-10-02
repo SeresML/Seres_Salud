@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import ConsultaRapida from '@/components/ConsultaRapida';
 import {
   CheckCircle2,
   FileCheck,
@@ -992,52 +993,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 <h2 className="text-lg font-bold font-heading text-gray-900 mb-4">
                   Envíe su Consulta
                 </h2>
-                <form action="/contacto" method="GET" className="space-y-3">
-                  <div>
-                    <input
-                      type="text"
-                      name="nombre"
-                      placeholder="Contacto/Empresa"
-                      className="w-full border border-gray-300 rounded-lg px-3.5 py-2 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0A5229]"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="tel"
-                      name="telefono"
-                      placeholder="Teléfono"
-                      className="w-full border border-gray-300 rounded-lg px-3.5 py-2 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0A5229]"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="E-mail"
-                      className="w-full border border-gray-300 rounded-lg px-3.5 py-2 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0A5229]"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      name="mensaje"
-                      rows={3}
-                      placeholder="Consulta"
-                      className="w-full border border-gray-300 rounded-lg px-3.5 py-2 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0A5229] resize-none"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <button
-                      type="submit"
-                      className="bg-[#006E32] hover:bg-[#005426] text-white font-bold text-xs sm:text-sm px-6 py-2 rounded-lg transition-all shadow-md active:scale-95"
-                    >
-                      Enviar
-                    </button>
-                  </div>
-                </form>
+                <ConsultaRapida servicio={service.title} />
               </div>
             </div>
 
