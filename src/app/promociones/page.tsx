@@ -34,7 +34,7 @@ export default function PromocionesPage() {
                   ABONOS MEDICINA LABORAL
                 </h2>
                 <p className="text-base sm:text-lg font-semibold text-[#0A5229]">
-                  Desde $15.000 + IVA + IIBB
+                  Desde $35.000 + IVA + IIBB
                 </p>
                 <div className="pt-4">
                   <div className="w-full border-b border-gray-200" />
@@ -110,7 +110,7 @@ export default function PromocionesPage() {
                   EXAMEN BÁSICO DE LEY
                 </h2>
                 <p className="text-base sm:text-lg font-semibold text-[#0A5229]">
-                  Desde $34.800 + IVA + IIBB
+                  Desde $68.300 + IVA + IIBB
                 </p>
                 <div className="pt-4">
                   <div className="w-full border-b border-gray-200" />
