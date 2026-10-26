@@ -975,17 +975,17 @@ export default function SingleServicePage({ params }: { params: { slug: string }
       {/* Full-Width Header Hero Section matching reference screenshot (hidden on panel cursos page) */}
       {!isPanelCursos && (
         <>
-          <div className="relative w-full bg-gradient-to-r from-[#1B5E3B] via-[#0A5229] to-[#3B8E63] py-8 sm:py-16 text-white shadow-sm overflow-hidden">
+          <div className="relative w-full bg-gradient-to-r from-[#1B5E3B] via-[#0A5229] to-[#3B8E63] py-5 sm:py-16 text-white shadow-sm overflow-hidden">
             <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]" />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-12 items-center">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-12 items-center">
                 
                 {/* Left Side: Title & Subtitle & Button */}
-                <div className="lg:col-span-7 space-y-2.5 sm:space-y-5 text-center lg:text-left">
-                  <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-wide drop-shadow-md leading-tight">
+                <div className="lg:col-span-7 space-y-1.5 sm:space-y-5 text-center lg:text-left">
+                  <h1 className="text-2xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-wide drop-shadow-md leading-tight">
                     {service.title}
                   </h1>
-                  <p className="text-lg sm:text-xl font-medium text-emerald-100 font-sans leading-relaxed drop-shadow-xs">
+                  <p className="text-xs sm:text-xl font-medium text-emerald-100 font-sans leading-snug sm:leading-relaxed drop-shadow-xs">
                     {service.subtitle}
                   </p>
                   <div className="hidden lg:block pt-2">
@@ -1002,8 +1002,8 @@ export default function SingleServicePage({ params }: { params: { slug: string }
 
                 {/* Right Side: Quick Consultation Form matching screenshot */}
                 <div className="lg:col-span-5 flex justify-center lg:justify-end">
-                  <div className="bg-white rounded-2xl p-6 sm:p-7 shadow-2xl border border-emerald-100 max-w-sm w-full text-gray-800">
-                    <h2 className="text-lg font-bold font-heading text-gray-900 mb-4">
+                  <div className="bg-white rounded-2xl p-4 sm:p-7 shadow-2xl border border-emerald-100 max-w-sm w-full text-gray-800">
+                    <h2 className="text-base sm:text-lg font-bold font-heading text-gray-900 mb-2.5 sm:mb-4">
                       Complete el Formulario
                     </h2>
                     <ConsultaRapida servicio={service.title} />

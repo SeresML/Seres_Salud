@@ -33,14 +33,14 @@ export default function ConsultaRapida({ servicio }: { servicio: string }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-3">
+    <form onSubmit={handleSubmit} className="space-y-2.5 sm:space-y-3">
       <input type="text" name="web" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
       <div>
         <input
           type="text"
           name="nombre"
           placeholder="Contacto/Empresa"
-          className="w-full border-2 border-gray-400 rounded-lg px-3.5 py-2.5 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
+          className="w-full border-2 border-gray-400 rounded-lg px-3.5 py-2 sm:py-2.5 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
           required
         />
       </div>
@@ -49,7 +49,7 @@ export default function ConsultaRapida({ servicio }: { servicio: string }) {
           type="tel"
           name="telefono"
           placeholder="Teléfono/Móvil"
-          className="w-full border-2 border-gray-400 rounded-lg px-3.5 py-2.5 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
+          className="w-full border-2 border-gray-400 rounded-lg px-3.5 py-2 sm:py-2.5 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
           required
         />
       </div>
@@ -58,7 +58,7 @@ export default function ConsultaRapida({ servicio }: { servicio: string }) {
           type="email"
           name="email"
           placeholder="E-mail"
-          className="w-full border-2 border-gray-400 rounded-lg px-3.5 py-2.5 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
+          className="w-full border-2 border-gray-400 rounded-lg px-3.5 py-2 sm:py-2.5 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
           required
         />
       </div>
@@ -67,7 +67,7 @@ export default function ConsultaRapida({ servicio }: { servicio: string }) {
           name="mensaje"
           rows={3}
           placeholder="Consulta"
-          className="w-full border-2 border-gray-400 rounded-lg px-3.5 py-2.5 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all resize-none"
+          className="w-full border-2 border-gray-400 rounded-lg px-3.5 py-2 sm:py-2.5 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all resize-none"
           required
         />
       </div>
