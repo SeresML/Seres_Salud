@@ -25,15 +25,15 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center flex flex-col items-center justify-center space-y-4">
         
         {/* Main Title - Single Line on Desktop, Two Clean Lines on Mobile */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading text-white tracking-tight sm:whitespace-nowrap leading-tight drop-shadow-[0_4px_14px_rgba(0,0,0,0.9)] max-w-full">
-          Líderes en <br className="sm:hidden" />
-          Medicina Laboral
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading text-white tracking-tight md:whitespace-nowrap leading-tight drop-shadow-[0_4px_14px_rgba(0,0,0,0.9)] max-w-full">
+          <span className="block md:inline">Líderes en </span>
+          <span className="block md:inline">Medicina Laboral</span>
         </h1>
 
         {/* Subtitle - Single Line on Desktop, Two Clean Lines on Mobile */}
         <p className="text-xl sm:text-3xl md:text-4xl font-bold font-heading text-white tracking-wide leading-snug drop-shadow-[0_3px_10px_rgba(0,0,0,0.8)] pt-1">
-          Más de 25 Años <br className="sm:hidden" />
-          de Trayectoria
+          <span className="block md:inline">Más de 25 Años </span>
+          <span className="block md:inline">de Trayectoria</span>
         </p>
 
         {/* Single Centered Green Button */}
