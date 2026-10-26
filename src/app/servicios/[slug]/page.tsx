@@ -78,7 +78,7 @@ export function generateStaticParams() {
 const servicesMap: Record<string, ServiceDetail> = {
   'medicina-laboral': {
     title: 'Medicina Laboral para Empresas',
-    subtitle: 'Servicios médicos especializados para empresas',
+    subtitle: 'Servicios Médicos Especializados para Empresas',
     description:
       'Priorizamos la salud y el bienestar de sus empleados mediante programas integrales de prevención de enfermedades profesionales, auditorías clínicas y asesoramiento en normativas vigentes.',
     legalFramework: 'Ley Nacional N° 19.587 de Higiene y Seguridad y Ley N° 24.557 de Riesgos del Trabajo.',
@@ -108,7 +108,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'examenes-preocupacionales': {
     title: 'Exámenes Preocupacionales',
-    subtitle: 'Evaluaciones médicas completas previa a la incorporación de personal',
+    subtitle: 'Evaluaciones Médicas Completas Previa a la Incorporación de Personal',
     description:
       'Su objetivo principal es determinar la aptitud física y psíquica del postulante para el puesto de trabajo a desempeñar, detectando patologías preexistentes para su debido resguardo legal.',
     legalFramework: 'Resolución SRT N° 37/10 y Decreto 1338/96.',
@@ -139,7 +139,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'medico-en-planta': {
     title: 'Servicio Médico en Planta',
-    subtitle: 'Médicos y enfermeros universitarios dentro de su empresa',
+    subtitle: 'Médicos y Enfermeros Dentro de su Empresa',
     description:
       'Nos encargamos de la selección, supervisión y gestión continua del equipo médico que atiende a diario las emergencias, primeros auxilios y control de ausentismo en su predio industrial.',
     legalFramework: 'Ley 19.587 Cap. 3 - Servicios de Medicina del Trabajo.',
@@ -165,7 +165,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'unidades-moviles': {
     title: 'Unidades Móviles para Empresas',
-    subtitle: 'Controles y prestaciones directamente en tu empresa, con equipos profesionales y equipamiento completo.',
+    subtitle: 'Controles y Prestaciones Directamente en tu Empresa, con Equipos Profesionales y Equipamiento Completo.',
     description:
       'Unidades operativas especialmente adaptadas para la realización de exámenes periódicos, preocupacionales y de egreso directamente en los establecimientos de su empresa.',
     legalFramework: 'Resoluciones SRT para operativos en planta.',
@@ -191,7 +191,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'cursos': {
     title: 'Cursos y Capacitaciones para Empresas',
-    subtitle: 'Programas de formación en salud ocupacional, prevención de riesgos y socorrismo',
+    subtitle: 'Programas de Formación en Salud Ocupacional, Prevención de Riesgos y Socorrismo',
     description:
       'Catálogo de cursos y capacitaciones con certificación oficial para colaboradores y equipos de trabajo en empresas de todos los rubros.',
     legalFramework: 'Normativas de la SRT, Ley de Higiene y Seguridad 19.587 y Ley 27.159 de Muerte Súbita.',
@@ -226,7 +226,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-rcp': {
     title: 'Curso de Reanimación Cardiopulmonar (RCP)',
-    subtitle: 'Capacitación teórico-práctica con simulación y maniobras de RCP.',
+    subtitle: 'Capacitación Teórico-Práctica con Simulación y Maniobras de RCP.',
     description:
       'El curso de RCP de Seres Salud capacita a los colaboradores de tu empresa en técnicas de Reanimación Cardiopulmonar y uso de Desfibrilador Externo Automático (DEA), brindando conocimientos vitales ante emergencias médicas en el trabajo.',
     legalFramework: 'Ley 27.159 de Sistema de Prevención Integral de Eventos Cardiovasculares de Muerte Súbita.',
@@ -251,7 +251,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'rcp': {
     title: 'Curso de Reanimación Cardiopulmonar (RCP)',
-    subtitle: 'Capacitación teórico-práctica con simulación y maniobras de RCP.',
+    subtitle: 'Capacitación Teórico-Práctica con Simulación y Maniobras de RCP.',
     description:
       'El curso de RCP de Seres Salud capacita a los colaboradores de tu empresa en técnicas de Reanimación Cardiopulmonar y uso de Desfibrilador Externo Automático (DEA), brindando conocimientos vitales ante emergencias médicas en el trabajo.',
     legalFramework: 'Ley 27.159 de Sistema de Prevención Integral de Eventos Cardiovasculares de Muerte Súbita.',
@@ -276,7 +276,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-primeros-auxilios': {
     title: 'Curso de Primeros Auxilios para Empresas',
-    subtitle: 'Capacitación en atención inicial de emergencias, quemaduras, heridas y traumatismos.',
+    subtitle: 'Capacitación en Atención Inicial de Emergencias, Quemaduras, Heridas y Traumatismos.',
     description:
       'El curso de Primeros Auxilios capacita al personal de la empresa para responder con rapidez y eficacia ante accidentes o emergencias de salud hasta la llegada de asistencia médica especializada.',
     legalFramework: 'Ley 19.587 de Higiene y Seguridad Laboral y Resoluciones de la SRT.',
@@ -301,7 +301,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'primeros-auxilios': {
     title: 'Curso de Primeros Auxilios para Empresas',
-    subtitle: 'Capacitación en atención inicial de emergencias, quemaduras, heridas y traumatismos.',
+    subtitle: 'Capacitación en Atención Inicial de Emergencias, Quemaduras, Heridas y Traumatismos.',
     description:
       'El curso de Primeros Auxilios capacita al personal de la empresa para responder con rapidez y eficacia ante accidentes o emergencias de salud hasta la llegada de asistencia médica especializada.',
     legalFramework: 'Ley 19.587 de Higiene y Seguridad Laboral y Resoluciones de la SRT.',
@@ -326,7 +326,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-vida-saludable': {
     title: 'Curso de Vida Saludable para Empresas',
-    subtitle: 'Promoción de hábitos saludables, alimentación equilibrada y bienestar integral.',
+    subtitle: 'Promoción de Hábitos Saludables, Alimentación Equilibrada y Bienestar Integral.',
     description:
       'El curso de Vida Saludable de Seres Salud está diseñado para educar y motivar a los equipos de trabajo a adoptar hábitos que beneficien su salud física y mental dentro y fuera del ambiente laboral.',
     legalFramework: 'Normativas de la SRT y Ministerio de Salud.',
@@ -351,7 +351,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'vida-saludable': {
     title: 'Curso de Vida Saludable para Empresas',
-    subtitle: 'Promoción de hábitos saludables, alimentación equilibrada y bienestar integral.',
+    subtitle: 'Promoción de Hábitos Saludables, Alimentación Equilibrada y Bienestar Integral.',
     description:
       'El curso de Vida Saludable de Seres Salud está diseñado para educar y motivar a los equipos de trabajo a adoptar hábitos que beneficien su salud física y mental dentro y fuera del ambiente laboral.',
     legalFramework: 'Normativas de la SRT y Ministerio de Salud.',
@@ -376,7 +376,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'higiene-y-seguridad': {
     title: 'Higiene y Seguridad Laboral para Empresas',
-    subtitle: 'Servicio integral para cumplir con la normativa y mejorar las condiciones de trabajo.',
+    subtitle: 'Servicio Integral para Cumplir con la Normativa y Mejorar las Condiciones de Trabajo.',
     description:
       'Asesoramos a las empresas en el cumplimiento de las normativas de seguridad laboral, realizando mediciones de campo e implementando sistemas de gestión ambiental.',
     legalFramework: 'Ley 19.587 y resoluciones SRT 900/15, 84/12, 85/12.',
@@ -401,7 +401,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'control-de-ausentismo': {
     title: 'Control de Ausentismo Laboral',
-    subtitle: 'Gestión médica profesional para reducir ausencias injustificadas.',
+    subtitle: 'Gestión Médica Profesional para Reducir Ausencias Injustificadas.',
     description:
       'Servicio orientado a auditar y verificar las inasistencias por motivos de salud mediante médicos visitadores a domicilio y atención en consultorio central.',
     legalFramework: 'Ley de Contrato de Trabajo N° 20.744 (Art. 209 y 210).',
@@ -426,7 +426,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'atencion-art': {
     title: 'Atención por ART para Empresas',
-    subtitle: 'Respuesta médica rápida, gestión administrativa y seguimiento del trabajador.',
+    subtitle: 'Respuesta Médica Rápida, Gestión Administrativa y Seguimiento del Trabajador.',
     description:
       'Coordinamos y ejecutamos la primera atención médica, curaciones, interconsultas con especialistas y la rehabilitación física requerida hasta el alta definitiva del trabajador.',
     legalFramework: 'Ley de Riesgos del Trabajo N° 24.557.',
@@ -450,7 +450,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'kinesiologia': {
     title: 'Kinesiología para Empresas',
-    subtitle: 'Atención profesional en kinesiología para tus colaboradores.',
+    subtitle: 'Atención Profesional en Kinesiología para tus Colaboradores.',
     description:
       'Tratamiento de patologías musculares, articulares y osteoarticulares originadas por sobreesfuerzo, accidentes laborales o posturas inadecuadas.',
     legalFramework: 'Nomenclador de Prestaciones Médicas.',
@@ -474,7 +474,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'area-protegida': {
     title: 'Área Protegida para Empresas',
-    subtitle: 'Cobertura médica inmediata para cuidar a tu equipo y cumplir con la normativa.',
+    subtitle: 'Cobertura Médica Inmediata para Cuidar a tu Equipo y Cumplir con la Normativa.',
     description:
       'Protegemos el recinto físico de su empresa garantizando la atención médica rápida ante cualquier eventualidad de salud sufrida por empleados, clientes o contratistas.',
     legalFramework: 'Normas internacionales de soporte vital básico y avanzado.',
@@ -498,7 +498,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'libretas-sanitarias-laborales': {
     title: 'Libretas Sanitarias Laborales para Empresas',
-    subtitle: 'Libretas sanitarias para cumplimiento de las obligaciones sanitarias laborales.',
+    subtitle: 'Libretas Sanitarias para Cumplimiento de las Obligaciones Sanitarias Laborales.',
     description:
       'Realizamos la totalidad de los análisis clínicos, físicos y radiológicos necesarios para la obtención y renovación de la Libreta Sanitaria Laboral obligatoria para industrias alimenticias, gastronómicas y de atención al público.',
     legalFramework: 'Reglamentaciones municipales y provinciales de Salud Pública y Código Alimentario Argentino.',
@@ -524,7 +524,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'medicina-asistencial': {
     title: 'Medicina Asistencial',
-    subtitle: 'Atención médica integral para vos y tu familia',
+    subtitle: 'Atención Médica Integral para Vos y tu Familia',
     description:
       'Brindamos atención asistencial de primer nivel para dolencias comunes, consultas médicas espontáneas y seguimiento de patologías no ocupacionales en nuestros consultorios equipados.',
     legalFramework: 'Ley 26.529 de Derechos del Paciente e Historias Clínicas.',
@@ -550,7 +550,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'psicotecnicos-laborales': {
     title: 'Psicotécnicos Laborales',
-    subtitle: 'Evaluaciones diseñadas para medir capacidades, aptitudes y comportamientos relacionados con el desempeño laboral.',
+    subtitle: 'Evaluaciones Diseñadas para Medir Capacidades, Aptitudes y Comportamientos Relacionados con el Desempeño Laboral.',
     description:
       'Evaluamos la aptitud psicológica, rasgos de personalidad y competencias emocionales de los postulantes según las exigencias del puesto de trabajo a cubrir.',
     legalFramework: 'Resolución SRT N° 37/10 y Ley de Ejercicio Profesional de la Psicología.',
@@ -576,7 +576,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'pausas-activas': {
     title: 'Pausas Activas para Empresas',
-    subtitle: 'Programas de pausas activas que reducen la fatiga y aumentan la productividad de tus equipos.',
+    subtitle: 'Programas de Pausas Activas Que Reducen la Fatiga y Aumentan la Productividad de tus Equipos.',
     description:
       'Implementamos sesiones breves de ejercicios físicos y de movilidad dentro de la jornada laboral para aliviar tensiones musculares, prevenir lesiones por postura y renovar la energía del equipo.',
     legalFramework: 'Programas de Promoción de la Salud y Ergonómicos de la SRT.',
@@ -602,7 +602,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'vacunas-antigripales': {
     title: 'Vacunas Antigripales para Empresas',
-    subtitle: 'Servicio de vacunación antigripal para proteger a tu equipo.',
+    subtitle: 'Servicio de Vacunación Antigripal para Proteger a tu Equipo.',
     description:
       'Organizamos campañas de vacunación antigripal y de inmunización laboral directamente en su empresa para proteger a los trabajadores durante la temporada invernal y minimizar licencias por gripe.',
     legalFramework: 'Calendario Nacional de Vacunación y Recomendaciones del Ministerio de Salud.',
@@ -628,7 +628,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'prevencion-cardiovascular': {
     title: 'Prevención Cardiovascular en el Ámbito Laboral',
-    subtitle: 'Programas para cuidar la salud cardíaca de tus colaboradores y promover entornos laborales más seguros.',
+    subtitle: 'Programas para Cuidar la Salud Cardíaca de tus Colaboradores y Promover Entornos Laborales Más Seguros.',
     description:
       'En Seres Salud realizamos programas de prevención cardiovascular para identificar factores de riesgo, promover hábitos de vida saludables y disminuir la probabilidad de eventos cardíacos dentro del entorno laboral.',
     legalFramework: 'Normativas de la SRT y Ministerio de Salud.',
@@ -653,7 +653,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-alcoholismo': {
     title: 'Curso Alcoholismo para Empresas',
-    subtitle: 'Capacitación preventiva para concientizar, reducir riesgos laborales y entornos de trabajo más seguros.',
+    subtitle: 'Capacitación Preventiva para Concientizar, Reducir Riesgos Laborales y Entornos de Trabajo Más Seguros.',
     description:
       'El curso de Alcoholismo Laboral de Seres Salud está orientado a concientizar sobre los riesgos del consumo de alcohol en el trabajo y su impacto en la seguridad, la salud y el desempeño laboral.',
     legalFramework: 'Normativas de la SRT y Ley 19.587 de Higiene y Seguridad Laboral.',
@@ -678,7 +678,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'alcoholismo': {
     title: 'Curso Alcoholismo para Empresas',
-    subtitle: 'Capacitación preventiva para concientizar, reducir riesgos laborales y entornos de trabajo más seguros.',
+    subtitle: 'Capacitación Preventiva para Concientizar, Reducir Riesgos Laborales y Entornos de Trabajo Más Seguros.',
     description:
       'El curso de Alcoholismo Laboral de Seres Salud está orientado a concientizar sobre los riesgos del consumo de alcohol en el trabajo y su impacto en la seguridad, la salud y el desempeño laboral.',
     legalFramework: 'Normativas de la SRT y Ley 19.587 de Higiene y Seguridad Laboral.',
@@ -703,7 +703,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-drogas-de-abuso': {
     title: 'Curso de Drogas de Abuso',
-    subtitle: 'Capacitación para reconocer, abordar y gestionar riesgos relacionados al consumo.',
+    subtitle: 'Capacitación para Reconocer, Abordar y Gestionar Riesgos Relacionados al Consumo.',
     description:
       'El curso de Drogas de Abuso está diseñado para empresas y equipos de trabajo que buscan prevenir y gestionar riesgos asociados al consumo de sustancias, promoviendo entornos laborales más seguros y saludables.',
     legalFramework: 'Normativas de la SRT y Ley 19.587 de Higiene y Seguridad Laboral.',
@@ -728,7 +728,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'drogas-de-abuso': {
     title: 'Curso de Drogas de Abuso',
-    subtitle: 'Capacitación para reconocer, abordar y gestionar riesgos relacionados al consumo.',
+    subtitle: 'Capacitación para Reconocer, Abordar y Gestionar Riesgos Relacionados al Consumo.',
     description:
       'El curso de Drogas de Abuso está diseñado para empresas y equipos de trabajo que buscan prevenir y gestionar riesgos asociados al consumo de sustancias, promoviendo entornos laborales más seguros y saludables.',
     legalFramework: 'Normativas de la SRT y Ley 19.587 de Higiene y Seguridad Laboral.',
@@ -753,7 +753,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-hiv-sida': {
     title: 'Curso de HIV / SIDA para Empresas',
-    subtitle: 'Capacitación para la prevención, comprensión y gestión responsable de HIV/SIDA.',
+    subtitle: 'Capacitación para la Prevención, Comprensión y Gestión Responsable de HIV/SIDA.',
     description:
       'Este curso brinda información clara y actualizada sobre el HIV / SIDA, su transmisión, prevención y manejo de situaciones laborales, promoviendo entornos de trabajo seguros y respetuosos.',
     legalFramework: 'Normativas de la SRT y Ley 23.798 de SIDA.',
@@ -778,7 +778,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'hiv-sida': {
     title: 'Curso de HIV / SIDA para Empresas',
-    subtitle: 'Capacitación para la prevención, comprensión y gestión responsable de HIV/SIDA.',
+    subtitle: 'Capacitación para la Prevención, Comprensión y Gestión Responsable de HIV/SIDA.',
     description:
       'Este curso brinda información clara y actualizada sobre el HIV / SIDA, su transmisión, prevención y manejo de situaciones laborales, promoviendo entornos de trabajo seguros y respetuosos.',
     legalFramework: 'Normativas de la SRT y Ley 23.798 de SIDA.',
@@ -803,7 +803,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-ergonomia': {
     title: 'Curso de Ergonomía para Empresas',
-    subtitle: 'Capacitación enfocada en la prevención de lesiones, adaptación de puestos de trabajo y promoción del bienestar físico.',
+    subtitle: 'Capacitación Enfocada en la Prevención de Lesiones, Adaptación de Puestos de Trabajo y Promoción del Bienestar Físico.',
     description:
       'El curso de Ergonomía de Seres Salud está enfocado en la prevención de lesiones y adaptación de puestos de trabajo para mejorar el bienestar físico de los colaboradores y reducir riesgos laborales.',
     legalFramework: 'Resolución SRT 886/15 y Ley 19.587 de Higiene y Seguridad.',
@@ -828,7 +828,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'ergonomia': {
     title: 'Curso de Ergonomía para Empresas',
-    subtitle: 'Capacitación enfocada en la prevención de lesiones, adaptación de puestos de trabajo y promoción del bienestar físico.',
+    subtitle: 'Capacitación Enfocada en la Prevención de Lesiones, Adaptación de Puestos de Trabajo y Promoción del Bienestar Físico.',
     description:
       'El curso de Ergonomía de Seres Salud está enfocado en la prevención de lesiones y adaptación de puestos de trabajo para mejorar el bienestar físico de los colaboradores y reducir riesgos laborales.',
     legalFramework: 'Resolución SRT 886/15 y Ley 19.587 de Higiene y Seguridad.',
@@ -853,7 +853,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-tabaquismo': {
     title: 'Curso de Tabaquismo Laboral',
-    subtitle: 'Orientado para promover ambientes laborales más saludables y seguros.',
+    subtitle: 'Orientado para Promover Ambientes Laborales Más Saludables y Seguros.',
     description:
       'El curso de Tabaquismo de Seres Salud está diseñado para promover la prevención, concientización y reducción del consumo de tabaco en el ámbito laboral.',
     legalFramework: 'Ley 26.687 de Control del Tabaco y Normativas de Higiene y Seguridad Laboral.',
@@ -878,7 +878,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'tabaquismo': {
     title: 'Curso de Tabaquismo Laboral',
-    subtitle: 'Orientado para promover ambientes laborales más saludables y seguros.',
+    subtitle: 'Orientado para Promover Ambientes Laborales Más Saludables y Seguros.',
     description:
       'El curso de Tabaquismo de Seres Salud está diseñado para promover la prevención, concientización y reducción del consumo de tabaco en el ámbito laboral.',
     legalFramework: 'Ley 26.687 de Control del Tabaco y Normativas de Higiene y Seguridad Laboral.',
@@ -1103,7 +1103,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestros exámenes
+                  Beneficios de Nuestros Exámenes
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Seguridad, cumplimiento y salud
@@ -1118,7 +1118,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Cumplimiento legal
+                      Cumplimiento Legal
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Evaluaciones que cumplen con requisitos legales y laborales.
@@ -1133,7 +1133,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Resultados confiables
+                      Resultados Confiables
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Evaluaciones médicas precisas y reportes profesionales.
@@ -1148,7 +1148,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Protección del equipo
+                      Protección del Equipo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Identificación temprana de condiciones de salud relevantes.
@@ -1163,7 +1163,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      RRHH ordenado
+                      RRHH Ordenado
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Documentación clara para procesos internos de personal.
@@ -1178,7 +1178,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el examen preocupacional?
+                  ¿Qué Incluye el Examen Preocupacional?
                 </h2>
               </div>
 
@@ -1186,7 +1186,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Historia clínica
+                    Historia Clínica
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1207,7 +1207,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Evaluaciones médicas
+                    Evaluaciones Médicas
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1300,7 +1300,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios del servicio médico en planta
+                  Beneficios del Servicio Médico en Planta
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Presencia profesional, atención rápida y respaldo médico
@@ -1315,7 +1315,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Atención inmediata
+                      Atención Inmediata
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Respuesta médica directa ante malestares o accidentes durante la jornada.
@@ -1330,7 +1330,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción del ausentismo
+                      Reducción del Ausentismo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Control continuo y verificación rápida de licencias por enfermedad.
@@ -1345,7 +1345,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Prevención y salud
+                      Prevención y Salud
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Promoción de hábitos saludables y seguimiento activo del personal.
@@ -1375,7 +1375,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el servicio médico en planta?
+                  ¿Qué Incluye el Servicio Médico en Planta?
                 </h2>
               </div>
 
@@ -1383,7 +1383,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Gestión médica
+                    Gestión Médica
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1404,7 +1404,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Control preventivo
+                    Control Preventivo
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1425,7 +1425,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Informes y auditoría
+                    Informes y Auditoría
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1512,7 +1512,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Cero pérdida de horas hombre
+                      Cero Pérdida de Horas Hombre
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Atención médica in-situ sin necesidad de traslados fuera de la planta.
@@ -1527,7 +1527,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Operativos masivos
+                      Operativos Masivos
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Capacidad para atender grandes nóminas de trabajadores en tiempo récord.
@@ -1542,7 +1542,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Equipamiento de alta complejidad
+                      Equipamiento de Alta Complejidad
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Cabinas audiométricas insonorizadas, RX digital y laboratorio móvil.
@@ -1557,7 +1557,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Cobertura integral
+                      Cobertura Integral
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Llegada a plantas industriales, obras, predios y empresas en todo el país.
@@ -1572,7 +1572,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluyen nuestras Unidades Móviles?
+                  ¿Qué Incluyen Nuestras Unidades Móviles?
                 </h2>
               </div>
 
@@ -1580,7 +1580,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Estudios in-situ
+                    Estudios In-Situ
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1601,7 +1601,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Operativa ágil
+                    Operativa Ágil
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1622,7 +1622,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Resultados y entrega
+                    Resultados y Entrega
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1694,7 +1694,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestros servicios
+                  Beneficios de Nuestros Servicios
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Protección, cumplimiento y tranquilidad
@@ -1709,7 +1709,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Cumplimiento de normas
+                      Cumplimiento de Normas
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Implementación de estándares y auditorías de higiene y seguridad.
@@ -1724,7 +1724,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de riesgos
+                      Reducción de Riesgos
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Identificación y mitigación de peligros laborales.
@@ -1739,7 +1739,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Entornos más seguros
+                      Entornos Más Seguros
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Protección real para tus colaboradores y procesos.
@@ -1769,7 +1769,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el servicio de Higiene y Seguridad?
+                  ¿Qué Incluye el Servicio de Higiene y Seguridad?
                 </h2>
               </div>
 
@@ -1777,7 +1777,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Diagnóstico de riesgos
+                    Diagnóstico de Riesgos
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1798,7 +1798,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Planificación y control
+                    Planificación y Control
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1819,7 +1819,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Informes y documentación
+                    Informes y Documentación
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1891,7 +1891,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestras libretas sanitarias
+                  Beneficios de Nuestras Libretas Sanitarias
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Cumplimiento, seguridad y tranquilidad
@@ -1905,7 +1905,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Cumplimiento normativo
+                      Cumplimiento Normativo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Docs sanitarios que cumplen con las exigencias legales vigentes.
@@ -1919,7 +1919,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Trámites simplificados
+                      Trámites Simplificados
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Gestionamos todo para vos sin complicaciones.
@@ -1933,7 +1933,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Protección del equipo
+                      Protección del Equipo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Colaboradores certificados y aptos para sus tareas.
@@ -1947,7 +1947,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Soporte documental
+                      Soporte Documental
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Reportes y certificados para RRHH e Inspecciones.
@@ -1961,7 +1961,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye la gestión de libretas sanitarias?
+                  ¿Qué Incluye la Gestión de Libretas Sanitarias?
                 </h2>
               </div>
 
@@ -1969,7 +1969,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Exámenes requeridos
+                    Exámenes Requeridos
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -1990,7 +1990,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Gestión documental
+                    Gestión Documental
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2011,7 +2011,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Soporte para empresa
+                    Soporte para Empresa
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2083,7 +2083,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestros planes
+                  Beneficios de Nuestros Planes
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Soluciones integrales que transforman la gestión de salud en tu empresa
@@ -2097,7 +2097,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de costos
+                      Reducción de Costos
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Optimización de gastos mediante prevención y gestión médica eficiente.
@@ -2111,7 +2111,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Mejora de productividad
+                      Mejora de Productividad
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Mayor rendimiento laboral gracias a empleados más saludables.
@@ -2125,7 +2125,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Cumplimiento normativo
+                      Cumplimiento Normativo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Alineación con la normativa vigente en salud y seguridad laboral.
@@ -2139,7 +2139,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Cultura de bienestar
+                      Cultura de Bienestar
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Compromiso, satisfacción y cuidado integral de los colaboradores.
@@ -2153,7 +2153,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el servicio de Área Protegida?
+                  ¿Qué Incluye el Servicio de Área Protegida?
                 </h2>
               </div>
 
@@ -2161,7 +2161,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Atención médica inmediata
+                    Atención Médica Inmediata
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2182,7 +2182,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Respaldo legal
+                    Respaldo Legal
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2203,7 +2203,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Prevención de riesgos
+                    Prevención de Riesgos
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2275,7 +2275,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestro servicio
+                  Beneficios de Nuestro Servicio
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Salud, función y rendimiento
@@ -2289,7 +2289,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Prevención de lesiones
+                      Prevención de Lesiones
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Evaluaciones funcionales para detectar riesgos tempranos.
@@ -2303,7 +2303,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Mejor postura y movilidad
+                      Mejor Postura y Movilidad
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Técnicas especializadas para mejorar el movimiento diario.
@@ -2317,7 +2317,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de dolor
+                      Reducción de Dolor
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Tratamientos personalizados para molestias y tensiones.
@@ -2331,7 +2331,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Bienestar laboral
+                      Bienestar Laboral
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Mayor confort y funcionalidad para el equipo.
@@ -2345,7 +2345,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el servicio de kinesiología?
+                  ¿Qué Incluye el Servicio de Kinesiología?
                 </h2>
               </div>
 
@@ -2353,7 +2353,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Evaluación funcional
+                    Evaluación Funcional
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2374,7 +2374,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Tratamiento personalizado
+                    Tratamiento Personalizado
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2428,7 +2428,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
-                  Atención por ART para trabajadores y empresas
+                  Atención por ART para Trabajadores y Empresas
                 </h2>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
@@ -2467,7 +2467,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de la atención por ART
+                  Beneficios de la Atención por ART
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Respuesta rápida, trámites ágiles y recuperación del trabajador
@@ -2481,7 +2481,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Atención médica inmediata
+                      Atención Médica Inmediata
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Asistencia médica rápida ante accidentes de trabajo y contingencias.
@@ -2509,7 +2509,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Seguimiento de evolución
+                      Seguimiento de Evolución
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Control exhaustivo de la recuperación hasta el alta médica definitiva.
@@ -2523,7 +2523,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Tranquilidad para la empresa
+                      Tranquilidad para la Empresa
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Resguardo legal y comunicación fluida con el departamento de RRHH.
@@ -2537,7 +2537,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye la atención por ART?
+                  ¿Qué Incluye la Atención por ART?
                 </h2>
               </div>
 
@@ -2545,7 +2545,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Atención médica inicial
+                    Atención Médica Inicial
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2587,7 +2587,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Seguimiento médico
+                    Seguimiento Médico
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2620,7 +2620,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
-                  Control médico de ausentismo laboral
+                  Control Médico de Ausentismo Laboral
                 </h2>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
@@ -2663,7 +2663,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestro servicio
+                  Beneficios de Nuestro Servicio
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Agilidad, veracidad y control para recursos humanos
@@ -2677,7 +2677,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Verificación objetiva
+                      Verificación Objetiva
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Médicos especializados evalúan la veracidad y grado de la patología.
@@ -2691,7 +2691,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Respuesta en 24 hs
+                      Respuesta en 24 Hs
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Visitas domiciliarias y controles en consultorio con rápida gestión.
@@ -2705,7 +2705,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Desarticulación del ausentismo
+                      Desarticulación del Ausentismo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Disminución significativa de ausencias injustificadas o reiteradas.
@@ -2733,7 +2733,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el servicio?
+                  ¿Qué Incluye el Servicio?
                 </h2>
               </div>
 
@@ -2741,7 +2741,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Control médico
+                    Control Médico
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2762,7 +2762,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Atención flexible
+                    Atención Flexible
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2855,7 +2855,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de la medicina asistencial
+                  Beneficios de la Medicina Asistencial
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Salud, atención y respaldo profesional
@@ -2870,7 +2870,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Atención médica confiable
+                      Atención Médica Confiable
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Evaluaciones y seguimientos con profesionales especializados.
@@ -2885,7 +2885,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Planes de atención
+                      Planes de Atención
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Adaptamos el servicio según las necesidades de tu equipo.
@@ -2900,7 +2900,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Prevención y diagnóstico
+                      Prevención y Diagnóstico
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Chequeos y estudios enfocados en salud laboral.
@@ -2929,7 +2929,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye la medicina asistencial?
+                  ¿Qué Incluye la Medicina Asistencial?
                 </h2>
               </div>
 
@@ -2937,7 +2937,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Consultas médicas
+                    Consultas Médicas
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2958,7 +2958,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Estudios y chequeos
+                    Estudios y Chequeos
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -2979,7 +2979,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Seguimiento e informes
+                    Seguimiento E Informes
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3051,7 +3051,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de los psicotécnicos
+                  Beneficios de los Psicotécnicos
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Decisiones más acertadas en RRHH
@@ -3066,7 +3066,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Selección objetiva
+                      Selección Objetiva
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Aporta datos medibles para elegir candidatos.
@@ -3081,7 +3081,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Riesgo reducido
+                      Riesgo Reducido
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Minimiza errores de contratación y rotación.
@@ -3096,7 +3096,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Desarrollo interno
+                      Desarrollo Interno
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Identifica potencial para promociones y formación.
@@ -3111,7 +3111,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Informes detallados
+                      Informes Detallados
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Resultados claros para decisiones estratégicas.
@@ -3125,7 +3125,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye un psicotécnico laboral?
+                  ¿Qué Incluye un Psicotécnico Laboral?
                 </h2>
               </div>
 
@@ -3133,7 +3133,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Evaluación cognitiva
+                    Evaluación Cognitiva
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3154,7 +3154,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Evaluación conductual
+                    Evaluación Conductual
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3175,7 +3175,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Informe profesional
+                    Informe Profesional
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3247,7 +3247,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de las pausas activas
+                  Beneficios de las Pausas Activas
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Salud, energía y rendimiento
@@ -3262,7 +3262,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de fatiga
+                      Reducción de Fatiga
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Pausas que alivian tensiones y favorecen la energía general.
@@ -3277,7 +3277,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Mejor postura
+                      Mejor Postura
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Movimientos guiados que corrigen la postura y reducen molestias.
@@ -3292,7 +3292,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Incremento de concentración
+                      Incremento de Concentración
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Mini ejercicios que revitalizan la atención durante la jornada.
@@ -3307,7 +3307,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Clima laboral positivo
+                      Clima Laboral Positivo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Actividades grupales que fomentan colaboración y bienestar.
@@ -3321,7 +3321,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el programa de pausas activas?
+                  ¿Qué Incluye el Programa de Pausas Activas?
                 </h2>
               </div>
 
@@ -3329,7 +3329,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Sesiones guiadas
+                    Sesiones Guiadas
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3350,7 +3350,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Evaluación inicial
+                    Evaluación Inicial
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3371,7 +3371,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Material complementario
+                    Material Complementario
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3443,7 +3443,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de la vacunación antigripal
+                  Beneficios de la Vacunación Antigripal
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Cuidado, salud y continuidad laboral
@@ -3458,7 +3458,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Protección de la salud
+                      Protección de la Salud
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Reduce la probabilidad de contraer gripe estacional.
@@ -3473,7 +3473,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Menor ausentismo
+                      Menor Ausentismo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Reduce faltas por enfermedad prolongada.
@@ -3503,7 +3503,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Soporte organizativo
+                      Soporte Organizativo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Coordinación y logística adaptada a tu empresa.
@@ -3517,7 +3517,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el servicio de vacunación antigripal?
+                  ¿Qué Incluye el Servicio de Vacunación Antigripal?
                 </h2>
               </div>
 
@@ -3525,7 +3525,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Aplicación de vacunas
+                    Aplicación de Vacunas
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3546,7 +3546,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Logística y coordinación
+                    Logística y Coordinación
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3567,7 +3567,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Seguimiento y documentación
+                    Seguimiento y Documentación
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3639,7 +3639,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios del curso de RCP
+                  Beneficios del Curso de RCP
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Preparación real ante emergencias
@@ -3653,7 +3653,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Salva vidas
+                      Salva Vidas
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Actuar correctamente en los primeros minutos es clave.
@@ -3667,7 +3667,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Respuesta inmediata
+                      Respuesta Inmediata
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Preparación para actuar sin demoras ante una emergencia.
@@ -3681,7 +3681,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Mayor seguridad laboral
+                      Mayor Seguridad Laboral
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Equipos capacitados y preparados para actuar.
@@ -3695,7 +3695,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Capacitación certificada
+                      Capacitación Certificada
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Constancia de formación para la empresa.
@@ -3709,7 +3709,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el curso de RCP?
+                  ¿Qué Incluye el Curso de RCP?
                 </h2>
               </div>
 
@@ -3736,7 +3736,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
 
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Práctica guiada
+                    Práctica Guiada
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -3828,7 +3828,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios del curso de primeros auxilios
+                  Beneficios del Curso de Primeros Auxilios
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Prevención, intervención oportuna y resguardo en planta
@@ -3842,7 +3842,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Atención primaria
+                      Atención Primaria
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Saber cómo intervenir en los primeros minutos críticos de un accidente.
@@ -3856,7 +3856,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de secuelas
+                      Reducción de Secuelas
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Procedimientos adecuados de inmovilización y primeros auxilios.
@@ -3870,7 +3870,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Uso de botiquines
+                      Uso de Botiquines
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Conocimiento y manejo correcto del material de primeros auxilios.
@@ -3946,7 +3946,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestros cursos
+                  Beneficios de Nuestros Cursos
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Hábitos saludables y rendimiento laboral
@@ -3961,7 +3961,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Bienestar general
+                      Bienestar General
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Promueve una vida más saludable dentro y fuera del trabajo.
@@ -3991,7 +3991,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de ausentismo
+                      Reducción de Ausentismo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Mejor salud reduce ausencias por enfermedad.
@@ -4006,7 +4006,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Ambiente laboral positivo
+                      Ambiente Laboral Positivo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Fomenta compromiso y bienestar colectivo.
@@ -4020,7 +4020,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el curso de vida saludable?
+                  ¿Qué Incluye el Curso de Vida Saludable?
                 </h2>
               </div>
 
@@ -4028,7 +4028,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Contenido educativo
+                    Contenido Educativo
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4049,7 +4049,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Herramientas prácticas
+                    Herramientas Prácticas
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4070,7 +4070,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Card 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Aplicación laboral
+                    Aplicación Laboral
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4265,7 +4265,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de la medicina laboral
+                  Beneficios de la Medicina Laboral
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Salud, prevención y respaldo profesional
@@ -4279,7 +4279,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Prevención de riesgos
+                      Prevención de Riesgos
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Controles que identifican riesgos antes de que afecten al equipo.
@@ -4293,7 +4293,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Atención médica profesional
+                      Atención Médica Profesional
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Evaluaciones, diagnósticos y seguimientos especializados.
@@ -4307,7 +4307,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Diagnósticos confiables
+                      Diagnósticos Confiables
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Estudios clínicos claros y respaldados por profesionales.
@@ -4335,14 +4335,14 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye la medicina laboral?
+                  ¿Qué Incluye la Medicina Laboral?
                 </h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Controles preventivos
+                    Controles Preventivos
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4362,7 +4362,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
 
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Estudios y diagnósticos
+                    Estudios y Diagnósticos
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4382,7 +4382,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
 
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight max-w-[180px]">
-                    Informes y seguimiento
+                    Informes y Seguimiento
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4454,7 +4454,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de la prevención cardiovascular
+                  Beneficios de la Prevención Cardiovascular
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Cuidá el corazón de tu equipo
@@ -4469,7 +4469,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Detección temprana
+                      Detección Temprana
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Identificamos factores de riesgo antes de que sean problemas.
@@ -4484,7 +4484,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Planes personalizados
+                      Planes Personalizados
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Recomendaciones adaptadas a cada persona.
@@ -4499,7 +4499,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Mejor salud general
+                      Mejor Salud General
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Promovemos hábitos saludables y sostenibles.
@@ -4528,7 +4528,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye nuestro programa de prevención cardiovascular?
+                  ¿Qué Incluye Nuestro Programa de Prevención Cardiovascular?
                 </h2>
               </div>
 
@@ -4536,7 +4536,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Evaluación médica
+                    Evaluación Médica
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4557,7 +4557,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Estudios complementarios
+                    Estudios Complementarios
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4578,7 +4578,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Planes preventivos
+                    Planes Preventivos
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4611,7 +4611,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
-                  Prevención del alcoholismo en el ámbito laboral
+                  Prevención del Alcoholismo en el Ámbito Laboral
                 </h2>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
@@ -4650,7 +4650,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestros cursos
+                  Beneficios de Nuestros Cursos
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Prevención, concientización y cumplimiento normativo
@@ -4665,7 +4665,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de riesgos
+                      Reducción de Riesgos
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Disminuye accidentes laborales asociados al consumo de alcohol.
@@ -4680,7 +4680,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Mayor seguridad laboral
+                      Mayor Seguridad Laboral
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Promueve conductas responsables en el entorno de trabajo.
@@ -4695,7 +4695,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Concientización del personal
+                      Concientización del Personal
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Información clara sobre consecuencias y prevención.
@@ -4710,7 +4710,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Cumplimiento normativo
+                      Cumplimiento Normativo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Capacitación alineada a normativas de salud y seguridad laboral.
@@ -4724,7 +4724,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el curso de alcoholismo?
+                  ¿Qué Incluye el Curso de Alcoholismo?
                 </h2>
               </div>
 
@@ -4732,7 +4732,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Contenido teórico
+                    Contenido Teórico
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4753,7 +4753,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Enfoque preventivo
+                    Enfoque Preventivo
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4774,7 +4774,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Capacitación adaptada
+                    Capacitación Adaptada
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4846,7 +4846,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestros cursos
+                  Beneficios de Nuestros Cursos
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Concientización y prevención efectiva
@@ -4861,7 +4861,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de riesgos
+                      Reducción de Riesgos
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Minimiza accidentes y situaciones relacionadas con consumo de drogas.
@@ -4876,7 +4876,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Entorno laboral más seguro
+                      Entorno Laboral Más Seguro
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Promueve conductas responsables y un clima de trabajo saludable.
@@ -4891,7 +4891,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Concientización clara
+                      Concientización Clara
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Información práctica y accesible sobre efectos y prevención.
@@ -4906,7 +4906,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Cumplimiento normativo
+                      Cumplimiento Normativo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Alineado a normas de seguridad y salud en el trabajo.
@@ -4920,7 +4920,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el curso de drogas de abuso?
+                  ¿Qué Incluye el Curso de Drogas de Abuso?
                 </h2>
               </div>
 
@@ -4928,7 +4928,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Contenido teórico
+                    Contenido Teórico
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4949,7 +4949,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Prevención y detección
+                    Prevención y Detección
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -4970,7 +4970,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Modalidades de dictado
+                    Modalidades de Dictado
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -5003,7 +5003,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-gray-900 leading-tight">
-                  Curso de HIV / SIDA en el ámbito laboral
+                  Curso de HIV / SIDA en el Ámbito Laboral
                 </h2>
 
                 <p className="text-sm sm:text-base text-gray-600 font-sans leading-relaxed">
@@ -5042,7 +5042,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestros cursos
+                  Beneficios de Nuestros Cursos
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Prevención, respeto y gestión responsable
@@ -5057,7 +5057,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Concientización efectiva
+                      Concientización Efectiva
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Información clara y actualizada sobre HIV/SIDA.
@@ -5072,7 +5072,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Entornos laborales seguros
+                      Entornos Laborales Seguros
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Promueve prácticas y políticas saludables.
@@ -5087,7 +5087,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de estigma
+                      Reducción de Estigma
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Desmitifica prejuicios y fomenta respeto.
@@ -5102,7 +5102,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Políticas internas claras
+                      Políticas Internas Claras
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Base para estrategias de salud laboral.
@@ -5116,7 +5116,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el curso de HIV / SIDA?
+                  ¿Qué Incluye el Curso de HIV / SIDA?
                 </h2>
               </div>
 
@@ -5124,7 +5124,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Marco teórico
+                    Marco Teórico
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -5166,7 +5166,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Aplicación laboral
+                    Aplicación Laboral
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -5238,7 +5238,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestros cursos
+                  Beneficios de Nuestros Cursos
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Prevención, bienestar y rendimiento
@@ -5253,7 +5253,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de lesiones
+                      Reducción de Lesiones
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Previene dolencias musculoesqueléticas y problemas físicos.
@@ -5268,7 +5268,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Posturas correctas
+                      Posturas Correctas
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Enseña técnicas de movimiento y ergonomía postural.
@@ -5283,7 +5283,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Mejor bienestar
+                      Mejor Bienestar
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Mayor confort y salud física en el equipo.
@@ -5298,7 +5298,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Incremento productivo
+                      Incremento Productivo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Menos ausencias por fatiga y lesiones laborales.
@@ -5312,7 +5312,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el curso de ergonomía?
+                  ¿Qué Incluye el Curso de Ergonomía?
                 </h2>
               </div>
 
@@ -5320,7 +5320,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Contenido teórico
+                    Contenido Teórico
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -5341,7 +5341,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Prácticas laborales
+                    Prácticas Laborales
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -5434,7 +5434,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center max-w-2xl mx-auto space-y-1">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  Beneficios de nuestros cursos
+                  Beneficios de Nuestros Cursos
                 </h2>
                 <p className="text-sm text-gray-500 font-medium font-sans">
                   Prevención y vida saludable
@@ -5449,7 +5449,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Concientización eficaz
+                      Concientización Eficaz
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Información clara sobre efectos y riesgos del tabaco.
@@ -5464,7 +5464,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Entorno laboral saludable
+                      Entorno Laboral Saludable
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Promueve prácticas y hábitos que favorecen la salud.
@@ -5479,7 +5479,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Reducción de consumo
+                      Reducción de Consumo
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Brinda estrategias para disminuir la dependencia del tabaco.
@@ -5494,7 +5494,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-base sm:text-lg font-bold font-heading text-gray-900">
-                      Mejor calidad de vida
+                      Mejor Calidad de Vida
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
                       Contribuye al bienestar general de los colaboradores.
@@ -5508,7 +5508,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
             <div className="space-y-10 pt-4">
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0A5229]">
-                  ¿Qué incluye el curso de tabaquismo?
+                  ¿Qué Incluye el Curso de Tabaquismo?
                 </h2>
               </div>
 
@@ -5516,7 +5516,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 1 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Marco teórico
+                    Marco Teórico
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -5537,7 +5537,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 2 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Prevención y estrategias
+                    Prevención y Estrategias
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
@@ -5558,7 +5558,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 {/* Column 3 */}
                 <div className="bg-white p-8 sm:p-9 rounded-3xl shadow-xl shadow-black/5 border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6 leading-tight">
-                    Aplicación laboral
+                    Aplicación Laboral
                   </h3>
                   <ul className="space-y-3.5 text-sm sm:text-base text-gray-600 font-sans">
                     <li className="flex items-center gap-3">
