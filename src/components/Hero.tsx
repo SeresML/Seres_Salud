@@ -30,10 +30,9 @@ export default function Hero() {
           <span className="block md:inline">Medicina Laboral</span>
         </h1>
 
-        {/* Subtitle - Single Line on Desktop, Two Clean Lines on Mobile */}
-        <p className="text-xl sm:text-3xl md:text-4xl font-bold font-heading text-white tracking-wide leading-snug drop-shadow-[0_3px_10px_rgba(0,0,0,0.8)] pt-1">
-          <span className="block md:inline">Más de 25 Años </span>
-          <span className="block md:inline">de Trayectoria</span>
+        {/* Subtitle - Always on a Single Line */}
+        <p className="text-lg sm:text-3xl md:text-4xl font-bold font-heading text-white tracking-wide whitespace-nowrap drop-shadow-[0_3px_10px_rgba(0,0,0,0.8)] pt-1">
+          Más de 25 Años de Trayectoria
         </p>
 
         {/* Single Centered Green Button */}
