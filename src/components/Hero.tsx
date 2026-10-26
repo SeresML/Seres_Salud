@@ -24,8 +24,8 @@ export default function Hero() {
       {/* Hero Content matching screenshot typography */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center flex flex-col items-center justify-center space-y-4">
         
-        {/* Main Title - Single Line with Dark Drop Shadow */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading text-white tracking-tight whitespace-nowrap drop-shadow-[0_4px_14px_rgba(0,0,0,0.9)] max-w-full overflow-hidden text-ellipsis">
+        {/* Main Title - Single Line on Desktop, Wrapped on Mobile with Dark Drop Shadow */}
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading text-white tracking-tight sm:whitespace-nowrap leading-tight drop-shadow-[0_4px_14px_rgba(0,0,0,0.9)] max-w-full">
           Líderes en Medicina Laboral
         </h1>
 
