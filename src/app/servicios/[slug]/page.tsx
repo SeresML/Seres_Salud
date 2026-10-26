@@ -1004,7 +1004,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                 <div className="lg:col-span-5 flex justify-center lg:justify-end">
                   <div className="bg-white rounded-2xl p-6 sm:p-7 shadow-2xl border border-emerald-100 max-w-sm w-full text-gray-800">
                     <h2 className="text-lg font-bold font-heading text-gray-900 mb-4">
-                      Envíe su Consulta
+                      Complete el Formulario
                     </h2>
                     <ConsultaRapida servicio={service.title} />
                   </div>
