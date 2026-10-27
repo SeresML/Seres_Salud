@@ -36,3 +36,21 @@
   animation: pulse-slow 3s infinite ease-in-out;
 }
 
+@keyframes whatsapp-halo {
+  0% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+  70% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+.animate-whatsapp-halo {
+  animation: whatsapp-halo 2.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
