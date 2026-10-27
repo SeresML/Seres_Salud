@@ -78,7 +78,7 @@ export function generateStaticParams() {
 const servicesMap: Record<string, ServiceDetail> = {
   'medicina-laboral': {
     title: 'Medicina Laboral para Empresas',
-    subtitle: 'Servicios Médicos Especializados para Empresas',
+    subtitle: 'Prevención y Salud Ocupacional Integral',
     description:
       'Priorizamos la salud y el bienestar de sus empleados mediante programas integrales de prevención de enfermedades profesionales, auditorías clínicas y asesoramiento en normativas vigentes.',
     legalFramework: 'Ley Nacional N° 19.587 de Higiene y Seguridad y Ley N° 24.557 de Riesgos del Trabajo.',
@@ -108,7 +108,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'examenes-preocupacionales': {
     title: 'Exámenes Preocupacionales',
-    subtitle: 'Evaluaciones Médicas Completas Previa a la Incorporación de Personal',
+    subtitle: 'Aptitud Médica para Ingreso de Personal',
     description:
       'Su objetivo principal es determinar la aptitud física y psíquica del postulante para el puesto de trabajo a desempeñar, detectando patologías preexistentes para su debido resguardo legal.',
     legalFramework: 'Resolución SRT N° 37/10 y Decreto 1338/96.',
@@ -165,7 +165,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'unidades-moviles': {
     title: 'Unidades Móviles para Empresas',
-    subtitle: 'Controles y Prestaciones Directamente en tu Empresa, con Equipos Profesionales y Equipamiento Completo.',
+    subtitle: 'Operativos Médicos In-Situ Equipados',
     description:
       'Unidades operativas especialmente adaptadas para la realización de exámenes periódicos, preocupacionales y de egreso directamente en los establecimientos de su empresa.',
     legalFramework: 'Resoluciones SRT para operativos en planta.',
@@ -191,7 +191,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'cursos': {
     title: 'Cursos y Capacitaciones para Empresas',
-    subtitle: 'Programas de Formación en Salud Ocupacional, Prevención de Riesgos y Socorrismo',
+    subtitle: 'Capacitaciones Oficiales en Prevención',
     description:
       'Catálogo de cursos y capacitaciones con certificación oficial para colaboradores y equipos de trabajo en empresas de todos los rubros.',
     legalFramework: 'Normativas de la SRT, Ley de Higiene y Seguridad 19.587 y Ley 27.159 de Muerte Súbita.',
@@ -226,7 +226,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-rcp': {
     title: 'Curso de Reanimación Cardiopulmonar (RCP)',
-    subtitle: 'Capacitación Teórico-Práctica con Simulación y Maniobras de RCP.',
+    subtitle: 'Práctica con Maniquíes y Uso de DEA',
     description:
       'El curso de RCP de Seres Salud capacita a los colaboradores de tu empresa en técnicas de Reanimación Cardiopulmonar y uso de Desfibrilador Externo Automático (DEA), brindando conocimientos vitales ante emergencias médicas en el trabajo.',
     legalFramework: 'Ley 27.159 de Sistema de Prevención Integral de Eventos Cardiovasculares de Muerte Súbita.',
@@ -251,7 +251,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'rcp': {
     title: 'Curso de Reanimación Cardiopulmonar (RCP)',
-    subtitle: 'Capacitación Teórico-Práctica con Simulación y Maniobras de RCP.',
+    subtitle: 'Práctica con Maniquíes y Uso de DEA',
     description:
       'El curso de RCP de Seres Salud capacita a los colaboradores de tu empresa en técnicas de Reanimación Cardiopulmonar y uso de Desfibrilador Externo Automático (DEA), brindando conocimientos vitales ante emergencias médicas en el trabajo.',
     legalFramework: 'Ley 27.159 de Sistema de Prevención Integral de Eventos Cardiovasculares de Muerte Súbita.',
@@ -276,7 +276,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-primeros-auxilios': {
     title: 'Curso de Primeros Auxilios para Empresas',
-    subtitle: 'Capacitación en Atención Inicial de Emergencias, Quemaduras, Heridas y Traumatismos.',
+    subtitle: 'Respuesta Rápida Ante Emergencias',
     description:
       'El curso de Primeros Auxilios capacita al personal de la empresa para responder con rapidez y eficacia ante accidentes o emergencias de salud hasta la llegada de asistencia médica especializada.',
     legalFramework: 'Ley 19.587 de Higiene y Seguridad Laboral y Resoluciones de la SRT.',
@@ -301,7 +301,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'primeros-auxilios': {
     title: 'Curso de Primeros Auxilios para Empresas',
-    subtitle: 'Capacitación en Atención Inicial de Emergencias, Quemaduras, Heridas y Traumatismos.',
+    subtitle: 'Respuesta Rápida Ante Emergencias',
     description:
       'El curso de Primeros Auxilios capacita al personal de la empresa para responder con rapidez y eficacia ante accidentes o emergencias de salud hasta la llegada de asistencia médica especializada.',
     legalFramework: 'Ley 19.587 de Higiene y Seguridad Laboral y Resoluciones de la SRT.',
@@ -326,7 +326,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-vida-saludable': {
     title: 'Curso de Vida Saludable para Empresas',
-    subtitle: 'Promoción de Hábitos Saludables, Alimentación Equilibrada y Bienestar Integral.',
+    subtitle: 'Hábitos Saludables y Bienestar Integral',
     description:
       'El curso de Vida Saludable de Seres Salud está diseñado para educar y motivar a los equipos de trabajo a adoptar hábitos que beneficien su salud física y mental dentro y fuera del ambiente laboral.',
     legalFramework: 'Normativas de la SRT y Ministerio de Salud.',
@@ -351,7 +351,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'vida-saludable': {
     title: 'Curso de Vida Saludable para Empresas',
-    subtitle: 'Promoción de Hábitos Saludables, Alimentación Equilibrada y Bienestar Integral.',
+    subtitle: 'Hábitos Saludables y Bienestar Integral',
     description:
       'El curso de Vida Saludable de Seres Salud está diseñado para educar y motivar a los equipos de trabajo a adoptar hábitos que beneficien su salud física y mental dentro y fuera del ambiente laboral.',
     legalFramework: 'Normativas de la SRT y Ministerio de Salud.',
@@ -376,7 +376,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'higiene-y-seguridad': {
     title: 'Higiene y Seguridad Laboral para Empresas',
-    subtitle: 'Servicio Integral para Cumplir con la Normativa y Mejorar las Condiciones de Trabajo.',
+    subtitle: 'Cumplimiento Legal y Prevención de Riesgos',
     description:
       'Asesoramos a las empresas en el cumplimiento de las normativas de seguridad laboral, realizando mediciones de campo e implementando sistemas de gestión ambiental.',
     legalFramework: 'Ley 19.587 y resoluciones SRT 900/15, 84/12, 85/12.',
@@ -401,7 +401,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'control-de-ausentismo': {
     title: 'Control de Ausentismo Laboral',
-    subtitle: 'Gestión Médica Profesional para Reducir Ausencias Injustificadas.',
+    subtitle: 'Auditoría Médica Domiciliaria y en Clínica',
     description:
       'Servicio orientado a auditar y verificar las inasistencias por motivos de salud mediante médicos visitadores a domicilio y atención en consultorio central.',
     legalFramework: 'Ley de Contrato de Trabajo N° 20.744 (Art. 209 y 210).',
@@ -426,7 +426,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'atencion-art': {
     title: 'Atención por ART para Empresas',
-    subtitle: 'Respuesta Médica Rápida, Gestión Administrativa y Seguimiento del Trabajador.',
+    subtitle: 'Asistencia Rápida y Seguimiento Médico',
     description:
       'Coordinamos y ejecutamos la primera atención médica, curaciones, interconsultas con especialistas y la rehabilitación física requerida hasta el alta definitiva del trabajador.',
     legalFramework: 'Ley de Riesgos del Trabajo N° 24.557.',
@@ -450,7 +450,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'kinesiologia': {
     title: 'Kinesiología para Empresas',
-    subtitle: 'Atención Profesional en Kinesiología para tus Colaboradores.',
+    subtitle: 'Rehabilitación Física y Funcional',
     description:
       'Tratamiento de patologías musculares, articulares y osteoarticulares originadas por sobreesfuerzo, accidentes laborales o posturas inadecuadas.',
     legalFramework: 'Nomenclador de Prestaciones Médicas.',
@@ -474,7 +474,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'area-protegida': {
     title: 'Área Protegida para Empresas',
-    subtitle: 'Cobertura Médica Inmediata para Cuidar a tu Equipo y Cumplir con la Normativa.',
+    subtitle: 'Cobertura de Emergencias en su Predio',
     description:
       'Protegemos el recinto físico de su empresa garantizando la atención médica rápida ante cualquier eventualidad de salud sufrida por empleados, clientes o contratistas.',
     legalFramework: 'Normas internacionales de soporte vital básico y avanzado.',
@@ -498,7 +498,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'libretas-sanitarias-laborales': {
     title: 'Libretas Sanitarias Laborales para Empresas',
-    subtitle: 'Libretas Sanitarias para Cumplimiento de las Obligaciones Sanitarias Laborales.',
+    subtitle: 'Gestión Ágil de Habilitación Sanitaria',
     description:
       'Realizamos la totalidad de los análisis clínicos, físicos y radiológicos necesarios para la obtención y renovación de la Libreta Sanitaria Laboral obligatoria para industrias alimenticias, gastronómicas y de atención al público.',
     legalFramework: 'Reglamentaciones municipales y provinciales de Salud Pública y Código Alimentario Argentino.',
@@ -524,7 +524,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'medicina-asistencial': {
     title: 'Medicina Asistencial',
-    subtitle: 'Atención Médica Integral para Vos y tu Familia',
+    subtitle: 'Atención Médica Integral para tu Familia',
     description:
       'Brindamos atención asistencial de primer nivel para dolencias comunes, consultas médicas espontáneas y seguimiento de patologías no ocupacionales en nuestros consultorios equipados.',
     legalFramework: 'Ley 26.529 de Derechos del Paciente e Historias Clínicas.',
@@ -550,7 +550,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'psicotecnicos-laborales': {
     title: 'Psicotécnicos Laborales',
-    subtitle: 'Evaluaciones Diseñadas para Medir Capacidades, Aptitudes y Comportamientos Relacionados con el Desempeño Laboral.',
+    subtitle: 'Evaluación de Aptitudes y Perfiles',
     description:
       'Evaluamos la aptitud psicológica, rasgos de personalidad y competencias emocionales de los postulantes según las exigencias del puesto de trabajo a cubrir.',
     legalFramework: 'Resolución SRT N° 37/10 y Ley de Ejercicio Profesional de la Psicología.',
@@ -576,7 +576,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'pausas-activas': {
     title: 'Pausas Activas para Empresas',
-    subtitle: 'Programas de Pausas Activas Que Reducen la Fatiga y Aumentan la Productividad de tus Equipos.',
+    subtitle: 'Menos Fatiga y Más Productividad',
     description:
       'Implementamos sesiones breves de ejercicios físicos y de movilidad dentro de la jornada laboral para aliviar tensiones musculares, prevenir lesiones por postura y renovar la energía del equipo.',
     legalFramework: 'Programas de Promoción de la Salud y Ergonómicos de la SRT.',
@@ -602,7 +602,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'vacunas-antigripales': {
     title: 'Vacunas Antigripales para Empresas',
-    subtitle: 'Servicio de Vacunación Antigripal para Proteger a tu Equipo.',
+    subtitle: 'Inmunización en Planta o en Clínica',
     description:
       'Organizamos campañas de vacunación antigripal y de inmunización laboral directamente en su empresa para proteger a los trabajadores durante la temporada invernal y minimizar licencias por gripe.',
     legalFramework: 'Calendario Nacional de Vacunación y Recomendaciones del Ministerio de Salud.',
@@ -628,7 +628,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'prevencion-cardiovascular': {
     title: 'Prevención Cardiovascular en el Ámbito Laboral',
-    subtitle: 'Programas para Cuidar la Salud Cardíaca de tus Colaboradores y Promover Entornos Laborales Más Seguros.',
+    subtitle: 'Cuidado Cardíaco y Control de Riesgos',
     description:
       'En Seres Salud realizamos programas de prevención cardiovascular para identificar factores de riesgo, promover hábitos de vida saludables y disminuir la probabilidad de eventos cardíacos dentro del entorno laboral.',
     legalFramework: 'Normativas de la SRT y Ministerio de Salud.',
@@ -653,7 +653,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-alcoholismo': {
     title: 'Curso Alcoholismo para Empresas',
-    subtitle: 'Capacitación Preventiva para Concientizar, Reducir Riesgos Laborales y Entornos de Trabajo Más Seguros.',
+    subtitle: 'Concientización y Entornos Seguros',
     description:
       'El curso de Alcoholismo Laboral de Seres Salud está orientado a concientizar sobre los riesgos del consumo de alcohol en el trabajo y su impacto en la seguridad, la salud y el desempeño laboral.',
     legalFramework: 'Normativas de la SRT y Ley 19.587 de Higiene y Seguridad Laboral.',
@@ -678,7 +678,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'alcoholismo': {
     title: 'Curso Alcoholismo para Empresas',
-    subtitle: 'Capacitación Preventiva para Concientizar, Reducir Riesgos Laborales y Entornos de Trabajo Más Seguros.',
+    subtitle: 'Concientización y Entornos Seguros',
     description:
       'El curso de Alcoholismo Laboral de Seres Salud está orientado a concientizar sobre los riesgos del consumo de alcohol en el trabajo y su impacto en la seguridad, la salud y el desempeño laboral.',
     legalFramework: 'Normativas de la SRT y Ley 19.587 de Higiene y Seguridad Laboral.',
@@ -703,7 +703,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-drogas-de-abuso': {
     title: 'Curso de Drogas de Abuso',
-    subtitle: 'Capacitación para Reconocer, Abordar y Gestionar Riesgos Relacionados al Consumo.',
+    subtitle: 'Prevención de Consumos Problemáticos',
     description:
       'El curso de Drogas de Abuso está diseñado para empresas y equipos de trabajo que buscan prevenir y gestionar riesgos asociados al consumo de sustancias, promoviendo entornos laborales más seguros y saludables.',
     legalFramework: 'Normativas de la SRT y Ley 19.587 de Higiene y Seguridad Laboral.',
@@ -728,7 +728,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'drogas-de-abuso': {
     title: 'Curso de Drogas de Abuso',
-    subtitle: 'Capacitación para Reconocer, Abordar y Gestionar Riesgos Relacionados al Consumo.',
+    subtitle: 'Prevención de Consumos Problemáticos',
     description:
       'El curso de Drogas de Abuso está diseñado para empresas y equipos de trabajo que buscan prevenir y gestionar riesgos asociados al consumo de sustancias, promoviendo entornos laborales más seguros y saludables.',
     legalFramework: 'Normativas de la SRT y Ley 19.587 de Higiene y Seguridad Laboral.',
@@ -753,7 +753,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-hiv-sida': {
     title: 'Curso de HIV / SIDA para Empresas',
-    subtitle: 'Capacitación para la Prevención, Comprensión y Gestión Responsable de HIV/SIDA.',
+    subtitle: 'Prevención, Salud e Inclusión Laboral',
     description:
       'Este curso brinda información clara y actualizada sobre el HIV / SIDA, su transmisión, prevención y manejo de situaciones laborales, promoviendo entornos de trabajo seguros y respetuosos.',
     legalFramework: 'Normativas de la SRT y Ley 23.798 de SIDA.',
@@ -778,7 +778,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'hiv-sida': {
     title: 'Curso de HIV / SIDA para Empresas',
-    subtitle: 'Capacitación para la Prevención, Comprensión y Gestión Responsable de HIV/SIDA.',
+    subtitle: 'Prevención, Salud e Inclusión Laboral',
     description:
       'Este curso brinda información clara y actualizada sobre el HIV / SIDA, su transmisión, prevención y manejo de situaciones laborales, promoviendo entornos de trabajo seguros y respetuosos.',
     legalFramework: 'Normativas de la SRT y Ley 23.798 de SIDA.',
@@ -803,7 +803,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-ergonomia': {
     title: 'Curso de Ergonomía para Empresas',
-    subtitle: 'Capacitación Enfocada en la Prevención de Lesiones, Adaptación de Puestos de Trabajo y Promoción del Bienestar Físico.',
+    subtitle: 'Cuidado Postural en el Puesto de Trabajo',
     description:
       'El curso de Ergonomía de Seres Salud está enfocado en la prevención de lesiones y adaptación de puestos de trabajo para mejorar el bienestar físico de los colaboradores y reducir riesgos laborales.',
     legalFramework: 'Resolución SRT 886/15 y Ley 19.587 de Higiene y Seguridad.',
@@ -828,7 +828,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'ergonomia': {
     title: 'Curso de Ergonomía para Empresas',
-    subtitle: 'Capacitación Enfocada en la Prevención de Lesiones, Adaptación de Puestos de Trabajo y Promoción del Bienestar Físico.',
+    subtitle: 'Cuidado Postural en el Puesto de Trabajo',
     description:
       'El curso de Ergonomía de Seres Salud está enfocado en la prevención de lesiones y adaptación de puestos de trabajo para mejorar el bienestar físico de los colaboradores y reducir riesgos laborales.',
     legalFramework: 'Resolución SRT 886/15 y Ley 19.587 de Higiene y Seguridad.',
@@ -853,7 +853,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'curso-tabaquismo': {
     title: 'Curso de Tabaquismo Laboral',
-    subtitle: 'Orientado para Promover Ambientes Laborales Más Saludables y Seguros.',
+    subtitle: 'Espacios Libres de Humo y Cese Tabáquico',
     description:
       'El curso de Tabaquismo de Seres Salud está diseñado para promover la prevención, concientización y reducción del consumo de tabaco en el ámbito laboral.',
     legalFramework: 'Ley 26.687 de Control del Tabaco y Normativas de Higiene y Seguridad Laboral.',
@@ -878,7 +878,7 @@ const servicesMap: Record<string, ServiceDetail> = {
   },
   'tabaquismo': {
     title: 'Curso de Tabaquismo Laboral',
-    subtitle: 'Orientado para Promover Ambientes Laborales Más Saludables y Seguros.',
+    subtitle: 'Espacios Libres de Humo y Cese Tabáquico',
     description:
       'El curso de Tabaquismo de Seres Salud está diseñado para promover la prevención, concientización y reducción del consumo de tabaco en el ámbito laboral.',
     legalFramework: 'Ley 26.687 de Control del Tabaco y Normativas de Higiene y Seguridad Laboral.',
@@ -985,7 +985,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                   <h1 className="text-2xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-wide drop-shadow-md leading-tight">
                     {service.title}
                   </h1>
-                  <p className="text-xs sm:text-xl font-medium text-emerald-100 font-sans leading-snug sm:leading-relaxed drop-shadow-xs">
+                  <p className="text-xs sm:text-lg lg:text-xl font-medium text-emerald-100 font-sans whitespace-nowrap drop-shadow-xs">
                     {service.subtitle}
                   </p>
                   <div className="hidden lg:block pt-2">
