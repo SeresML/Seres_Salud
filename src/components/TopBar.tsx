@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Linkedin } from 'lucide-react';
 
 export default function TopBar() {
   return (
@@ -34,16 +34,7 @@ export default function TopBar() {
           </span>
           <div className="flex items-center gap-3">
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1 rounded hover:bg-emerald-800 text-emerald-100 hover:text-white transition-colors"
-              aria-label="Facebook"
-            >
-              <Facebook className="w-3.5 h-3.5" />
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/seres_.salud/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-1 rounded hover:bg-emerald-800 text-emerald-100 hover:text-white transition-colors"
@@ -52,7 +43,7 @@ export default function TopBar() {
               <Instagram className="w-3.5 h-3.5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/seressalud/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-1 rounded hover:bg-emerald-800 text-emerald-100 hover:text-white transition-colors"

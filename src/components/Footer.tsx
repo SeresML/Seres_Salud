@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, ArrowUpRight, Shield } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Linkedin, ArrowUpRight, Shield } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -25,16 +25,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-emerald-900/80 flex items-center justify-center text-emerald-200 hover:bg-brand-moss hover:text-white transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/seres_.salud/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-emerald-900/80 flex items-center justify-center text-emerald-200 hover:bg-brand-moss hover:text-white transition-colors"
@@ -43,7 +34,7 @@ export default function Footer() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/seressalud/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-emerald-900/80 flex items-center justify-center text-emerald-200 hover:bg-brand-moss hover:text-white transition-colors"
