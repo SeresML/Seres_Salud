@@ -1015,7 +1015,7 @@ export default function SingleServicePage({ params }: { params: { slug: string }
                       rel="noopener noreferrer"
                       className="inline-block w-full bg-white hover:bg-emerald-50 text-[#0A5229] font-bold text-sm px-8 py-3 rounded-xl shadow-lg border border-emerald-100 transition-all active:scale-95"
                     >
-                      Contactar
+                      CONTACTAR
                     </a>
                   </div>
                 </div>

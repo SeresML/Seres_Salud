@@ -205,7 +205,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="bg-[#0A5229] hover:bg-[#073B1D] text-white font-bold px-7 py-3 rounded-lg transition-all shadow-sm hover:shadow-card active:scale-[0.98] text-base flex items-center justify-center"
           >
-            <span>Contactar</span>
+            <span>CONTACTAR</span>
           </a>
         </nav>
 
@@ -358,7 +358,7 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center bg-[#0A5229] text-white font-bold py-3.5 rounded-lg block shadow-md hover:bg-brand-darkgreen transition-colors text-base"
             >
-              Contactar
+              CONTACTAR
             </a>
           </div>
         </div>
