@@ -38,9 +38,9 @@ export default function ContactForm() {
       {/* Background Dot Pattern matching screenshot */}
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1.5px,transparent_1.5px)] [background-size:18px_18px] pointer-events-none" />
 
-      <div className="relative z-10 max-w-md w-full">
+      <div className="relative z-10 max-w-md w-full flex flex-col items-center">
         {/* White Card matching screenshot */}
-        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg text-gray-800 border-2 border-gray-200">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg text-gray-800 border-2 border-gray-200 w-full">
           <h2 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6">
             Complete el Formulario
           </h2>
@@ -109,6 +109,18 @@ export default function ContactForm() {
               </p>
             )}
           </form>
+        </div>
+
+        {/* Mobile-only Contactar button below form */}
+        <div className="sm:hidden pt-5 w-full text-center">
+          <a
+            href="https://wa.link/wsa6r5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block w-full bg-white hover:bg-emerald-50 text-[#0A5229] font-bold text-sm px-8 py-3 rounded-xl shadow-lg border border-emerald-100 transition-all active:scale-95"
+          >
+            Contactar
+          </a>
         </div>
       </div>
     </div>
