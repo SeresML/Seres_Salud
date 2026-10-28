@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { CheckCircle2, ArrowLeft, Phone, Mail } from 'lucide-react';
+import { CheckCircle2, ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: '¡Muchas Gracias por su Consulta! | Seres Salud',
@@ -32,25 +32,7 @@ export default function GraciasPage() {
           </p>
         </div>
 
-        <div className="pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base text-gray-600">
-          <a
-            href="tel:+5491166048055"
-            className="inline-flex items-center gap-2 font-semibold text-[#0A5229] hover:underline"
-          >
-            <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-brand-moss" />
-            <span>+54 9 11 6604-8055</span>
-          </a>
-          <span className="hidden sm:inline text-gray-300">|</span>
-          <a
-            href="mailto:consultas@seressalud.com.ar"
-            className="inline-flex items-center gap-2 font-semibold text-[#0A5229] hover:underline"
-          >
-            <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-brand-moss" />
-            <span>consultas@seressalud.com.ar</span>
-          </a>
-        </div>
-
-        <div className="pt-2 flex justify-center">
+        <div className="pt-4 flex justify-center">
           <Link
             href="/"
             className="inline-flex items-center justify-center gap-2 bg-[#006E32] hover:bg-[#005426] text-white font-bold text-sm sm:text-base px-9 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95"
