@@ -1,9 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { enviarConsulta, DESTINO } from '@/lib/enviarConsulta';
 
 export default function ContactForm() {
+  const router = useRouter();
   const [enviando, setEnviando] = useState(false);
   const [estado, setEstado] = useState<'ok' | 'error' | null>(null);
 
@@ -29,8 +31,12 @@ export default function ContactForm() {
     );
 
     setEnviando(false);
-    setEstado(ok ? 'ok' : 'error');
-    if (ok) form.reset();
+    if (ok) {
+      form.reset();
+      router.push('/gracias');
+    } else {
+      setEstado('error');
+    }
   };
 
   return (
@@ -98,11 +104,6 @@ export default function ContactForm() {
               </button>
             </div>
 
-            {estado === 'ok' && (
-              <p className="mt-3 text-sm font-semibold text-[#0A5229]">
-                ¡Gracias! Recibimos su consulta y lo contactaremos a la brevedad.
-              </p>
-            )}
             {estado === 'error' && (
               <p className="mt-3 text-sm font-semibold text-red-600">
                 No pudimos enviar su consulta. Intente nuevamente o escríbanos a {DESTINO}.

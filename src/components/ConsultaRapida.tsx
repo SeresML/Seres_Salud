@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { enviarConsulta, DESTINO } from '@/lib/enviarConsulta';
 
 // Formulario corto "Complete el Formulario" de las páginas de cada servicio
 export default function ConsultaRapida({ servicio }: { servicio: string }) {
+  const router = useRouter();
   const [enviando, setEnviando] = useState(false);
   const [estado, setEstado] = useState<'ok' | 'error' | null>(null);
 
@@ -28,8 +30,12 @@ export default function ConsultaRapida({ servicio }: { servicio: string }) {
       { email: campo('email'), telefono: campo('telefono') }
     );
     setEnviando(false);
-    setEstado(ok ? 'ok' : 'error');
-    if (ok) form.reset();
+    if (ok) {
+      form.reset();
+      router.push('/gracias');
+    } else {
+      setEstado('error');
+    }
   };
 
   return (
@@ -79,9 +85,6 @@ export default function ConsultaRapida({ servicio }: { servicio: string }) {
         >
           {enviando ? 'Enviando...' : 'Enviar'}
         </button>
-        {estado === 'ok' && (
-          <p className="mt-3 text-sm text-[#0A5229]">¡Gracias! Recibimos su consulta y lo contactaremos a la brevedad.</p>
-        )}
         {estado === 'error' && (
           <p className="mt-3 text-sm text-red-600">No pudimos enviar su consulta. Intente nuevamente o escríbanos a {DESTINO}.</p>
         )}
