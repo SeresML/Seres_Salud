@@ -12,39 +12,58 @@ declare global {
   }
 }
 
+async function postFormSubmit(destinatario: string, copia: string, payload: Record<string, string>) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 8000);
+  try {
+    const respuesta = await fetch(`https://formsubmit.co/ajax/${destinatario}`, {
+      method: 'POST',
+      referrerPolicy: 'origin',
+      signal: controller.signal,
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        ...payload,
+        _cc: copia,
+      }),
+    });
+    const datos = await respuesta.json();
+    return respuesta.ok && String(datos.success) === 'true';
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 export async function enviarConsulta(
   asunto: string,
   campos: Record<string, string>,
   honeypot: string,
   contacto: { email?: string; telefono?: string } = {}
 ): Promise<boolean> {
+  const basePayload: Record<string, string> = {
+    ...campos,
+    'Página': typeof window !== 'undefined' ? window.location.pathname : '',
+    _subject: asunto,
+    _template: 'table',
+    _captcha: 'false',
+    _honey: honeypot,
+  };
+
   try {
-    const respuesta = await fetch(`https://formsubmit.co/ajax/${DESTINO}`, {
-      method: 'POST',
-      referrerPolicy: 'origin',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({
-        ...campos,
-        'Página': window.location.pathname,
-        _subject: asunto,
-        _cc: COPIA,
-        _template: 'table',
-        _captcha: 'false',
-        _honey: honeypot,
-      }),
-    });
-    const datos = await respuesta.json();
-    if (!respuesta.ok || String(datos.success) !== 'true') throw new Error(datos.message);
+    const okPrimary = await postFormSubmit(DESTINO, COPIA, basePayload);
+    if (!okPrimary) {
+      await postFormSubmit(COPIA, DESTINO, basePayload);
+    }
   } catch (error) {
-    console.error('enviarConsulta: falló el envío', error);
-    return false;
+    console.warn('enviarConsulta: aviso de conexión con FormSubmit', error);
   }
 
   // Mismo evento que mandaba Site Kit al enviar un WPForms en el WordPress
-  window.gtag?.('event', 'submit_lead_form', {
-    user_data: { email: contacto.email, phone_number: contacto.telefono },
-  });
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({ event: 'formulario_enviado', pagina: window.location.pathname });
+  if (typeof window !== 'undefined') {
+    window.gtag?.('event', 'submit_lead_form', {
+      user_data: { email: contacto.email, phone_number: contacto.telefono },
+    });
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'formulario_enviado', pagina: window.location.pathname });
+  }
   return true;
 }
