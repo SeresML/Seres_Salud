@@ -46,8 +46,8 @@ export default function ContactForm() {
 
       <div className="relative z-10 max-w-md w-full flex flex-col items-center">
         {/* White Card matching screenshot */}
-        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg text-gray-800 border-2 border-gray-200 w-full">
-          <h2 className="text-xl sm:text-2xl font-bold font-heading text-gray-900 mb-6">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg text-gray-700 border-2 border-gray-200 w-full">
+          <h2 className="text-xl sm:text-2xl font-bold font-heading text-gray-700 mb-6">
             Complete el Formulario
           </h2>
 
@@ -59,7 +59,7 @@ export default function ContactForm() {
                 type="text"
                 name="nombre"
                 placeholder="Contacto/Empresa"
-                className="w-full border-2 border-gray-400 rounded-xl px-4 py-3 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
+                className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
                 required
               />
             </div>
@@ -69,7 +69,7 @@ export default function ContactForm() {
                 type="tel"
                 name="telefono"
                 placeholder="Teléfono/Móvil"
-                className="w-full border-2 border-gray-400 rounded-xl px-4 py-3 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
+                className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
                 required
               />
             </div>
@@ -79,7 +79,7 @@ export default function ContactForm() {
                 type="email"
                 name="email"
                 placeholder="E-mail"
-                className="w-full border-2 border-gray-400 rounded-xl px-4 py-3 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
+                className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all"
                 required
               />
             </div>
@@ -89,7 +89,7 @@ export default function ContactForm() {
                 name="mensaje"
                 rows={4}
                 placeholder="Consulta"
-                className="w-full border-2 border-gray-400 rounded-xl px-4 py-3 text-sm text-gray-900 font-medium placeholder-gray-600 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all resize-none"
+                className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#0A5229] focus:ring-2 focus:ring-[#0A5229]/20 transition-all resize-none"
                 required
               />
             </div>

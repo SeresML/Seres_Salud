@@ -1002,8 +1002,8 @@ export default function SingleServicePage({ params }: { params: { slug: string }
 
                 {/* Right Side: Quick Consultation Form matching screenshot */}
                 <div className="lg:col-span-5 flex flex-col items-center lg:items-end">
-                  <div className="bg-white rounded-2xl p-4 sm:p-7 shadow-2xl border border-emerald-100 max-w-sm w-full text-gray-800">
-                    <h2 className="text-base sm:text-lg font-bold font-heading text-gray-900 mb-2.5 sm:mb-4">
+                  <div className="bg-white rounded-2xl p-4 sm:p-7 shadow-2xl border border-emerald-100 max-w-sm w-full text-gray-700">
+                    <h2 className="text-base sm:text-lg font-bold font-heading text-gray-700 mb-2.5 sm:mb-4">
                       Complete el Formulario
                     </h2>
                     <ConsultaRapida servicio={service.title} />
